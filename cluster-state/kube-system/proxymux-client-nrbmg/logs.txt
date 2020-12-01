@@ -1,0 +1,98 @@
+==== START logs for container proxymux-client of pod kube-system/proxymux-client-nrbmg ====
+time="2020-11-25T19:02:37Z" level=info msg="verbosity at level: debug"
+time="2020-11-25T19:02:37Z" level=info msg="connecting to proxymux server at" tcp_url="https://192.29.193.86:12250"
+time="2020-11-25T19:02:37Z" level=debug msg="processing request to url" host="192.29.193.86:12250" scheme=https
+time="2020-11-25T19:02:38Z" level=info msg="request has been signed" headers="[Authorization Date X-Content-Sha256 Content-Length Content-Type]" host="192.29.193.86:12250" scheme=https
+time="2020-11-25T19:02:38Z" level=debug msg="process request status" host="192.29.193.86:12250" scheme=https status_code=200
+time="2020-11-25T19:02:38Z" level=debug msg="conn created" cluster_id=c4gknbtgrrw conn="192.29.193.86:12250" error="<nil>" node_id=ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a node_name=10.0.4.2 node_pool_id=
+time="2020-11-25T19:02:38Z" level=info msg="successfully registered delegate" cluster_id=c4gknbtgrrw node_id=ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a node_name=10.0.4.2 node_pool_id=
+time="2020-11-25T19:02:38Z" level=debug msg="new connection received" DelegateRegistrationInfo="{ c4gknbtgrrw  ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a 10.0.4.2}"
+time="2020-11-25T19:02:38Z" level=info msg="proxymux client has started"
+time="2020-11-25T20:02:36Z" level=error msg="unable to accept stream" DelegateRegistrationInfo="{ c4gknbtgrrw  ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a 10.0.4.2}" error=EOF
+time="2020-11-25T20:02:36Z" level=debug msg="processing request to url" host="192.29.193.86:12250" scheme=https
+time="2020-11-25T20:02:37Z" level=info msg="request has been signed" headers="[X-Content-Sha256 Content-Length Content-Type Authorization Date]" host="192.29.193.86:12250" scheme=https
+time="2020-11-25T20:02:37Z" level=debug msg="process request status" host="192.29.193.86:12250" scheme=https status_code=200
+time="2020-11-25T20:02:37Z" level=debug msg="conn created" cluster_id=c4gknbtgrrw conn="192.29.193.86:12250" error="<nil>" node_id=ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a node_name=10.0.4.2 node_pool_id=
+time="2020-11-25T20:02:37Z" level=info msg="successfully registered delegate" cluster_id=c4gknbtgrrw node_id=ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a node_name=10.0.4.2 node_pool_id=
+time="2020-11-25T20:02:37Z" level=debug msg="new connection received" DelegateRegistrationInfo="{ c4gknbtgrrw  ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a 10.0.4.2}"
+time="2020-11-25T20:59:05Z" level=error msg="unable to accept stream" DelegateRegistrationInfo="{ c4gknbtgrrw  ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a 10.0.4.2}" error=EOF
+time="2020-11-25T20:59:05Z" level=debug msg="processing request to url" host="192.29.193.86:12250" scheme=https
+time="2020-11-25T20:59:06Z" level=info msg="request has been signed" headers="[X-Content-Sha256 Content-Length Content-Type Authorization Date]" host="192.29.193.86:12250" scheme=https
+time="2020-11-25T20:59:06Z" level=debug msg="process request status" host="192.29.193.86:12250" scheme=https status_code=200
+time="2020-11-25T20:59:06Z" level=debug msg="conn created" cluster_id=c4gknbtgrrw conn="192.29.193.86:12250" error="<nil>" node_id=ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a node_name=10.0.4.2 node_pool_id=
+time="2020-11-25T20:59:06Z" level=info msg="successfully registered delegate" cluster_id=c4gknbtgrrw node_id=ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a node_name=10.0.4.2 node_pool_id=
+time="2020-11-25T20:59:06Z" level=debug msg="new connection received" DelegateRegistrationInfo="{ c4gknbtgrrw  ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a 10.0.4.2}"
+time="2020-11-25T21:40:20Z" level=error msg="unable to accept stream" DelegateRegistrationInfo="{ c4gknbtgrrw  ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a 10.0.4.2}" error=EOF
+time="2020-11-25T21:40:20Z" level=debug msg="processing request to url" host="192.29.193.86:12250" scheme=https
+time="2020-11-25T21:40:21Z" level=info msg="request has been signed" headers="[Date X-Content-Sha256 Content-Length Content-Type Authorization]" host="192.29.193.86:12250" scheme=https
+time="2020-11-25T21:40:21Z" level=debug msg="process request status" host="192.29.193.86:12250" scheme=https status_code=200
+time="2020-11-25T21:40:21Z" level=debug msg="conn created" cluster_id=c4gknbtgrrw conn="192.29.193.86:12250" error="<nil>" node_id=ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a node_name=10.0.4.2 node_pool_id=
+time="2020-11-25T21:40:21Z" level=info msg="successfully registered delegate" cluster_id=c4gknbtgrrw node_id=ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a node_name=10.0.4.2 node_pool_id=
+time="2020-11-25T21:40:21Z" level=debug msg="new connection received" DelegateRegistrationInfo="{ c4gknbtgrrw  ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a 10.0.4.2}"
+time="2020-11-25T22:46:48Z" level=error msg="unable to accept stream" DelegateRegistrationInfo="{ c4gknbtgrrw  ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a 10.0.4.2}" error=EOF
+time="2020-11-25T22:46:48Z" level=debug msg="processing request to url" host="192.29.193.86:12250" scheme=https
+time="2020-11-25T22:46:49Z" level=info msg="request has been signed" headers="[X-Content-Sha256 Content-Length Content-Type Authorization Date]" host="192.29.193.86:12250" scheme=https
+time="2020-11-25T22:46:49Z" level=debug msg="process request status" host="192.29.193.86:12250" scheme=https status_code=200
+time="2020-11-25T22:46:49Z" level=debug msg="conn created" cluster_id=c4gknbtgrrw conn="192.29.193.86:12250" error="<nil>" node_id=ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a node_name=10.0.4.2 node_pool_id=
+time="2020-11-25T22:46:49Z" level=info msg="successfully registered delegate" cluster_id=c4gknbtgrrw node_id=ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a node_name=10.0.4.2 node_pool_id=
+time="2020-11-25T22:46:49Z" level=debug msg="new connection received" DelegateRegistrationInfo="{ c4gknbtgrrw  ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a 10.0.4.2}"
+time="2020-11-25T23:34:11Z" level=error msg="unable to accept stream" DelegateRegistrationInfo="{ c4gknbtgrrw  ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a 10.0.4.2}" error=EOF
+time="2020-11-25T23:34:11Z" level=debug msg="processing request to url" host="192.29.193.86:12250" scheme=https
+time="2020-11-25T23:34:12Z" level=info msg="request has been signed" headers="[Content-Length Content-Type Authorization Date X-Content-Sha256]" host="192.29.193.86:12250" scheme=https
+time="2020-11-25T23:34:12Z" level=debug msg="process request status" host="192.29.193.86:12250" scheme=https status_code=200
+time="2020-11-25T23:34:12Z" level=debug msg="conn created" cluster_id=c4gknbtgrrw conn="192.29.193.86:12250" error="<nil>" node_id=ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a node_name=10.0.4.2 node_pool_id=
+time="2020-11-25T23:34:12Z" level=info msg="successfully registered delegate" cluster_id=c4gknbtgrrw node_id=ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a node_name=10.0.4.2 node_pool_id=
+time="2020-11-25T23:34:12Z" level=debug msg="new connection received" DelegateRegistrationInfo="{ c4gknbtgrrw  ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a 10.0.4.2}"
+time="2020-11-26T00:07:40Z" level=error msg="unable to accept stream" DelegateRegistrationInfo="{ c4gknbtgrrw  ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a 10.0.4.2}" error=EOF
+time="2020-11-26T00:07:40Z" level=debug msg="processing request to url" host="192.29.193.86:12250" scheme=https
+time="2020-11-26T00:07:41Z" level=info msg="request has been signed" headers="[X-Content-Sha256 Content-Length Content-Type Authorization Date]" host="192.29.193.86:12250" scheme=https
+time="2020-11-26T00:07:41Z" level=debug msg="process request status" host="192.29.193.86:12250" scheme=https status_code=200
+time="2020-11-26T00:07:41Z" level=debug msg="conn created" cluster_id=c4gknbtgrrw conn="192.29.193.86:12250" error="<nil>" node_id=ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a node_name=10.0.4.2 node_pool_id=
+time="2020-11-26T00:07:41Z" level=info msg="successfully registered delegate" cluster_id=c4gknbtgrrw node_id=ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a node_name=10.0.4.2 node_pool_id=
+time="2020-11-26T00:07:41Z" level=debug msg="new connection received" DelegateRegistrationInfo="{ c4gknbtgrrw  ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a 10.0.4.2}"
+time="2020-11-26T01:27:52Z" level=error msg="unable to accept stream" DelegateRegistrationInfo="{ c4gknbtgrrw  ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a 10.0.4.2}" error=EOF
+time="2020-11-26T01:27:52Z" level=debug msg="processing request to url" host="192.29.193.86:12250" scheme=https
+time="2020-11-26T01:27:53Z" level=info msg="request has been signed" headers="[Date X-Content-Sha256 Content-Length Content-Type Authorization]" host="192.29.193.86:12250" scheme=https
+time="2020-11-26T01:27:53Z" level=debug msg="process request status" host="192.29.193.86:12250" scheme=https status_code=200
+time="2020-11-26T01:27:53Z" level=debug msg="conn created" cluster_id=c4gknbtgrrw conn="192.29.193.86:12250" error="<nil>" node_id=ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a node_name=10.0.4.2 node_pool_id=
+time="2020-11-26T01:27:53Z" level=info msg="successfully registered delegate" cluster_id=c4gknbtgrrw node_id=ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a node_name=10.0.4.2 node_pool_id=
+time="2020-11-26T01:27:53Z" level=debug msg="new connection received" DelegateRegistrationInfo="{ c4gknbtgrrw  ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a 10.0.4.2}"
+time="2020-11-26T02:42:54Z" level=error msg="unable to accept stream" DelegateRegistrationInfo="{ c4gknbtgrrw  ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a 10.0.4.2}" error=EOF
+time="2020-11-26T02:42:54Z" level=debug msg="processing request to url" host="192.29.193.86:12250" scheme=https
+time="2020-11-26T02:42:54Z" level=info msg="request has been signed" headers="[Date X-Content-Sha256 Content-Length Content-Type Authorization]" host="192.29.193.86:12250" scheme=https
+time="2020-11-26T02:42:54Z" level=debug msg="process request status" host="192.29.193.86:12250" scheme=https status_code=200
+time="2020-11-26T02:42:54Z" level=debug msg="conn created" cluster_id=c4gknbtgrrw conn="192.29.193.86:12250" error="<nil>" node_id=ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a node_name=10.0.4.2 node_pool_id=
+time="2020-11-26T02:42:54Z" level=info msg="successfully registered delegate" cluster_id=c4gknbtgrrw node_id=ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a node_name=10.0.4.2 node_pool_id=
+time="2020-11-26T02:42:54Z" level=debug msg="new connection received" DelegateRegistrationInfo="{ c4gknbtgrrw  ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a 10.0.4.2}"
+time="2020-11-26T03:36:16Z" level=error msg="unable to accept stream" DelegateRegistrationInfo="{ c4gknbtgrrw  ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a 10.0.4.2}" error=EOF
+time="2020-11-26T03:36:16Z" level=debug msg="processing request to url" host="192.29.193.86:12250" scheme=https
+time="2020-11-26T03:36:16Z" level=info msg="request has been signed" headers="[Date X-Content-Sha256 Content-Length Content-Type Authorization]" host="192.29.193.86:12250" scheme=https
+time="2020-11-26T03:36:17Z" level=debug msg="process request status" host="192.29.193.86:12250" scheme=https status_code=200
+time="2020-11-26T03:36:17Z" level=debug msg="conn created" cluster_id=c4gknbtgrrw conn="192.29.193.86:12250" error="<nil>" node_id=ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a node_name=10.0.4.2 node_pool_id=
+time="2020-11-26T03:36:17Z" level=info msg="successfully registered delegate" cluster_id=c4gknbtgrrw node_id=ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a node_name=10.0.4.2 node_pool_id=
+time="2020-11-26T03:36:17Z" level=debug msg="new connection received" DelegateRegistrationInfo="{ c4gknbtgrrw  ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a 10.0.4.2}"
+time="2020-11-26T04:14:16Z" level=error msg="unable to accept stream" DelegateRegistrationInfo="{ c4gknbtgrrw  ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a 10.0.4.2}" error=EOF
+time="2020-11-26T04:14:16Z" level=debug msg="processing request to url" host="192.29.193.86:12250" scheme=https
+time="2020-11-26T04:14:17Z" level=info msg="request has been signed" headers="[Content-Length Content-Type Authorization Date X-Content-Sha256]" host="192.29.193.86:12250" scheme=https
+time="2020-11-26T04:14:17Z" level=debug msg="process request status" host="192.29.193.86:12250" scheme=https status_code=200
+time="2020-11-26T04:14:17Z" level=debug msg="conn created" cluster_id=c4gknbtgrrw conn="192.29.193.86:12250" error="<nil>" node_id=ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a node_name=10.0.4.2 node_pool_id=
+time="2020-11-26T04:14:17Z" level=info msg="successfully registered delegate" cluster_id=c4gknbtgrrw node_id=ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a node_name=10.0.4.2 node_pool_id=
+time="2020-11-26T04:14:17Z" level=debug msg="new connection received" DelegateRegistrationInfo="{ c4gknbtgrrw  ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a 10.0.4.2}"
+time="2020-11-26T05:41:54Z" level=error msg="unable to accept stream" DelegateRegistrationInfo="{ c4gknbtgrrw  ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a 10.0.4.2}" error=EOF
+time="2020-11-26T05:41:54Z" level=debug msg="processing request to url" host="192.29.193.86:12250" scheme=https
+time="2020-11-26T05:41:55Z" level=info msg="request has been signed" headers="[Date X-Content-Sha256 Content-Length Content-Type Authorization]" host="192.29.193.86:12250" scheme=https
+time="2020-11-26T05:41:55Z" level=debug msg="process request status" host="192.29.193.86:12250" scheme=https status_code=200
+time="2020-11-26T05:41:55Z" level=debug msg="conn created" cluster_id=c4gknbtgrrw conn="192.29.193.86:12250" error="<nil>" node_id=ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a node_name=10.0.4.2 node_pool_id=
+time="2020-11-26T05:41:55Z" level=info msg="successfully registered delegate" cluster_id=c4gknbtgrrw node_id=ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a node_name=10.0.4.2 node_pool_id=
+time="2020-11-26T05:41:55Z" level=debug msg="new connection received" DelegateRegistrationInfo="{ c4gknbtgrrw  ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a 10.0.4.2}"
+time="2020-11-26T06:33:03Z" level=error msg="unable to accept stream" DelegateRegistrationInfo="{ c4gknbtgrrw  ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a 10.0.4.2}" error=EOF
+time="2020-11-26T06:33:03Z" level=debug msg="processing request to url" host="192.29.193.86:12250" scheme=https
+time="2020-11-26T06:33:03Z" level=info msg="request has been signed" headers="[Date X-Content-Sha256 Content-Length Content-Type Authorization]" host="192.29.193.86:12250" scheme=https
+time="2020-11-26T06:33:03Z" level=debug msg="process request status" host="192.29.193.86:12250" scheme=https status_code=200
+time="2020-11-26T06:33:03Z" level=debug msg="conn created" cluster_id=c4gknbtgrrw conn="192.29.193.86:12250" error="<nil>" node_id=ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a node_name=10.0.4.2 node_pool_id=
+time="2020-11-26T06:33:03Z" level=info msg="successfully registered delegate" cluster_id=c4gknbtgrrw node_id=ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a node_name=10.0.4.2 node_pool_id=
+time="2020-11-26T06:33:03Z" level=debug msg="new connection received" DelegateRegistrationInfo="{ c4gknbtgrrw  ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a 10.0.4.2}"
+time="2020-11-26T06:56:16Z" level=debug msg="dialing connection" DelegateRegistrationInfo="{ c4gknbtgrrw  ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a 10.0.4.2}" address="127.0.0.1:10250" original_addr="10.0.4.2:10250" stream_local_addr="10.0.4.2:42990" stream_remote_addr="192.29.193.86:12250"
+time="2020-11-26T06:56:16Z" level=debug msg="dialing connection" DelegateRegistrationInfo="{ c4gknbtgrrw  ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a 10.0.4.2}" address="127.0.0.1:10250" original_addr="10.0.4.2:10250" stream_local_addr="10.0.4.2:42990" stream_remote_addr="192.29.193.86:12250"
+time="2020-11-26T06:56:18Z" level=debug msg="dialing connection" DelegateRegistrationInfo="{ c4gknbtgrrw  ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a 10.0.4.2}" address="127.0.0.1:10250" original_addr="10.0.4.2:10250" stream_local_addr="10.0.4.2:42990" stream_remote_addr="192.29.193.86:12250"
+==== END logs for container proxymux-client of pod kube-system/proxymux-client-nrbmg ====

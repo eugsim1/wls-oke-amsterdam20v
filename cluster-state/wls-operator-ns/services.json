@@ -1,0 +1,88 @@
+{
+    "kind": "ServiceList",
+    "apiVersion": "v1",
+    "metadata": {
+        "selfLink": "/api/v1/namespaces/wls-operator-ns/services",
+        "resourceVersion": "190658"
+    },
+    "items": [
+        {
+            "metadata": {
+                "name": "internal-weblogic-operator-svc",
+                "namespace": "wls-operator-ns",
+                "selfLink": "/api/v1/namespaces/wls-operator-ns/services/internal-weblogic-operator-svc",
+                "uid": "e2179ee0-31aa-4d56-b9fd-b1770c596d6a",
+                "resourceVersion": "3029",
+                "creationTimestamp": "2020-11-25T19:04:46Z",
+                "labels": {
+                    "app.kubernetes.io/managed-by": "Helm",
+                    "weblogic.operatorName": "wls-operator-ns"
+                },
+                "annotations": {
+                    "meta.helm.sh/release-name": "wls-weblogic-operator",
+                    "meta.helm.sh/release-namespace": "wls-operator-ns"
+                },
+                "managedFields": [
+                    {
+                        "manager": "Go-http-client",
+                        "operation": "Update",
+                        "apiVersion": "v1",
+                        "time": "2020-11-25T19:04:46Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    ".": {},
+                                    "f:meta.helm.sh/release-name": {},
+                                    "f:meta.helm.sh/release-namespace": {}
+                                },
+                                "f:labels": {
+                                    ".": {},
+                                    "f:app.kubernetes.io/managed-by": {},
+                                    "f:weblogic.operatorName": {}
+                                }
+                            },
+                            "f:spec": {
+                                "f:ports": {
+                                    ".": {},
+                                    "k:{\"port\":8082,\"protocol\":\"TCP\"}": {
+                                        ".": {},
+                                        "f:name": {},
+                                        "f:port": {},
+                                        "f:protocol": {},
+                                        "f:targetPort": {}
+                                    }
+                                },
+                                "f:selector": {
+                                    ".": {},
+                                    "f:app": {}
+                                },
+                                "f:sessionAffinity": {},
+                                "f:type": {}
+                            }
+                        }
+                    }
+                ]
+            },
+            "spec": {
+                "ports": [
+                    {
+                        "name": "rest",
+                        "protocol": "TCP",
+                        "port": 8082,
+                        "targetPort": 8082
+                    }
+                ],
+                "selector": {
+                    "app": "weblogic-operator"
+                },
+                "clusterIP": "10.96.177.240",
+                "type": "ClusterIP",
+                "sessionAffinity": "None"
+            },
+            "status": {
+                "loadBalancer": {}
+            }
+        }
+    ]
+}

@@ -1,0 +1,420 @@
+{
+    "kind": "ReplicaSetList",
+    "apiVersion": "apps/v1",
+    "metadata": {
+        "selfLink": "/apis/apps/v1/namespaces/jenkins-ns/replicasets",
+        "resourceVersion": "190604"
+    },
+    "items": [
+        {
+            "metadata": {
+                "name": "jenkins-deployment-6db7c96795",
+                "namespace": "jenkins-ns",
+                "selfLink": "/apis/apps/v1/namespaces/jenkins-ns/replicasets/jenkins-deployment-6db7c96795",
+                "uid": "f4e5cb74-e391-424a-b5bb-23a7b2328cca",
+                "resourceVersion": "4245",
+                "generation": 1,
+                "creationTimestamp": "2020-11-25T19:07:34Z",
+                "labels": {
+                    "oci": "jenkins-wls-oke",
+                    "pod-template-hash": "6db7c96795"
+                },
+                "annotations": {
+                    "deployment.kubernetes.io/desired-replicas": "1",
+                    "deployment.kubernetes.io/max-replicas": "2",
+                    "deployment.kubernetes.io/revision": "1",
+                    "meta.helm.sh/release-name": "jenkins-oke",
+                    "meta.helm.sh/release-namespace": "default"
+                },
+                "ownerReferences": [
+                    {
+                        "apiVersion": "apps/v1",
+                        "kind": "Deployment",
+                        "name": "jenkins-deployment",
+                        "uid": "2e74c2c5-4a90-49ef-8c8c-87d0eff56625",
+                        "controller": true,
+                        "blockOwnerDeletion": true
+                    }
+                ],
+                "managedFields": [
+                    {
+                        "manager": "kube-controller-manager",
+                        "operation": "Update",
+                        "apiVersion": "apps/v1",
+                        "time": "2020-11-25T19:08:17Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    ".": {},
+                                    "f:deployment.kubernetes.io/desired-replicas": {},
+                                    "f:deployment.kubernetes.io/max-replicas": {},
+                                    "f:deployment.kubernetes.io/revision": {},
+                                    "f:meta.helm.sh/release-name": {},
+                                    "f:meta.helm.sh/release-namespace": {}
+                                },
+                                "f:labels": {
+                                    ".": {},
+                                    "f:oci": {},
+                                    "f:pod-template-hash": {}
+                                },
+                                "f:ownerReferences": {
+                                    ".": {},
+                                    "k:{\"uid\":\"2e74c2c5-4a90-49ef-8c8c-87d0eff56625\"}": {
+                                        ".": {},
+                                        "f:apiVersion": {},
+                                        "f:blockOwnerDeletion": {},
+                                        "f:controller": {},
+                                        "f:kind": {},
+                                        "f:name": {},
+                                        "f:uid": {}
+                                    }
+                                }
+                            },
+                            "f:spec": {
+                                "f:replicas": {},
+                                "f:selector": {
+                                    "f:matchLabels": {
+                                        ".": {},
+                                        "f:oci": {},
+                                        "f:pod-template-hash": {}
+                                    }
+                                },
+                                "f:template": {
+                                    "f:metadata": {
+                                        "f:labels": {
+                                            ".": {},
+                                            "f:oci": {},
+                                            "f:pod-template-hash": {}
+                                        }
+                                    },
+                                    "f:spec": {
+                                        "f:containers": {
+                                            "k:{\"name\":\"jenkins-charts\"}": {
+                                                ".": {},
+                                                "f:env": {
+                                                    ".": {},
+                                                    "k:{\"name\":\"DOCKER_IMAGE\"}": {
+                                                        ".": {},
+                                                        "f:name": {},
+                                                        "f:value": {}
+                                                    },
+                                                    "k:{\"name\":\"HOST_PATH_VOLUME_HOST_PATH\"}": {
+                                                        ".": {},
+                                                        "f:name": {},
+                                                        "f:value": {}
+                                                    },
+                                                    "k:{\"name\":\"HOST_PATH_VOLUME_MOUNT_PATH\"}": {
+                                                        ".": {},
+                                                        "f:name": {},
+                                                        "f:value": {}
+                                                    },
+                                                    "k:{\"name\":\"IMAGE_PULL_SECRETS\"}": {
+                                                        ".": {},
+                                                        "f:name": {},
+                                                        "f:value": {}
+                                                    },
+                                                    "k:{\"name\":\"IS_PRIVILEGED\"}": {
+                                                        ".": {},
+                                                        "f:name": {},
+                                                        "f:value": {}
+                                                    },
+                                                    "k:{\"name\":\"JENKINS_HOME\"}": {
+                                                        ".": {},
+                                                        "f:name": {},
+                                                        "f:value": {}
+                                                    },
+                                                    "k:{\"name\":\"JENKINS_NAMESPACE\"}": {
+                                                        ".": {},
+                                                        "f:name": {},
+                                                        "f:value": {}
+                                                    },
+                                                    "k:{\"name\":\"JENKINS_OPTS\"}": {
+                                                        ".": {},
+                                                        "f:name": {},
+                                                        "f:value": {}
+                                                    },
+                                                    "k:{\"name\":\"JENKINS_SERVICE_NAME\"}": {
+                                                        ".": {},
+                                                        "f:name": {},
+                                                        "f:value": {}
+                                                    },
+                                                    "k:{\"name\":\"JENKINS_TUNNEL\"}": {
+                                                        ".": {},
+                                                        "f:name": {},
+                                                        "f:value": {}
+                                                    },
+                                                    "k:{\"name\":\"JENKINS_URL\"}": {
+                                                        ".": {},
+                                                        "f:name": {},
+                                                        "f:value": {}
+                                                    },
+                                                    "k:{\"name\":\"JNLP_PORT\"}": {
+                                                        ".": {},
+                                                        "f:name": {},
+                                                        "f:value": {}
+                                                    },
+                                                    "k:{\"name\":\"KUBE_URL\"}": {
+                                                        ".": {},
+                                                        "f:name": {},
+                                                        "f:value": {}
+                                                    },
+                                                    "k:{\"name\":\"NODESELECTOR\"}": {
+                                                        ".": {},
+                                                        "f:name": {},
+                                                        "f:value": {}
+                                                    },
+                                                    "k:{\"name\":\"PERSISTENT_VOLUME_CLAIM_NAME\"}": {
+                                                        ".": {},
+                                                        "f:name": {},
+                                                        "f:value": {}
+                                                    },
+                                                    "k:{\"name\":\"PERSISTENT_VOLUME_IS_READ_ONLY\"}": {
+                                                        ".": {},
+                                                        "f:name": {},
+                                                        "f:value": {}
+                                                    },
+                                                    "k:{\"name\":\"PERSISTENT_VOLUME_MOUNT_PATH\"}": {
+                                                        ".": {},
+                                                        "f:name": {},
+                                                        "f:value": {}
+                                                    },
+                                                    "k:{\"name\":\"SPECIAL_CONFIG\"}": {
+                                                        ".": {},
+                                                        "f:name": {},
+                                                        "f:value": {}
+                                                    }
+                                                },
+                                                "f:image": {},
+                                                "f:imagePullPolicy": {},
+                                                "f:name": {},
+                                                "f:ports": {
+                                                    ".": {},
+                                                    "k:{\"containerPort\":8080,\"protocol\":\"TCP\"}": {
+                                                        ".": {},
+                                                        "f:containerPort": {},
+                                                        "f:name": {},
+                                                        "f:protocol": {}
+                                                    }
+                                                },
+                                                "f:resources": {},
+                                                "f:terminationMessagePath": {},
+                                                "f:terminationMessagePolicy": {},
+                                                "f:volumeMounts": {
+                                                    ".": {},
+                                                    "k:{\"mountPath\":\"/home/ca/.tls\"}": {
+                                                        ".": {},
+                                                        "f:mountPath": {},
+                                                        "f:name": {},
+                                                        "f:readOnly": {}
+                                                    },
+                                                    "k:{\"mountPath\":\"/u01/shared\"}": {
+                                                        ".": {},
+                                                        "f:mountPath": {},
+                                                        "f:name": {}
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "f:dnsPolicy": {},
+                                        "f:nodeSelector": {
+                                            ".": {},
+                                            "f:usage": {}
+                                        },
+                                        "f:restartPolicy": {},
+                                        "f:schedulerName": {},
+                                        "f:securityContext": {},
+                                        "f:serviceAccount": {},
+                                        "f:serviceAccountName": {},
+                                        "f:terminationGracePeriodSeconds": {},
+                                        "f:volumes": {
+                                            ".": {},
+                                            "k:{\"name\":\"jenkins-cert-secret-mount\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:secret": {
+                                                    ".": {},
+                                                    "f:defaultMode": {},
+                                                    "f:secretName": {}
+                                                }
+                                            },
+                                            "k:{\"name\":\"persistent-storage\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:persistentVolumeClaim": {
+                                                    ".": {},
+                                                    "f:claimName": {}
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "f:status": {
+                                "f:availableReplicas": {},
+                                "f:fullyLabeledReplicas": {},
+                                "f:observedGeneration": {},
+                                "f:readyReplicas": {},
+                                "f:replicas": {}
+                            }
+                        }
+                    }
+                ]
+            },
+            "spec": {
+                "replicas": 1,
+                "selector": {
+                    "matchLabels": {
+                        "oci": "jenkins-wls-oke",
+                        "pod-template-hash": "6db7c96795"
+                    }
+                },
+                "template": {
+                    "metadata": {
+                        "creationTimestamp": null,
+                        "labels": {
+                            "oci": "jenkins-wls-oke",
+                            "pod-template-hash": "6db7c96795"
+                        }
+                    },
+                    "spec": {
+                        "volumes": [
+                            {
+                                "name": "persistent-storage",
+                                "persistentVolumeClaim": {
+                                    "claimName": "jenkins-oke-pvc"
+                                }
+                            },
+                            {
+                                "name": "jenkins-cert-secret-mount",
+                                "secret": {
+                                    "secretName": "oke-ssl-secret",
+                                    "defaultMode": 420
+                                }
+                            }
+                        ],
+                        "containers": [
+                            {
+                                "name": "jenkins-charts",
+                                "image": "ams.ocir.io/oraseemeatechse/wls/infra/cisystem-jenkins-controller:1.0.1_2.235.5",
+                                "ports": [
+                                    {
+                                        "name": "http",
+                                        "containerPort": 8080,
+                                        "protocol": "TCP"
+                                    }
+                                ],
+                                "env": [
+                                    {
+                                        "name": "JENKINS_HOME",
+                                        "value": "/u01/shared/var/jenkins_home"
+                                    },
+                                    {
+                                        "name": "JENKINS_OPTS",
+                                        "value": "--prefix=/jenkins --httpsCertificate=/home/ca/.tls/tls.crt --httpsPrivateKey=/home/ca/.tls/tls.key"
+                                    },
+                                    {
+                                        "name": "IS_PRIVILEGED",
+                                        "value": "true"
+                                    },
+                                    {
+                                        "name": "KUBE_URL",
+                                        "value": "https://kubernetes.default.svc:443/"
+                                    },
+                                    {
+                                        "name": "JENKINS_NAMESPACE",
+                                        "value": "jenkins-ns"
+                                    },
+                                    {
+                                        "name": "JENKINS_URL",
+                                        "value": "http://jenkins-service.jenkins-ns.svc.cluster.local:8080/jenkins"
+                                    },
+                                    {
+                                        "name": "JENKINS_SERVICE_NAME",
+                                        "value": "jenkins-service"
+                                    },
+                                    {
+                                        "name": "JENKINS_TUNNEL",
+                                        "value": "jenkins-service.jenkins-ns.svc.cluster.local:50000"
+                                    },
+                                    {
+                                        "name": "JNLP_PORT",
+                                        "value": "50000"
+                                    },
+                                    {
+                                        "name": "DOCKER_IMAGE",
+                                        "value": "ams.ocir.io/oraseemeatechse/wls/infra/cisystem-jenkins-agent:1.0.0"
+                                    },
+                                    {
+                                        "name": "IMAGE_PULL_SECRETS",
+                                        "value": "ocirsecrets"
+                                    },
+                                    {
+                                        "name": "PERSISTENT_VOLUME_CLAIM_NAME",
+                                        "value": "jenkins-oke-pvc"
+                                    },
+                                    {
+                                        "name": "PERSISTENT_VOLUME_IS_READ_ONLY",
+                                        "value": "false"
+                                    },
+                                    {
+                                        "name": "PERSISTENT_VOLUME_MOUNT_PATH",
+                                        "value": "/u01/shared"
+                                    },
+                                    {
+                                        "name": "HOST_PATH_VOLUME_HOST_PATH",
+                                        "value": "/var/run/docker.sock"
+                                    },
+                                    {
+                                        "name": "HOST_PATH_VOLUME_MOUNT_PATH",
+                                        "value": "/var/run/docker.sock"
+                                    },
+                                    {
+                                        "name": "NODESELECTOR",
+                                        "value": "usage=weblogic"
+                                    },
+                                    {
+                                        "name": "SPECIAL_CONFIG",
+                                        "value": "wlsoke-metadata-configmap"
+                                    }
+                                ],
+                                "resources": {},
+                                "volumeMounts": [
+                                    {
+                                        "name": "persistent-storage",
+                                        "mountPath": "/u01/shared"
+                                    },
+                                    {
+                                        "name": "jenkins-cert-secret-mount",
+                                        "readOnly": true,
+                                        "mountPath": "/home/ca/.tls"
+                                    }
+                                ],
+                                "terminationMessagePath": "/dev/termination-log",
+                                "terminationMessagePolicy": "File",
+                                "imagePullPolicy": "IfNotPresent"
+                            }
+                        ],
+                        "restartPolicy": "Always",
+                        "terminationGracePeriodSeconds": 30,
+                        "dnsPolicy": "ClusterFirst",
+                        "nodeSelector": {
+                            "usage": "jenkins"
+                        },
+                        "serviceAccountName": "jenkins-serviceaccount",
+                        "serviceAccount": "jenkins-serviceaccount",
+                        "securityContext": {},
+                        "schedulerName": "default-scheduler"
+                    }
+                }
+            },
+            "status": {
+                "replicas": 1,
+                "fullyLabeledReplicas": 1,
+                "readyReplicas": 1,
+                "availableReplicas": 1,
+                "observedGeneration": 1
+            }
+        }
+    ]
+}

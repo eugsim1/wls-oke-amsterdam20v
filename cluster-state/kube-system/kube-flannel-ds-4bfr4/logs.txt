@@ -1,0 +1,32 @@
+==== START logs for container install-cni of pod kube-system/kube-flannel-ds-4bfr4 ====
+==== END logs for container install-cni of pod kube-system/kube-flannel-ds-4bfr4 ====
+==== START logs for container kube-flannel of pod kube-system/kube-flannel-ds-4bfr4 ====
+I1125 19:03:37.189409       1 main.go:475] Determining IP address of default interface
+I1125 19:03:37.190025       1 main.go:488] Using interface with name ens3 and address 10.0.4.4
+I1125 19:03:37.190056       1 main.go:505] Defaulting external address to interface address (10.0.4.4)
+I1125 19:03:37.207299       1 kube.go:131] Waiting 10m0s for node controller to sync
+I1125 19:03:37.207361       1 kube.go:294] Starting kube subnet manager
+I1125 19:03:38.207513       1 kube.go:138] Node controller sync successful
+I1125 19:03:38.207563       1 main.go:235] Created subnet manager: Kubernetes Subnet Manager - 10.0.4.4
+I1125 19:03:38.207573       1 main.go:238] Installing signal handlers
+I1125 19:03:38.207732       1 main.go:353] Found network config - Backend type: vxlan
+I1125 19:03:38.208004       1 vxlan.go:120] VXLAN config: VNI=1 Port=14789 GBP=false DirectRouting=false
+I1125 19:03:38.267568       1 main.go:300] Wrote subnet file to /run/flannel/subnet.env
+I1125 19:03:38.267592       1 main.go:304] Running backend.
+I1125 19:03:38.267608       1 main.go:322] Waiting for all goroutines to exit
+I1125 19:03:38.267649       1 vxlan_network.go:60] watching for new subnet leases
+I1125 19:03:38.287581       1 iptables.go:115] Some iptables rules are missing; deleting and recreating rules
+I1125 19:03:38.287605       1 iptables.go:137] Deleting iptables rule: -s 10.244.0.0/16 -d 10.244.0.0/16 -j RETURN
+I1125 19:03:38.289410       1 iptables.go:115] Some iptables rules are missing; deleting and recreating rules
+I1125 19:03:38.289429       1 iptables.go:137] Deleting iptables rule: -s 10.244.0.0/16 -j ACCEPT
+I1125 19:03:38.292545       1 iptables.go:137] Deleting iptables rule: -s 10.244.0.0/16 ! -d 224.0.0.0/4 -j MASQUERADE
+I1125 19:03:38.294128       1 iptables.go:137] Deleting iptables rule: -d 10.244.0.0/16 -j ACCEPT
+I1125 19:03:38.297688       1 iptables.go:137] Deleting iptables rule: ! -s 10.244.0.0/16 -d 10.244.0.128/25 -j RETURN
+I1125 19:03:38.298619       1 iptables.go:125] Adding iptables rule: -s 10.244.0.0/16 -j ACCEPT
+I1125 19:03:38.300092       1 iptables.go:137] Deleting iptables rule: ! -s 10.244.0.0/16 -d 10.244.0.0/16 -j MASQUERADE
+I1125 19:03:38.302842       1 iptables.go:125] Adding iptables rule: -s 10.244.0.0/16 -d 10.244.0.0/16 -j RETURN
+I1125 19:03:38.305656       1 iptables.go:125] Adding iptables rule: -d 10.244.0.0/16 -j ACCEPT
+I1125 19:03:39.352953       1 iptables.go:125] Adding iptables rule: -s 10.244.0.0/16 ! -d 224.0.0.0/4 -j MASQUERADE
+I1125 19:03:39.356984       1 iptables.go:125] Adding iptables rule: ! -s 10.244.0.0/16 -d 10.244.0.128/25 -j RETURN
+I1125 19:03:39.360570       1 iptables.go:125] Adding iptables rule: ! -s 10.244.0.0/16 -d 10.244.0.0/16 -j MASQUERADE
+==== END logs for container kube-flannel of pod kube-system/kube-flannel-ds-4bfr4 ====

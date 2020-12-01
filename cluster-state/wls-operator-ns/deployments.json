@@ -1,0 +1,437 @@
+{
+    "kind": "DeploymentList",
+    "apiVersion": "apps/v1",
+    "metadata": {
+        "selfLink": "/apis/apps/v1/namespaces/wls-operator-ns/deployments",
+        "resourceVersion": "190658"
+    },
+    "items": [
+        {
+            "metadata": {
+                "name": "weblogic-operator",
+                "namespace": "wls-operator-ns",
+                "selfLink": "/apis/apps/v1/namespaces/wls-operator-ns/deployments/weblogic-operator",
+                "uid": "34069c2b-6f27-4aae-9e8e-636ebac8e22b",
+                "resourceVersion": "3939",
+                "generation": 1,
+                "creationTimestamp": "2020-11-25T19:04:46Z",
+                "labels": {
+                    "app.kubernetes.io/managed-by": "Helm",
+                    "weblogic.operatorName": "wls-operator-ns"
+                },
+                "annotations": {
+                    "deployment.kubernetes.io/revision": "1",
+                    "meta.helm.sh/release-name": "wls-weblogic-operator",
+                    "meta.helm.sh/release-namespace": "wls-operator-ns"
+                },
+                "managedFields": [
+                    {
+                        "manager": "Go-http-client",
+                        "operation": "Update",
+                        "apiVersion": "apps/v1",
+                        "time": "2020-11-25T19:04:46Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    ".": {},
+                                    "f:meta.helm.sh/release-name": {},
+                                    "f:meta.helm.sh/release-namespace": {}
+                                },
+                                "f:labels": {
+                                    ".": {},
+                                    "f:app.kubernetes.io/managed-by": {},
+                                    "f:weblogic.operatorName": {}
+                                }
+                            },
+                            "f:spec": {
+                                "f:progressDeadlineSeconds": {},
+                                "f:replicas": {},
+                                "f:revisionHistoryLimit": {},
+                                "f:selector": {
+                                    "f:matchLabels": {
+                                        ".": {},
+                                        "f:weblogic.operatorName": {}
+                                    }
+                                },
+                                "f:strategy": {
+                                    "f:rollingUpdate": {
+                                        ".": {},
+                                        "f:maxSurge": {},
+                                        "f:maxUnavailable": {}
+                                    },
+                                    "f:type": {}
+                                },
+                                "f:template": {
+                                    "f:metadata": {
+                                        "f:labels": {
+                                            ".": {},
+                                            "f:app": {},
+                                            "f:weblogic.operatorName": {}
+                                        }
+                                    },
+                                    "f:spec": {
+                                        "f:containers": {
+                                            "k:{\"name\":\"weblogic-operator\"}": {
+                                                ".": {},
+                                                "f:args": {},
+                                                "f:command": {},
+                                                "f:env": {
+                                                    ".": {},
+                                                    "k:{\"name\":\"ISTIO_ENABLED\"}": {
+                                                        ".": {},
+                                                        "f:name": {},
+                                                        "f:value": {}
+                                                    },
+                                                    "k:{\"name\":\"JAVA_LOGGING_LEVEL\"}": {
+                                                        ".": {},
+                                                        "f:name": {},
+                                                        "f:value": {}
+                                                    },
+                                                    "k:{\"name\":\"OPERATOR_NAMESPACE\"}": {
+                                                        ".": {},
+                                                        "f:name": {},
+                                                        "f:valueFrom": {
+                                                            ".": {},
+                                                            "f:fieldRef": {
+                                                                ".": {},
+                                                                "f:apiVersion": {},
+                                                                "f:fieldPath": {}
+                                                            }
+                                                        }
+                                                    },
+                                                    "k:{\"name\":\"OPERATOR_VERBOSE\"}": {
+                                                        ".": {},
+                                                        "f:name": {},
+                                                        "f:value": {}
+                                                    }
+                                                },
+                                                "f:image": {},
+                                                "f:imagePullPolicy": {},
+                                                "f:livenessProbe": {
+                                                    ".": {},
+                                                    "f:exec": {
+                                                        ".": {},
+                                                        "f:command": {}
+                                                    },
+                                                    "f:failureThreshold": {},
+                                                    "f:initialDelaySeconds": {},
+                                                    "f:periodSeconds": {},
+                                                    "f:successThreshold": {},
+                                                    "f:timeoutSeconds": {}
+                                                },
+                                                "f:name": {},
+                                                "f:readinessProbe": {
+                                                    ".": {},
+                                                    "f:exec": {
+                                                        ".": {},
+                                                        "f:command": {}
+                                                    },
+                                                    "f:failureThreshold": {},
+                                                    "f:initialDelaySeconds": {},
+                                                    "f:periodSeconds": {},
+                                                    "f:successThreshold": {},
+                                                    "f:timeoutSeconds": {}
+                                                },
+                                                "f:resources": {
+                                                    ".": {},
+                                                    "f:requests": {
+                                                        ".": {},
+                                                        "f:cpu": {},
+                                                        "f:memory": {}
+                                                    }
+                                                },
+                                                "f:terminationMessagePath": {},
+                                                "f:terminationMessagePolicy": {},
+                                                "f:volumeMounts": {
+                                                    ".": {},
+                                                    "k:{\"mountPath\":\"/operator/config\"}": {
+                                                        ".": {},
+                                                        "f:mountPath": {},
+                                                        "f:name": {}
+                                                    },
+                                                    "k:{\"mountPath\":\"/operator/debug-config\"}": {
+                                                        ".": {},
+                                                        "f:mountPath": {},
+                                                        "f:name": {}
+                                                    },
+                                                    "k:{\"mountPath\":\"/operator/secrets\"}": {
+                                                        ".": {},
+                                                        "f:mountPath": {},
+                                                        "f:name": {},
+                                                        "f:readOnly": {}
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "f:dnsPolicy": {},
+                                        "f:imagePullSecrets": {
+                                            ".": {},
+                                            "k:{\"name\":\"ocirsecrets\"}": {
+                                                ".": {},
+                                                "f:name": {}
+                                            }
+                                        },
+                                        "f:restartPolicy": {},
+                                        "f:schedulerName": {},
+                                        "f:securityContext": {},
+                                        "f:serviceAccount": {},
+                                        "f:serviceAccountName": {},
+                                        "f:terminationGracePeriodSeconds": {},
+                                        "f:volumes": {
+                                            ".": {},
+                                            "k:{\"name\":\"weblogic-operator-cm-volume\"}": {
+                                                ".": {},
+                                                "f:configMap": {
+                                                    ".": {},
+                                                    "f:defaultMode": {},
+                                                    "f:name": {}
+                                                },
+                                                "f:name": {}
+                                            },
+                                            "k:{\"name\":\"weblogic-operator-debug-cm-volume\"}": {
+                                                ".": {},
+                                                "f:configMap": {
+                                                    ".": {},
+                                                    "f:defaultMode": {},
+                                                    "f:name": {},
+                                                    "f:optional": {}
+                                                },
+                                                "f:name": {}
+                                            },
+                                            "k:{\"name\":\"weblogic-operator-secrets-volume\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:secret": {
+                                                    ".": {},
+                                                    "f:defaultMode": {},
+                                                    "f:secretName": {}
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "manager": "kube-controller-manager",
+                        "operation": "Update",
+                        "apiVersion": "apps/v1",
+                        "time": "2020-11-25T19:07:25Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    "f:deployment.kubernetes.io/revision": {}
+                                }
+                            },
+                            "f:status": {
+                                "f:availableReplicas": {},
+                                "f:conditions": {
+                                    ".": {},
+                                    "k:{\"type\":\"Available\"}": {
+                                        ".": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:lastUpdateTime": {},
+                                        "f:message": {},
+                                        "f:reason": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    },
+                                    "k:{\"type\":\"Progressing\"}": {
+                                        ".": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:lastUpdateTime": {},
+                                        "f:message": {},
+                                        "f:reason": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    }
+                                },
+                                "f:observedGeneration": {},
+                                "f:readyReplicas": {},
+                                "f:replicas": {},
+                                "f:updatedReplicas": {}
+                            }
+                        }
+                    }
+                ]
+            },
+            "spec": {
+                "replicas": 1,
+                "selector": {
+                    "matchLabels": {
+                        "weblogic.operatorName": "wls-operator-ns"
+                    }
+                },
+                "template": {
+                    "metadata": {
+                        "creationTimestamp": null,
+                        "labels": {
+                            "app": "weblogic-operator",
+                            "weblogic.operatorName": "wls-operator-ns"
+                        }
+                    },
+                    "spec": {
+                        "volumes": [
+                            {
+                                "name": "weblogic-operator-cm-volume",
+                                "configMap": {
+                                    "name": "weblogic-operator-cm",
+                                    "defaultMode": 420
+                                }
+                            },
+                            {
+                                "name": "weblogic-operator-debug-cm-volume",
+                                "configMap": {
+                                    "name": "weblogic-operator-debug-cm",
+                                    "defaultMode": 420,
+                                    "optional": true
+                                }
+                            },
+                            {
+                                "name": "weblogic-operator-secrets-volume",
+                                "secret": {
+                                    "secretName": "weblogic-operator-secrets",
+                                    "defaultMode": 420
+                                }
+                            }
+                        ],
+                        "containers": [
+                            {
+                                "name": "weblogic-operator",
+                                "image": "ams.ocir.io/oraseemeatechse/wls/infra/weblogic-kubernetes-operator:3.0.0",
+                                "command": [
+                                    "bash"
+                                ],
+                                "args": [
+                                    "/operator/operator.sh"
+                                ],
+                                "env": [
+                                    {
+                                        "name": "OPERATOR_NAMESPACE",
+                                        "valueFrom": {
+                                            "fieldRef": {
+                                                "apiVersion": "v1",
+                                                "fieldPath": "metadata.namespace"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "name": "OPERATOR_VERBOSE",
+                                        "value": "false"
+                                    },
+                                    {
+                                        "name": "JAVA_LOGGING_LEVEL",
+                                        "value": "INFO"
+                                    },
+                                    {
+                                        "name": "ISTIO_ENABLED",
+                                        "value": "false"
+                                    }
+                                ],
+                                "resources": {
+                                    "requests": {
+                                        "cpu": "250m",
+                                        "memory": "512Mi"
+                                    }
+                                },
+                                "volumeMounts": [
+                                    {
+                                        "name": "weblogic-operator-cm-volume",
+                                        "mountPath": "/operator/config"
+                                    },
+                                    {
+                                        "name": "weblogic-operator-debug-cm-volume",
+                                        "mountPath": "/operator/debug-config"
+                                    },
+                                    {
+                                        "name": "weblogic-operator-secrets-volume",
+                                        "readOnly": true,
+                                        "mountPath": "/operator/secrets"
+                                    }
+                                ],
+                                "livenessProbe": {
+                                    "exec": {
+                                        "command": [
+                                            "bash",
+                                            "/operator/livenessProbe.sh"
+                                        ]
+                                    },
+                                    "initialDelaySeconds": 20,
+                                    "timeoutSeconds": 1,
+                                    "periodSeconds": 5,
+                                    "successThreshold": 1,
+                                    "failureThreshold": 3
+                                },
+                                "readinessProbe": {
+                                    "exec": {
+                                        "command": [
+                                            "bash",
+                                            "/operator/readinessProbe.sh"
+                                        ]
+                                    },
+                                    "initialDelaySeconds": 2,
+                                    "timeoutSeconds": 1,
+                                    "periodSeconds": 10,
+                                    "successThreshold": 1,
+                                    "failureThreshold": 3
+                                },
+                                "terminationMessagePath": "/dev/termination-log",
+                                "terminationMessagePolicy": "File",
+                                "imagePullPolicy": "IfNotPresent"
+                            }
+                        ],
+                        "restartPolicy": "Always",
+                        "terminationGracePeriodSeconds": 30,
+                        "dnsPolicy": "ClusterFirst",
+                        "serviceAccountName": "wls-operator-sa",
+                        "serviceAccount": "wls-operator-sa",
+                        "securityContext": {},
+                        "imagePullSecrets": [
+                            {
+                                "name": "ocirsecrets"
+                            }
+                        ],
+                        "schedulerName": "default-scheduler"
+                    }
+                },
+                "strategy": {
+                    "type": "RollingUpdate",
+                    "rollingUpdate": {
+                        "maxUnavailable": "25%",
+                        "maxSurge": "25%"
+                    }
+                },
+                "revisionHistoryLimit": 10,
+                "progressDeadlineSeconds": 600
+            },
+            "status": {
+                "observedGeneration": 1,
+                "replicas": 1,
+                "updatedReplicas": 1,
+                "readyReplicas": 1,
+                "availableReplicas": 1,
+                "conditions": [
+                    {
+                        "type": "Available",
+                        "status": "True",
+                        "lastUpdateTime": "2020-11-25T19:07:25Z",
+                        "lastTransitionTime": "2020-11-25T19:07:25Z",
+                        "reason": "MinimumReplicasAvailable",
+                        "message": "Deployment has minimum availability."
+                    },
+                    {
+                        "type": "Progressing",
+                        "status": "True",
+                        "lastUpdateTime": "2020-11-25T19:07:25Z",
+                        "lastTransitionTime": "2020-11-25T19:04:46Z",
+                        "reason": "NewReplicaSetAvailable",
+                        "message": "ReplicaSet \"weblogic-operator-75b5f58ffb\" has successfully progressed."
+                    }
+                ]
+            }
+        }
+    ]
+}

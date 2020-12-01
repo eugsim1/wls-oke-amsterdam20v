@@ -1,0 +1,122 @@
+==== START logs for container nginx-ingress-controller of pod ingress-nginx/nginx-ingress-controller-external-759c5dc656-2gq7f ====
+I1125 19:08:00.223391       6 flags.go:198] Watching for Ingress class: nginx-applications
+W1125 19:08:00.223509       6 flags.go:201] Only Ingresses with class "nginx-applications" will be processed by this Ingress controller
+W1125 19:08:00.227267       6 flags.go:243] SSL certificate chain completion is disabled (--enable-ssl-chain-completion=false)
+W1125 19:08:00.227392       6 client_config.go:541] Neither --kubeconfig nor --master was specified.  Using the inClusterConfig.  This might not work.
+I1125 19:08:00.227673       6 main.go:182] Creating API client for https://10.96.0.1:443
+-------------------------------------------------------------------------------
+NGINX Ingress controller
+  Release:       0.26.1
+  Build:         git-2de5a893a
+  Repository:    https://github.com/kubernetes/ingress-nginx
+  nginx version: openresty/1.15.8.2
+
+-------------------------------------------------------------------------------
+
+I1125 19:08:00.250153       6 main.go:226] Running in Kubernetes cluster version v1.18 (v1.18.10) - git (clean) commit 79f4a3a6e44e0717ac55cfc401801555ee07a37f - platform linux/amd64
+I1125 19:08:02.210898       6 main.go:101] SSL fake certificate created /etc/ingress-controller/ssl/default-fake-certificate.pem
+W1125 19:08:02.499928       6 store.go:635] Unexpected error reading configuration configmap: configmaps "nginx-configuration-external" not found
+I1125 19:08:02.526142       6 nginx.go:263] Starting NGINX Ingress controller
+I1125 19:08:03.921239       6 store.go:347] ignoring add for ingress wls-admin-ingress based on annotation kubernetes.io/ingress.class with value 
+I1125 19:08:03.921651       6 store.go:347] ignoring add for ingress jenkins-dashboard-ingress based on annotation kubernetes.io/ingress.class with value 
+I1125 19:08:03.921683       6 event.go:255] Event(v1.ObjectReference{Kind:"Ingress", Namespace:"wls-domain-ns", Name:"wls-cluster-ingress", UID:"c421ab69-2200-48d3-a923-3aee50746ab8", APIVersion:"networking.k8s.io/v1beta1", ResourceVersion:"3207", FieldPath:""}): type: 'Normal' reason: 'CREATE' Ingress wls-domain-ns/wls-cluster-ingress
+I1125 19:08:03.945419       6 nginx.go:307] Starting NGINX process
+I1125 19:08:04.209230       6 leaderelection.go:241] attempting to acquire leader lease  ingress-nginx/ingress-controller-leader-nginx-applications...
+W1125 19:08:04.252038       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-cluster-wls-cluster": no object matching key "wls-domain-ns/okewls-cluster-wls-cluster" in local store
+E1125 19:08:04.252121       6 controller.go:261] Error getting ConfigMap "ingress-nginx/tcp-services-external": no object matching key "ingress-nginx/tcp-services-external" in local store
+E1125 19:08:04.252145       6 controller.go:261] Error getting ConfigMap "ingress-nginx/udp-services-external": no object matching key "ingress-nginx/udp-services-external" in local store
+I1125 19:08:04.252169       6 controller.go:134] Configuration changes detected, backend reload required.
+I1125 19:08:04.268329       6 leaderelection.go:251] successfully acquired lease ingress-nginx/ingress-controller-leader-nginx-applications
+I1125 19:08:04.268559       6 status.go:86] new leader elected: nginx-ingress-controller-external-759c5dc656-2gq7f
+I1125 19:08:04.285220       6 status.go:274] updating Ingress wls-domain-ns/wls-cluster-ingress status from [] to [{193.123.39.23 }]
+I1125 19:08:04.297478       6 event.go:255] Event(v1.ObjectReference{Kind:"Ingress", Namespace:"wls-domain-ns", Name:"wls-cluster-ingress", UID:"c421ab69-2200-48d3-a923-3aee50746ab8", APIVersion:"networking.k8s.io/v1beta1", ResourceVersion:"4171", FieldPath:""}): type: 'Normal' reason: 'UPDATE' Ingress wls-domain-ns/wls-cluster-ingress
+I1125 19:08:04.433022       6 controller.go:150] Backend successfully reloaded.
+I1125 19:08:04.433079       6 controller.go:159] Initial sync, sleeping for 1 second.
+W1125 19:08:07.585556       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-cluster-wls-cluster": no object matching key "wls-domain-ns/okewls-cluster-wls-cluster" in local store
+E1125 19:08:07.585680       6 controller.go:261] Error getting ConfigMap "ingress-nginx/tcp-services-external": no object matching key "ingress-nginx/tcp-services-external" in local store
+E1125 19:08:07.585739       6 controller.go:261] Error getting ConfigMap "ingress-nginx/udp-services-external": no object matching key "ingress-nginx/udp-services-external" in local store
+W1125 19:08:10.918858       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-cluster-wls-cluster": no object matching key "wls-domain-ns/okewls-cluster-wls-cluster" in local store
+E1125 19:08:10.918929       6 controller.go:261] Error getting ConfigMap "ingress-nginx/tcp-services-external": no object matching key "ingress-nginx/tcp-services-external" in local store
+E1125 19:08:10.918953       6 controller.go:261] Error getting ConfigMap "ingress-nginx/udp-services-external": no object matching key "ingress-nginx/udp-services-external" in local store
+W1125 19:08:14.252180       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-cluster-wls-cluster": no object matching key "wls-domain-ns/okewls-cluster-wls-cluster" in local store
+E1125 19:08:14.252267       6 controller.go:261] Error getting ConfigMap "ingress-nginx/tcp-services-external": no object matching key "ingress-nginx/tcp-services-external" in local store
+E1125 19:08:14.252291       6 controller.go:261] Error getting ConfigMap "ingress-nginx/udp-services-external": no object matching key "ingress-nginx/udp-services-external" in local store
+W1125 19:08:17.587084       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-cluster-wls-cluster": no object matching key "wls-domain-ns/okewls-cluster-wls-cluster" in local store
+E1125 19:08:17.587172       6 controller.go:261] Error getting ConfigMap "ingress-nginx/tcp-services-external": no object matching key "ingress-nginx/tcp-services-external" in local store
+E1125 19:08:17.587194       6 controller.go:261] Error getting ConfigMap "ingress-nginx/udp-services-external": no object matching key "ingress-nginx/udp-services-external" in local store
+W1125 19:08:21.003436       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-cluster-wls-cluster": no object matching key "wls-domain-ns/okewls-cluster-wls-cluster" in local store
+E1125 19:08:21.003954       6 controller.go:261] Error getting ConfigMap "ingress-nginx/tcp-services-external": no object matching key "ingress-nginx/tcp-services-external" in local store
+E1125 19:08:21.004297       6 controller.go:261] Error getting ConfigMap "ingress-nginx/udp-services-external": no object matching key "ingress-nginx/udp-services-external" in local store
+W1125 19:08:24.252957       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-cluster-wls-cluster": no object matching key "wls-domain-ns/okewls-cluster-wls-cluster" in local store
+E1125 19:08:24.253136       6 controller.go:261] Error getting ConfigMap "ingress-nginx/tcp-services-external": no object matching key "ingress-nginx/tcp-services-external" in local store
+E1125 19:08:24.253207       6 controller.go:261] Error getting ConfigMap "ingress-nginx/udp-services-external": no object matching key "ingress-nginx/udp-services-external" in local store
+W1125 19:08:27.637352       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-cluster-wls-cluster": no object matching key "wls-domain-ns/okewls-cluster-wls-cluster" in local store
+E1125 19:08:27.640285       6 controller.go:261] Error getting ConfigMap "ingress-nginx/tcp-services-external": no object matching key "ingress-nginx/tcp-services-external" in local store
+E1125 19:08:27.640321       6 controller.go:261] Error getting ConfigMap "ingress-nginx/udp-services-external": no object matching key "ingress-nginx/udp-services-external" in local store
+W1125 19:08:30.920969       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-cluster-wls-cluster": no object matching key "wls-domain-ns/okewls-cluster-wls-cluster" in local store
+E1125 19:08:30.921057       6 controller.go:261] Error getting ConfigMap "ingress-nginx/tcp-services-external": no object matching key "ingress-nginx/tcp-services-external" in local store
+E1125 19:08:30.921098       6 controller.go:261] Error getting ConfigMap "ingress-nginx/udp-services-external": no object matching key "ingress-nginx/udp-services-external" in local store
+W1125 19:08:34.252953       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-cluster-wls-cluster": no object matching key "wls-domain-ns/okewls-cluster-wls-cluster" in local store
+E1125 19:08:34.253096       6 controller.go:261] Error getting ConfigMap "ingress-nginx/tcp-services-external": no object matching key "ingress-nginx/tcp-services-external" in local store
+E1125 19:08:34.253157       6 controller.go:261] Error getting ConfigMap "ingress-nginx/udp-services-external": no object matching key "ingress-nginx/udp-services-external" in local store
+W1125 19:08:37.585931       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-cluster-wls-cluster": no object matching key "wls-domain-ns/okewls-cluster-wls-cluster" in local store
+E1125 19:08:37.586048       6 controller.go:261] Error getting ConfigMap "ingress-nginx/tcp-services-external": no object matching key "ingress-nginx/tcp-services-external" in local store
+E1125 19:08:37.586104       6 controller.go:261] Error getting ConfigMap "ingress-nginx/udp-services-external": no object matching key "ingress-nginx/udp-services-external" in local store
+W1125 19:08:40.919711       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-cluster-wls-cluster": no object matching key "wls-domain-ns/okewls-cluster-wls-cluster" in local store
+E1125 19:08:40.919787       6 controller.go:261] Error getting ConfigMap "ingress-nginx/tcp-services-external": no object matching key "ingress-nginx/tcp-services-external" in local store
+E1125 19:08:40.919809       6 controller.go:261] Error getting ConfigMap "ingress-nginx/udp-services-external": no object matching key "ingress-nginx/udp-services-external" in local store
+W1125 19:08:44.254314       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-cluster-wls-cluster": no object matching key "wls-domain-ns/okewls-cluster-wls-cluster" in local store
+E1125 19:08:44.255678       6 controller.go:261] Error getting ConfigMap "ingress-nginx/tcp-services-external": no object matching key "ingress-nginx/tcp-services-external" in local store
+E1125 19:08:44.256095       6 controller.go:261] Error getting ConfigMap "ingress-nginx/udp-services-external": no object matching key "ingress-nginx/udp-services-external" in local store
+W1125 19:08:47.585936       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-cluster-wls-cluster": no object matching key "wls-domain-ns/okewls-cluster-wls-cluster" in local store
+E1125 19:08:47.586015       6 controller.go:261] Error getting ConfigMap "ingress-nginx/tcp-services-external": no object matching key "ingress-nginx/tcp-services-external" in local store
+E1125 19:08:47.586039       6 controller.go:261] Error getting ConfigMap "ingress-nginx/udp-services-external": no object matching key "ingress-nginx/udp-services-external" in local store
+W1125 19:08:50.918941       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-cluster-wls-cluster": no object matching key "wls-domain-ns/okewls-cluster-wls-cluster" in local store
+E1125 19:08:50.919635       6 controller.go:261] Error getting ConfigMap "ingress-nginx/tcp-services-external": no object matching key "ingress-nginx/tcp-services-external" in local store
+E1125 19:08:50.919735       6 controller.go:261] Error getting ConfigMap "ingress-nginx/udp-services-external": no object matching key "ingress-nginx/udp-services-external" in local store
+W1125 19:08:54.252961       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-cluster-wls-cluster": no object matching key "wls-domain-ns/okewls-cluster-wls-cluster" in local store
+E1125 19:08:54.253416       6 controller.go:261] Error getting ConfigMap "ingress-nginx/tcp-services-external": no object matching key "ingress-nginx/tcp-services-external" in local store
+E1125 19:08:54.253606       6 controller.go:261] Error getting ConfigMap "ingress-nginx/udp-services-external": no object matching key "ingress-nginx/udp-services-external" in local store
+W1125 19:08:57.585968       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-cluster-wls-cluster": no object matching key "wls-domain-ns/okewls-cluster-wls-cluster" in local store
+E1125 19:08:57.586174       6 controller.go:261] Error getting ConfigMap "ingress-nginx/tcp-services-external": no object matching key "ingress-nginx/tcp-services-external" in local store
+E1125 19:08:57.586265       6 controller.go:261] Error getting ConfigMap "ingress-nginx/udp-services-external": no object matching key "ingress-nginx/udp-services-external" in local store
+W1125 19:09:20.567180       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-cluster-wls-cluster": no object matching key "wls-domain-ns/okewls-cluster-wls-cluster" in local store
+E1125 19:09:20.567233       6 controller.go:261] Error getting ConfigMap "ingress-nginx/tcp-services-external": no object matching key "ingress-nginx/tcp-services-external" in local store
+E1125 19:09:20.567257       6 controller.go:261] Error getting ConfigMap "ingress-nginx/udp-services-external": no object matching key "ingress-nginx/udp-services-external" in local store
+W1125 19:09:23.902892       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-cluster-wls-cluster": no object matching key "wls-domain-ns/okewls-cluster-wls-cluster" in local store
+E1125 19:09:23.903118       6 controller.go:261] Error getting ConfigMap "ingress-nginx/tcp-services-external": no object matching key "ingress-nginx/tcp-services-external" in local store
+E1125 19:09:23.903294       6 controller.go:261] Error getting ConfigMap "ingress-nginx/udp-services-external": no object matching key "ingress-nginx/udp-services-external" in local store
+W1125 19:09:27.234022       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-cluster-wls-cluster": no object matching key "wls-domain-ns/okewls-cluster-wls-cluster" in local store
+E1125 19:09:27.234228       6 controller.go:261] Error getting ConfigMap "ingress-nginx/tcp-services-external": no object matching key "ingress-nginx/tcp-services-external" in local store
+E1125 19:09:27.234303       6 controller.go:261] Error getting ConfigMap "ingress-nginx/udp-services-external": no object matching key "ingress-nginx/udp-services-external" in local store
+W1125 19:10:19.521272       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-cluster-wls-cluster": no object matching key "wls-domain-ns/okewls-cluster-wls-cluster" in local store
+E1125 19:10:19.521653       6 controller.go:261] Error getting ConfigMap "ingress-nginx/tcp-services-external": no object matching key "ingress-nginx/tcp-services-external" in local store
+E1125 19:10:19.521864       6 controller.go:261] Error getting ConfigMap "ingress-nginx/udp-services-external": no object matching key "ingress-nginx/udp-services-external" in local store
+W1125 19:10:22.856016       6 controller.go:920] Service "wls-domain-ns/okewls-cluster-wls-cluster" does not have any active Endpoint.
+E1125 19:10:22.856318       6 controller.go:261] Error getting ConfigMap "ingress-nginx/tcp-services-external": no object matching key "ingress-nginx/tcp-services-external" in local store
+E1125 19:10:22.856515       6 controller.go:261] Error getting ConfigMap "ingress-nginx/udp-services-external": no object matching key "ingress-nginx/udp-services-external" in local store
+I1125 19:10:22.856716       6 controller.go:134] Configuration changes detected, backend reload required.
+I1125 19:10:23.010343       6 controller.go:150] Backend successfully reloaded.
+W1125 19:10:26.189982       6 controller.go:920] Service "wls-domain-ns/okewls-cluster-wls-cluster" does not have any active Endpoint.
+E1125 19:10:26.190313       6 controller.go:261] Error getting ConfigMap "ingress-nginx/tcp-services-external": no object matching key "ingress-nginx/tcp-services-external" in local store
+E1125 19:10:26.190533       6 controller.go:261] Error getting ConfigMap "ingress-nginx/udp-services-external": no object matching key "ingress-nginx/udp-services-external" in local store
+W1125 19:10:29.523910       6 controller.go:920] Service "wls-domain-ns/okewls-cluster-wls-cluster" does not have any active Endpoint.
+E1125 19:10:29.524069       6 controller.go:261] Error getting ConfigMap "ingress-nginx/tcp-services-external": no object matching key "ingress-nginx/tcp-services-external" in local store
+E1125 19:10:29.524178       6 controller.go:261] Error getting ConfigMap "ingress-nginx/udp-services-external": no object matching key "ingress-nginx/udp-services-external" in local store
+E1125 19:11:30.703763       6 controller.go:261] Error getting ConfigMap "ingress-nginx/tcp-services-external": no object matching key "ingress-nginx/tcp-services-external" in local store
+E1125 19:11:30.703811       6 controller.go:261] Error getting ConfigMap "ingress-nginx/udp-services-external": no object matching key "ingress-nginx/udp-services-external" in local store
+E1125 19:11:34.038048       6 controller.go:261] Error getting ConfigMap "ingress-nginx/tcp-services-external": no object matching key "ingress-nginx/tcp-services-external" in local store
+E1125 19:11:34.038195       6 controller.go:261] Error getting ConfigMap "ingress-nginx/udp-services-external": no object matching key "ingress-nginx/udp-services-external" in local store
+E1125 19:11:37.370603       6 controller.go:261] Error getting ConfigMap "ingress-nginx/tcp-services-external": no object matching key "ingress-nginx/tcp-services-external" in local store
+E1125 19:11:37.370646       6 controller.go:261] Error getting ConfigMap "ingress-nginx/udp-services-external": no object matching key "ingress-nginx/udp-services-external" in local store
+E1125 19:11:40.703994       6 controller.go:261] Error getting ConfigMap "ingress-nginx/tcp-services-external": no object matching key "ingress-nginx/tcp-services-external" in local store
+E1125 19:11:40.704039       6 controller.go:261] Error getting ConfigMap "ingress-nginx/udp-services-external": no object matching key "ingress-nginx/udp-services-external" in local store
+10.244.0.128 - - [25/Nov/2020:19:13:09 +0000] "GET / HTTP/1.1" 404 680 "-" "Mozilla/5.0 zgrab/0.x" 256 0.005 [wls-domain-ns-okewls-cluster-wls-cluster-8001] [] 10.244.1.134:8001 1164 0.005 404 997cd7aad3e14a4a30b6abb80cc3929d
+10.244.1.129 - - [25/Nov/2020:19:32:50 +0000] "GET /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f HTTP/1.1" 404 690 "-" "Mozilla/5.0 zgrab/0.x" 304 0.004 [wls-domain-ns-okewls-cluster-wls-cluster-8001] [] 10.244.1.3:8001 1164 0.003 404 429c103e8c8b7982c9f7fe6778aa0dfd
+10.244.1.0 - - [25/Nov/2020:23:48:30 +0000] "GET / HTTP/1.1" 404 1164 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0" 296 0.006 [wls-domain-ns-okewls-cluster-wls-cluster-8001] [] 10.244.1.3:8001 1164 0.006 404 70858616f40f5ee5728650a32c335bef
+10.244.0.0 - - [25/Nov/2020:23:48:31 +0000] "GET / HTTP/1.1" 404 690 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 QIHU 360SE" 357 0.002 [wls-domain-ns-okewls-cluster-wls-cluster-8001] [] 10.244.1.134:8001 1164 0.002 404 2f00df8a1e0973b08cb91da1e4440144
+10.244.0.128 - - [25/Nov/2020:23:48:32 +0000] "GET /favicon.ico HTTP/1.1" 404 680 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 QIHU 360SE" 368 0.002 [wls-domain-ns-okewls-cluster-wls-cluster-8001] [] 10.244.1.3:8001 1164 0.002 404 fe6d416c82a457d73068a4405a7792b8
+10.244.1.129 - - [26/Nov/2020:00:35:21 +0000] "GET / HTTP/1.1" 404 690 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0" 389 0.002 [wls-domain-ns-okewls-cluster-wls-cluster-8001] [] 10.244.1.134:8001 1164 0.002 404 d93a8fa9fb8c4aa0564ef08e2fb46409
+10.244.1.0 - - [26/Nov/2020:01:10:19 +0000] "GET / HTTP/1.1" 404 1164 "-" "HTTP Banner Detection (https://security.ipip.net)" 250 0.005 [wls-domain-ns-okewls-cluster-wls-cluster-8001] [] 10.244.1.3:8001 1164 0.005 404 4b9b241aa9378a3e73c698d9e3f05242
+10.244.0.0 - - [26/Nov/2020:05:02:41 +0000] "GET / HTTP/1.1" 404 1164 "-" "-" 187 0.001 [wls-domain-ns-okewls-cluster-wls-cluster-8001] [] 10.244.1.134:8001 1164 0.002 404 ccfa418c06805eec200ffa55e475f072
+==== END logs for container nginx-ingress-controller of pod ingress-nginx/nginx-ingress-controller-external-759c5dc656-2gq7f ====

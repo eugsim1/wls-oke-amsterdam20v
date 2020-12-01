@@ -1,0 +1,232 @@
+{
+    "kind": "ServiceList",
+    "apiVersion": "v1",
+    "metadata": {
+        "selfLink": "/api/v1/namespaces/ingress-nginx/services",
+        "resourceVersion": "190597"
+    },
+    "items": [
+        {
+            "metadata": {
+                "name": "wls-external",
+                "namespace": "ingress-nginx",
+                "selfLink": "/api/v1/namespaces/ingress-nginx/services/wls-external",
+                "uid": "b0d3d048-7fbf-4db4-a7e6-d6330eed7856",
+                "resourceVersion": "3363",
+                "creationTimestamp": "2020-11-25T19:05:12Z",
+                "labels": {
+                    "app.kubernetes.io/managed-by": "Helm",
+                    "app.kubernetes.io/name": "ingress-nginx-external",
+                    "app.kubernetes.io/part-of": "ingress-nginx-external"
+                },
+                "annotations": {
+                    "meta.helm.sh/release-name": "ingress-controller",
+                    "meta.helm.sh/release-namespace": "default",
+                    "service.beta.kubernetes.io/oci-load-balancer-backend-protocol": "HTTP",
+                    "service.beta.kubernetes.io/oci-load-balancer-shape": "100Mbps",
+                    "service.beta.kubernetes.io/oci-load-balancer-ssl-ports": "443",
+                    "service.beta.kubernetes.io/oci-load-balancer-tls-secret": "oke-ssl-secret"
+                },
+                "managedFields": [
+                    {
+                        "manager": "Go-http-client",
+                        "operation": "Update",
+                        "apiVersion": "v1",
+                        "time": "2020-11-25T19:05:12Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    ".": {},
+                                    "f:meta.helm.sh/release-name": {},
+                                    "f:meta.helm.sh/release-namespace": {},
+                                    "f:service.beta.kubernetes.io/oci-load-balancer-backend-protocol": {},
+                                    "f:service.beta.kubernetes.io/oci-load-balancer-shape": {},
+                                    "f:service.beta.kubernetes.io/oci-load-balancer-ssl-ports": {},
+                                    "f:service.beta.kubernetes.io/oci-load-balancer-tls-secret": {}
+                                },
+                                "f:labels": {
+                                    ".": {},
+                                    "f:app.kubernetes.io/managed-by": {},
+                                    "f:app.kubernetes.io/name": {},
+                                    "f:app.kubernetes.io/part-of": {}
+                                }
+                            },
+                            "f:spec": {
+                                "f:externalTrafficPolicy": {},
+                                "f:ports": {
+                                    ".": {},
+                                    "k:{\"port\":443,\"protocol\":\"TCP\"}": {
+                                        ".": {},
+                                        "f:name": {},
+                                        "f:port": {},
+                                        "f:protocol": {},
+                                        "f:targetPort": {}
+                                    }
+                                },
+                                "f:selector": {
+                                    ".": {},
+                                    "f:app.kubernetes.io/name": {},
+                                    "f:app.kubernetes.io/part-of": {}
+                                },
+                                "f:sessionAffinity": {},
+                                "f:type": {}
+                            }
+                        }
+                    },
+                    {
+                        "manager": "cloud-provider-oci",
+                        "operation": "Update",
+                        "apiVersion": "v1",
+                        "time": "2020-11-25T19:05:39Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:status": {
+                                "f:loadBalancer": {
+                                    "f:ingress": {}
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            "spec": {
+                "ports": [
+                    {
+                        "name": "https",
+                        "protocol": "TCP",
+                        "port": 443,
+                        "targetPort": "http",
+                        "nodePort": 30933
+                    }
+                ],
+                "selector": {
+                    "app.kubernetes.io/name": "ingress-nginx-external",
+                    "app.kubernetes.io/part-of": "ingress-nginx-external"
+                },
+                "clusterIP": "10.96.140.130",
+                "type": "LoadBalancer",
+                "sessionAffinity": "None",
+                "externalTrafficPolicy": "Cluster"
+            },
+            "status": {
+                "loadBalancer": {
+                    "ingress": [
+                        {
+                            "ip": "193.123.39.23"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "metadata": {
+                "name": "wls-internal",
+                "namespace": "ingress-nginx",
+                "selfLink": "/api/v1/namespaces/ingress-nginx/services/wls-internal",
+                "uid": "86d2eef2-c95f-40a4-8b2d-8d14662db555",
+                "resourceVersion": "3603",
+                "creationTimestamp": "2020-11-25T19:05:13Z",
+                "labels": {
+                    "app.kubernetes.io/managed-by": "Helm",
+                    "app.kubernetes.io/name": "ingress-nginx",
+                    "app.kubernetes.io/part-of": "ingress-nginx"
+                },
+                "annotations": {
+                    "meta.helm.sh/release-name": "ingress-controller",
+                    "meta.helm.sh/release-namespace": "default",
+                    "service.beta.kubernetes.io/oci-load-balancer-internal": "true",
+                    "service.beta.kubernetes.io/oci-load-balancer-shape": "100Mbps"
+                },
+                "managedFields": [
+                    {
+                        "manager": "Go-http-client",
+                        "operation": "Update",
+                        "apiVersion": "v1",
+                        "time": "2020-11-25T19:05:12Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    ".": {},
+                                    "f:meta.helm.sh/release-name": {},
+                                    "f:meta.helm.sh/release-namespace": {},
+                                    "f:service.beta.kubernetes.io/oci-load-balancer-internal": {},
+                                    "f:service.beta.kubernetes.io/oci-load-balancer-shape": {}
+                                },
+                                "f:labels": {
+                                    ".": {},
+                                    "f:app.kubernetes.io/managed-by": {},
+                                    "f:app.kubernetes.io/name": {},
+                                    "f:app.kubernetes.io/part-of": {}
+                                }
+                            },
+                            "f:spec": {
+                                "f:externalTrafficPolicy": {},
+                                "f:ports": {
+                                    ".": {},
+                                    "k:{\"port\":80,\"protocol\":\"TCP\"}": {
+                                        ".": {},
+                                        "f:name": {},
+                                        "f:port": {},
+                                        "f:protocol": {},
+                                        "f:targetPort": {}
+                                    }
+                                },
+                                "f:selector": {
+                                    ".": {},
+                                    "f:app.kubernetes.io/name": {},
+                                    "f:app.kubernetes.io/part-of": {}
+                                },
+                                "f:sessionAffinity": {},
+                                "f:type": {}
+                            }
+                        }
+                    },
+                    {
+                        "manager": "cloud-provider-oci",
+                        "operation": "Update",
+                        "apiVersion": "v1",
+                        "time": "2020-11-25T19:06:21Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:status": {
+                                "f:loadBalancer": {
+                                    "f:ingress": {}
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            "spec": {
+                "ports": [
+                    {
+                        "name": "http",
+                        "protocol": "TCP",
+                        "port": 80,
+                        "targetPort": "http",
+                        "nodePort": 30775
+                    }
+                ],
+                "selector": {
+                    "app.kubernetes.io/name": "ingress-nginx",
+                    "app.kubernetes.io/part-of": "ingress-nginx"
+                },
+                "clusterIP": "10.96.1.127",
+                "type": "LoadBalancer",
+                "sessionAffinity": "None",
+                "externalTrafficPolicy": "Cluster"
+            },
+            "status": {
+                "loadBalancer": {
+                    "ingress": [
+                        {
+                            "ip": "10.0.3.6"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

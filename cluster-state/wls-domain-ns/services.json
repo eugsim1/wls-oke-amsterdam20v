@@ -1,0 +1,466 @@
+{
+    "kind": "ServiceList",
+    "apiVersion": "v1",
+    "metadata": {
+        "selfLink": "/api/v1/namespaces/wls-domain-ns/services",
+        "resourceVersion": "190649"
+    },
+    "items": [
+        {
+            "metadata": {
+                "name": "okewls-cluster-wls-cluster",
+                "namespace": "wls-domain-ns",
+                "selfLink": "/api/v1/namespaces/wls-domain-ns/services/okewls-cluster-wls-cluster",
+                "uid": "94da6777-04d9-464b-bb26-ddc44bb77a8b",
+                "resourceVersion": "4819",
+                "creationTimestamp": "2020-11-25T19:10:19Z",
+                "labels": {
+                    "serviceType": "CLUSTER",
+                    "weblogic.clusterName": "wls-cluster",
+                    "weblogic.createdByOperator": "true",
+                    "weblogic.domainName": "okewls",
+                    "weblogic.domainUID": "okewls"
+                },
+                "annotations": {
+                    "weblogic.sha256": "009d42b4636a1edc2a16eec66ceb7a47f1757be249a460acdad6f0877c9682cf"
+                },
+                "ownerReferences": [
+                    {
+                        "apiVersion": "weblogic.oracle/v8",
+                        "kind": "Domain",
+                        "name": "okewls",
+                        "uid": "2788b87b-1553-4613-9d8e-6f10a9415ec1",
+                        "controller": true
+                    }
+                ],
+                "managedFields": [
+                    {
+                        "manager": "OpenAPI-Generator",
+                        "operation": "Update",
+                        "apiVersion": "v1",
+                        "time": "2020-11-25T19:10:19Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    ".": {},
+                                    "f:weblogic.sha256": {}
+                                },
+                                "f:labels": {
+                                    ".": {},
+                                    "f:serviceType": {},
+                                    "f:weblogic.clusterName": {},
+                                    "f:weblogic.createdByOperator": {},
+                                    "f:weblogic.domainName": {},
+                                    "f:weblogic.domainUID": {}
+                                },
+                                "f:ownerReferences": {
+                                    ".": {},
+                                    "k:{\"uid\":\"2788b87b-1553-4613-9d8e-6f10a9415ec1\"}": {
+                                        ".": {},
+                                        "f:apiVersion": {},
+                                        "f:controller": {},
+                                        "f:kind": {},
+                                        "f:name": {},
+                                        "f:uid": {}
+                                    }
+                                }
+                            },
+                            "f:spec": {
+                                "f:ports": {
+                                    ".": {},
+                                    "k:{\"port\":8001,\"protocol\":\"TCP\"}": {
+                                        ".": {},
+                                        "f:name": {},
+                                        "f:port": {},
+                                        "f:protocol": {},
+                                        "f:targetPort": {}
+                                    }
+                                },
+                                "f:selector": {
+                                    ".": {},
+                                    "f:weblogic.clusterName": {},
+                                    "f:weblogic.createdByOperator": {},
+                                    "f:weblogic.domainUID": {}
+                                },
+                                "f:sessionAffinity": {},
+                                "f:type": {}
+                            }
+                        }
+                    }
+                ]
+            },
+            "spec": {
+                "ports": [
+                    {
+                        "name": "default",
+                        "protocol": "TCP",
+                        "port": 8001,
+                        "targetPort": 8001
+                    }
+                ],
+                "selector": {
+                    "weblogic.clusterName": "wls-cluster",
+                    "weblogic.createdByOperator": "true",
+                    "weblogic.domainUID": "okewls"
+                },
+                "clusterIP": "10.96.54.144",
+                "type": "ClusterIP",
+                "sessionAffinity": "None"
+            },
+            "status": {
+                "loadBalancer": {}
+            }
+        },
+        {
+            "metadata": {
+                "name": "okewls-wls-adminserver",
+                "namespace": "wls-domain-ns",
+                "selfLink": "/api/v1/namespaces/wls-domain-ns/services/okewls-wls-adminserver",
+                "uid": "58a4079d-6618-439e-ab6a-e360f4cc91b8",
+                "resourceVersion": "4544",
+                "creationTimestamp": "2020-11-25T19:09:20Z",
+                "labels": {
+                    "serviceType": "SERVER",
+                    "weblogic.createdByOperator": "true",
+                    "weblogic.domainName": "okewls",
+                    "weblogic.domainUID": "okewls",
+                    "weblogic.serverName": "wls-adminserver"
+                },
+                "annotations": {
+                    "service.alpha.kubernetes.io/tolerate-unready-endpoints": "true",
+                    "weblogic.sha256": "fbdb401316d244555226b3cf65888a99543146efa2be52d5136e725b1ba37305"
+                },
+                "ownerReferences": [
+                    {
+                        "apiVersion": "weblogic.oracle/v8",
+                        "kind": "Domain",
+                        "name": "okewls",
+                        "uid": "2788b87b-1553-4613-9d8e-6f10a9415ec1",
+                        "controller": true
+                    }
+                ],
+                "managedFields": [
+                    {
+                        "manager": "OpenAPI-Generator",
+                        "operation": "Update",
+                        "apiVersion": "v1",
+                        "time": "2020-11-25T19:09:20Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    ".": {},
+                                    "f:service.alpha.kubernetes.io/tolerate-unready-endpoints": {},
+                                    "f:weblogic.sha256": {}
+                                },
+                                "f:labels": {
+                                    ".": {},
+                                    "f:serviceType": {},
+                                    "f:weblogic.createdByOperator": {},
+                                    "f:weblogic.domainName": {},
+                                    "f:weblogic.domainUID": {},
+                                    "f:weblogic.serverName": {}
+                                },
+                                "f:ownerReferences": {
+                                    ".": {},
+                                    "k:{\"uid\":\"2788b87b-1553-4613-9d8e-6f10a9415ec1\"}": {
+                                        ".": {},
+                                        "f:apiVersion": {},
+                                        "f:controller": {},
+                                        "f:kind": {},
+                                        "f:name": {},
+                                        "f:uid": {}
+                                    }
+                                }
+                            },
+                            "f:spec": {
+                                "f:clusterIP": {},
+                                "f:ports": {
+                                    ".": {},
+                                    "k:{\"port\":7001,\"protocol\":\"TCP\"}": {
+                                        ".": {},
+                                        "f:name": {},
+                                        "f:port": {},
+                                        "f:protocol": {},
+                                        "f:targetPort": {}
+                                    },
+                                    "k:{\"port\":30012,\"protocol\":\"TCP\"}": {
+                                        ".": {},
+                                        "f:name": {},
+                                        "f:port": {},
+                                        "f:protocol": {},
+                                        "f:targetPort": {}
+                                    }
+                                },
+                                "f:publishNotReadyAddresses": {},
+                                "f:selector": {
+                                    ".": {},
+                                    "f:weblogic.createdByOperator": {},
+                                    "f:weblogic.domainUID": {},
+                                    "f:weblogic.serverName": {}
+                                },
+                                "f:sessionAffinity": {},
+                                "f:type": {}
+                            }
+                        }
+                    }
+                ]
+            },
+            "spec": {
+                "ports": [
+                    {
+                        "name": "t3channel",
+                        "protocol": "TCP",
+                        "port": 30012,
+                        "targetPort": 30012
+                    },
+                    {
+                        "name": "default",
+                        "protocol": "TCP",
+                        "port": 7001,
+                        "targetPort": 7001
+                    }
+                ],
+                "selector": {
+                    "weblogic.createdByOperator": "true",
+                    "weblogic.domainUID": "okewls",
+                    "weblogic.serverName": "wls-adminserver"
+                },
+                "clusterIP": "None",
+                "type": "ClusterIP",
+                "sessionAffinity": "None",
+                "publishNotReadyAddresses": true
+            },
+            "status": {
+                "loadBalancer": {}
+            }
+        },
+        {
+            "metadata": {
+                "name": "okewls-wls-managed-server1",
+                "namespace": "wls-domain-ns",
+                "selfLink": "/api/v1/namespaces/wls-domain-ns/services/okewls-wls-managed-server1",
+                "uid": "ce542183-102c-4768-8efb-77e528e2d624",
+                "resourceVersion": "4825",
+                "creationTimestamp": "2020-11-25T19:10:19Z",
+                "labels": {
+                    "serviceType": "SERVER",
+                    "weblogic.clusterName": "wls-cluster",
+                    "weblogic.createdByOperator": "true",
+                    "weblogic.domainName": "okewls",
+                    "weblogic.domainUID": "okewls",
+                    "weblogic.serverName": "wls-managed-server1"
+                },
+                "annotations": {
+                    "service.alpha.kubernetes.io/tolerate-unready-endpoints": "true",
+                    "weblogic.sha256": "53c92039183fceffee7687d4752e92b99d50ada575a9480d32e871583cdc0230"
+                },
+                "ownerReferences": [
+                    {
+                        "apiVersion": "weblogic.oracle/v8",
+                        "kind": "Domain",
+                        "name": "okewls",
+                        "uid": "2788b87b-1553-4613-9d8e-6f10a9415ec1",
+                        "controller": true
+                    }
+                ],
+                "managedFields": [
+                    {
+                        "manager": "OpenAPI-Generator",
+                        "operation": "Update",
+                        "apiVersion": "v1",
+                        "time": "2020-11-25T19:10:19Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    ".": {},
+                                    "f:service.alpha.kubernetes.io/tolerate-unready-endpoints": {},
+                                    "f:weblogic.sha256": {}
+                                },
+                                "f:labels": {
+                                    ".": {},
+                                    "f:serviceType": {},
+                                    "f:weblogic.clusterName": {},
+                                    "f:weblogic.createdByOperator": {},
+                                    "f:weblogic.domainName": {},
+                                    "f:weblogic.domainUID": {},
+                                    "f:weblogic.serverName": {}
+                                },
+                                "f:ownerReferences": {
+                                    ".": {},
+                                    "k:{\"uid\":\"2788b87b-1553-4613-9d8e-6f10a9415ec1\"}": {
+                                        ".": {},
+                                        "f:apiVersion": {},
+                                        "f:controller": {},
+                                        "f:kind": {},
+                                        "f:name": {},
+                                        "f:uid": {}
+                                    }
+                                }
+                            },
+                            "f:spec": {
+                                "f:clusterIP": {},
+                                "f:ports": {
+                                    ".": {},
+                                    "k:{\"port\":8001,\"protocol\":\"TCP\"}": {
+                                        ".": {},
+                                        "f:name": {},
+                                        "f:port": {},
+                                        "f:protocol": {},
+                                        "f:targetPort": {}
+                                    }
+                                },
+                                "f:publishNotReadyAddresses": {},
+                                "f:selector": {
+                                    ".": {},
+                                    "f:weblogic.createdByOperator": {},
+                                    "f:weblogic.domainUID": {},
+                                    "f:weblogic.serverName": {}
+                                },
+                                "f:sessionAffinity": {},
+                                "f:type": {}
+                            }
+                        }
+                    }
+                ]
+            },
+            "spec": {
+                "ports": [
+                    {
+                        "name": "default",
+                        "protocol": "TCP",
+                        "port": 8001,
+                        "targetPort": 8001
+                    }
+                ],
+                "selector": {
+                    "weblogic.createdByOperator": "true",
+                    "weblogic.domainUID": "okewls",
+                    "weblogic.serverName": "wls-managed-server1"
+                },
+                "clusterIP": "None",
+                "type": "ClusterIP",
+                "sessionAffinity": "None",
+                "publishNotReadyAddresses": true
+            },
+            "status": {
+                "loadBalancer": {}
+            }
+        },
+        {
+            "metadata": {
+                "name": "okewls-wls-managed-server2",
+                "namespace": "wls-domain-ns",
+                "selfLink": "/api/v1/namespaces/wls-domain-ns/services/okewls-wls-managed-server2",
+                "uid": "234a2625-552b-4021-9865-15d692f288fb",
+                "resourceVersion": "4824",
+                "creationTimestamp": "2020-11-25T19:10:19Z",
+                "labels": {
+                    "serviceType": "SERVER",
+                    "weblogic.clusterName": "wls-cluster",
+                    "weblogic.createdByOperator": "true",
+                    "weblogic.domainName": "okewls",
+                    "weblogic.domainUID": "okewls",
+                    "weblogic.serverName": "wls-managed-server2"
+                },
+                "annotations": {
+                    "service.alpha.kubernetes.io/tolerate-unready-endpoints": "true",
+                    "weblogic.sha256": "e757314e81f43837304c9063605ce3742c76258534ee9bf5fc72a49404bf3219"
+                },
+                "ownerReferences": [
+                    {
+                        "apiVersion": "weblogic.oracle/v8",
+                        "kind": "Domain",
+                        "name": "okewls",
+                        "uid": "2788b87b-1553-4613-9d8e-6f10a9415ec1",
+                        "controller": true
+                    }
+                ],
+                "managedFields": [
+                    {
+                        "manager": "OpenAPI-Generator",
+                        "operation": "Update",
+                        "apiVersion": "v1",
+                        "time": "2020-11-25T19:10:19Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    ".": {},
+                                    "f:service.alpha.kubernetes.io/tolerate-unready-endpoints": {},
+                                    "f:weblogic.sha256": {}
+                                },
+                                "f:labels": {
+                                    ".": {},
+                                    "f:serviceType": {},
+                                    "f:weblogic.clusterName": {},
+                                    "f:weblogic.createdByOperator": {},
+                                    "f:weblogic.domainName": {},
+                                    "f:weblogic.domainUID": {},
+                                    "f:weblogic.serverName": {}
+                                },
+                                "f:ownerReferences": {
+                                    ".": {},
+                                    "k:{\"uid\":\"2788b87b-1553-4613-9d8e-6f10a9415ec1\"}": {
+                                        ".": {},
+                                        "f:apiVersion": {},
+                                        "f:controller": {},
+                                        "f:kind": {},
+                                        "f:name": {},
+                                        "f:uid": {}
+                                    }
+                                }
+                            },
+                            "f:spec": {
+                                "f:clusterIP": {},
+                                "f:ports": {
+                                    ".": {},
+                                    "k:{\"port\":8001,\"protocol\":\"TCP\"}": {
+                                        ".": {},
+                                        "f:name": {},
+                                        "f:port": {},
+                                        "f:protocol": {},
+                                        "f:targetPort": {}
+                                    }
+                                },
+                                "f:publishNotReadyAddresses": {},
+                                "f:selector": {
+                                    ".": {},
+                                    "f:weblogic.createdByOperator": {},
+                                    "f:weblogic.domainUID": {},
+                                    "f:weblogic.serverName": {}
+                                },
+                                "f:sessionAffinity": {},
+                                "f:type": {}
+                            }
+                        }
+                    }
+                ]
+            },
+            "spec": {
+                "ports": [
+                    {
+                        "name": "default",
+                        "protocol": "TCP",
+                        "port": 8001,
+                        "targetPort": 8001
+                    }
+                ],
+                "selector": {
+                    "weblogic.createdByOperator": "true",
+                    "weblogic.domainUID": "okewls",
+                    "weblogic.serverName": "wls-managed-server2"
+                },
+                "clusterIP": "None",
+                "type": "ClusterIP",
+                "sessionAffinity": "None",
+                "publishNotReadyAddresses": true
+            },
+            "status": {
+                "loadBalancer": {}
+            }
+        }
+    ]
+}

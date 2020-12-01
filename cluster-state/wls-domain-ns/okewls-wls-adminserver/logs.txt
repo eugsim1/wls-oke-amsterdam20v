@@ -1,0 +1,397 @@
+==== START logs for container weblogic-server of pod wls-domain-ns/okewls-wls-adminserver ====
+@[2020-11-25T19:09:22.216 UTC][startServer.sh:17][FINE] Starting WebLogic Server 'wls-adminserver'.
+@[2020-11-25T19:09:22.244 UTC][startServer.sh:254][FINE] Env vars before:
+    DOMAIN_UID='okewls'
+    NAMESPACE=''
+    SERVER_NAME='wls-adminserver'
+    SERVICE_NAME='okewls-wls-adminserver'
+    ADMIN_NAME='wls-adminserver'
+    AS_SERVICE_NAME='okewls-wls-adminserver'
+    ADMIN_PORT='7001'
+    ADMIN_PORT_SECURE=''
+    USER_MEM_ARGS='-XX:+UseContainerSupport -Djava.security.egd=file:/dev/./urandom '
+    JAVA_OPTIONS='-Dweblogic.StdoutDebugEnabled=false'
+    FAIL_BOOT_ON_SITUATIONAL_CONFIG_ERROR=''
+    STARTUP_MODE=''
+    DOMAIN_HOME='/u01/data/domains/okewls'
+    LOG_HOME='/u01/shared/logs'
+    SERVER_OUT_IN_POD_LOG='true'
+    DATA_HOME='/u01/shared/data/store/okewls'
+    KEEP_DEFAULT_DATA_HOME=''
+    EXPERIMENTAL_LINK_SERVER_DEFAULT_DATA_DIR=''
+    JAVA_HOME='/u01/jdk'
+    ORACLE_HOME='/u01/app/oracle/middleware'
+    WL_HOME='/u01/app/oracle/middleware/wlserver'
+    MW_HOME='/u01/app/oracle/middleware'
+    NODEMGR_HOME='/u01/nodemanager'
+    INTROSPECT_HOME=''
+    PATH='/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/u01/jdk/bin:/u01/app/oracle/middleware/oracle_common/common/bin:/u01/app/oracle/middleware/wlserver/common/bin:/u01/app/oracle/middleware:/u01/app/oracle/middleware/oracle_common/common/bin:/u01/app/oracle/middleware/wlserver/common/bin::/bin:/u01/oracle'
+    TRACE_TIMING=''
+    OPERATOR_ENVVAR_NAMES=''
+@[2020-11-25T19:09:22.284 UTC][startServer.sh:293][FINE] id = 'uid=1000(oracle) gid=1000(oracle) groups=1000(oracle)'
+@[2020-11-25T19:09:22.306 UTC][startServer.sh:297][FINE] Directory trace for DOMAIN_HOME=/u01/data/domains/okewls (before)
+  ls -ld /u01/data/domains/okewls/*:
+    drwxr-x---. 2 oracle oracle   24 Nov 25 18:58 /u01/data/domains/okewls/autodeploy
+    drwxr-x---. 1 oracle oracle   32 Nov 25 18:59 /u01/data/domains/okewls/backup_config
+    drwxr-x---. 1 oracle oracle 4096 Nov 25 18:58 /u01/data/domains/okewls/bin
+    drwxr-x---. 3 oracle oracle   16 Nov 25 18:58 /u01/data/domains/okewls/common
+    drwxr-x---. 1 oracle oracle   43 Nov 25 18:58 /u01/data/domains/okewls/config
+    drwxr-x---. 2 oracle oracle   24 Nov 25 18:58 /u01/data/domains/okewls/console-ext
+    -rw-r-----. 1 oracle oracle  327 Apr 26  2019 /u01/data/domains/okewls/fileRealm.properties
+    drwxr-x---. 1 oracle oracle 4096 Nov 25 18:59 /u01/data/domains/okewls/init-info
+    drwxr-x---. 2 oracle oracle   24 Nov 25 18:58 /u01/data/domains/okewls/lib
+    drwxr-x---. 1 oracle oracle   63 Nov 25 18:58 /u01/data/domains/okewls/nodemanager
+    drwxr-x---. 2 oracle oracle    6 Apr 26  2019 /u01/data/domains/okewls/resources
+    drwxr-x---. 2 oracle oracle 4096 Nov 25 18:58 /u01/data/domains/okewls/security
+    drwxr-x---. 3 oracle oracle   29 Nov 25 18:58 /u01/data/domains/okewls/servers
+    -rwxr-x---. 1 oracle oracle  240 Nov 25 18:58 /u01/data/domains/okewls/startWebLogic.sh
+  ls -ld /u01/data/domains/okewls:
+    drwxrwxrwx. 1 oracle oracle 88 Nov 25 18:59 /u01/data/domains/okewls
+  ls -ld /u01/data/domains:
+    drwxrwxrwx. 1 oracle oracle 20 Nov 25 18:57 /u01/data/domains
+  ls -ld /u01/data:
+    drwxrwxrwx. 1 oracle oracle 21 Nov 25 18:57 /u01/data
+  ls -ld /u01:
+    drwxrwxr-x. 1 oracle oracle 20 Nov 25 19:09 /u01
+  ls -ld /:
+    drwxr-xr-x. 1 root root 53 Nov 25 19:09 /
+@[2020-11-25T19:09:22.372 UTC][startServer.sh:297][FINE] Directory trace for LOG_HOME=/u01/shared/logs (before)
+  ls -ld /u01/shared/logs/*:
+    -rw-r-----. 1 oracle oracle 1205 Nov 25 19:09 /u01/shared/logs/introspector_nodemanager.log
+    -rw-r-----. 1 oracle oracle    0 Nov 25 19:08 /u01/shared/logs/introspector_nodemanager.log.lck
+    -rw-r--r--. 1 oracle oracle 3321 Nov 25 19:09 /u01/shared/logs/introspector_nodemanager.out
+  ls -ld /u01/shared/logs:
+    drwxrwxr-x. 2 oracle oracle 3 Nov 25 19:08 /u01/shared/logs
+  ls -ld /u01/shared:
+    drwxr-xr-x. 8 oracle oracle 6 Nov 25 19:08 /u01/shared
+  ls -ld /u01:
+    drwxrwxr-x. 1 oracle oracle 20 Nov 25 19:09 /u01
+  ls -ld /:
+    drwxr-xr-x. 1 root root 53 Nov 25 19:09 /
+@[2020-11-25T19:09:22.422 UTC][startServer.sh:297][FINE] Directory trace for DATA_HOME=/u01/shared/data/store/okewls (before)
+  ls -ld /u01/shared/data/store/okewls/*:
+    ls: cannot access /u01/shared/data/store/okewls/*: No such file or directory
+  ls -ld /u01/shared/data/store/okewls:
+    drwxr-x---. 2 oracle oracle 0 Nov 25 19:08 /u01/shared/data/store/okewls
+  ls -ld /u01/shared/data/store:
+    drwxr-xr-x. 3 oracle oracle 1 Nov 25 19:08 /u01/shared/data/store
+  ls -ld /u01/shared/data:
+    drwxr-xr-x. 3 oracle oracle 1 Nov 25 19:08 /u01/shared/data
+  ls -ld /u01/shared:
+    drwxr-xr-x. 8 oracle oracle 6 Nov 25 19:08 /u01/shared
+  ls -ld /u01:
+    drwxrwxr-x. 1 oracle oracle 20 Nov 25 19:09 /u01
+  ls -ld /:
+    drwxr-xr-x. 1 root root 53 Nov 25 19:09 /
+@[2020-11-25T19:09:22.492 UTC][startServer.sh:290][FINE] Creating directory '/u01/shared/data/store/okewls/wls-adminserver/data'
+@[2020-11-25T19:09:22.524 UTC][startServer.sh:254][FINE] Env vars after:
+    DOMAIN_UID='okewls'
+    NAMESPACE=''
+    SERVER_NAME='wls-adminserver'
+    SERVICE_NAME='okewls-wls-adminserver'
+    ADMIN_NAME='wls-adminserver'
+    AS_SERVICE_NAME='okewls-wls-adminserver'
+    ADMIN_PORT='7001'
+    ADMIN_PORT_SECURE=''
+    USER_MEM_ARGS='-XX:+UseContainerSupport -Djava.security.egd=file:/dev/./urandom '
+    JAVA_OPTIONS='-Dweblogic.StdoutDebugEnabled=false'
+    FAIL_BOOT_ON_SITUATIONAL_CONFIG_ERROR=''
+    STARTUP_MODE=''
+    DOMAIN_HOME='/u01/data/domains/okewls'
+    LOG_HOME='/u01/shared/logs'
+    SERVER_OUT_IN_POD_LOG='true'
+    DATA_HOME='/u01/shared/data/store/okewls'
+    KEEP_DEFAULT_DATA_HOME=''
+    EXPERIMENTAL_LINK_SERVER_DEFAULT_DATA_DIR=''
+    JAVA_HOME='/u01/jdk'
+    ORACLE_HOME='/u01/app/oracle/middleware'
+    WL_HOME='/u01/app/oracle/middleware/wlserver'
+    MW_HOME='/u01/app/oracle/middleware'
+    NODEMGR_HOME='/u01/nodemanager'
+    INTROSPECT_HOME=''
+    PATH='/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/u01/jdk/bin:/u01/app/oracle/middleware/oracle_common/common/bin:/u01/app/oracle/middleware/wlserver/common/bin:/u01/app/oracle/middleware:/u01/app/oracle/middleware/oracle_common/common/bin:/u01/app/oracle/middleware/wlserver/common/bin::/bin:/u01/oracle'
+    TRACE_TIMING=''
+    OPERATOR_ENVVAR_NAMES=''
+@[2020-11-25T19:09:22.548 UTC][startServer.sh:293][FINE] id = 'uid=1000(oracle) gid=1000(oracle) groups=1000(oracle)'
+@[2020-11-25T19:09:22.569 UTC][startServer.sh:297][FINE] Directory trace for DOMAIN_HOME=/u01/data/domains/okewls (after)
+  ls -ld /u01/data/domains/okewls/*:
+    drwxr-x---. 2 oracle oracle   24 Nov 25 18:58 /u01/data/domains/okewls/autodeploy
+    drwxr-x---. 1 oracle oracle   32 Nov 25 18:59 /u01/data/domains/okewls/backup_config
+    drwxr-x---. 1 oracle oracle 4096 Nov 25 18:58 /u01/data/domains/okewls/bin
+    drwxr-x---. 3 oracle oracle   16 Nov 25 18:58 /u01/data/domains/okewls/common
+    drwxr-x---. 1 oracle oracle   43 Nov 25 18:58 /u01/data/domains/okewls/config
+    drwxr-x---. 2 oracle oracle   24 Nov 25 18:58 /u01/data/domains/okewls/console-ext
+    -rw-r-----. 1 oracle oracle  327 Apr 26  2019 /u01/data/domains/okewls/fileRealm.properties
+    drwxr-x---. 1 oracle oracle 4096 Nov 25 18:59 /u01/data/domains/okewls/init-info
+    drwxr-x---. 2 oracle oracle   24 Nov 25 18:58 /u01/data/domains/okewls/lib
+    drwxr-x---. 1 oracle oracle   63 Nov 25 18:58 /u01/data/domains/okewls/nodemanager
+    drwxr-x---. 2 oracle oracle    6 Apr 26  2019 /u01/data/domains/okewls/resources
+    drwxr-x---. 2 oracle oracle 4096 Nov 25 18:58 /u01/data/domains/okewls/security
+    drwxr-x---. 3 oracle oracle   29 Nov 25 18:58 /u01/data/domains/okewls/servers
+    -rwxr-x---. 1 oracle oracle  240 Nov 25 18:58 /u01/data/domains/okewls/startWebLogic.sh
+  ls -ld /u01/data/domains/okewls:
+    drwxrwxrwx. 1 oracle oracle 88 Nov 25 18:59 /u01/data/domains/okewls
+  ls -ld /u01/data/domains:
+    drwxrwxrwx. 1 oracle oracle 20 Nov 25 18:57 /u01/data/domains
+  ls -ld /u01/data:
+    drwxrwxrwx. 1 oracle oracle 21 Nov 25 18:57 /u01/data
+  ls -ld /u01:
+    drwxrwxr-x. 1 oracle oracle 20 Nov 25 19:09 /u01
+  ls -ld /:
+    drwxr-xr-x. 1 root root 53 Nov 25 19:09 /
+@[2020-11-25T19:09:22.619 UTC][startServer.sh:297][FINE] Directory trace for LOG_HOME=/u01/shared/logs (after)
+  ls -ld /u01/shared/logs/*:
+    -rw-r-----. 1 oracle oracle 1205 Nov 25 19:09 /u01/shared/logs/introspector_nodemanager.log
+    -rw-r-----. 1 oracle oracle    0 Nov 25 19:08 /u01/shared/logs/introspector_nodemanager.log.lck
+    -rw-r--r--. 1 oracle oracle 3321 Nov 25 19:09 /u01/shared/logs/introspector_nodemanager.out
+  ls -ld /u01/shared/logs:
+    drwxrwxr-x. 2 oracle oracle 3 Nov 25 19:08 /u01/shared/logs
+  ls -ld /u01/shared:
+    drwxr-xr-x. 8 oracle oracle 6 Nov 25 19:08 /u01/shared
+  ls -ld /u01:
+    drwxrwxr-x. 1 oracle oracle 20 Nov 25 19:09 /u01
+  ls -ld /:
+    drwxr-xr-x. 1 root root 53 Nov 25 19:09 /
+@[2020-11-25T19:09:22.667 UTC][startServer.sh:297][FINE] Directory trace for DATA_HOME=/u01/shared/data/store/okewls (after)
+  ls -ld /u01/shared/data/store/okewls/*:
+    drwxr-xr-x. 3 oracle oracle 1 Nov 25 19:09 /u01/shared/data/store/okewls/wls-adminserver
+  ls -ld /u01/shared/data/store/okewls:
+    drwxr-x---. 3 oracle oracle 1 Nov 25 19:09 /u01/shared/data/store/okewls
+  ls -ld /u01/shared/data/store:
+    drwxr-xr-x. 3 oracle oracle 1 Nov 25 19:08 /u01/shared/data/store
+  ls -ld /u01/shared/data:
+    drwxr-xr-x. 3 oracle oracle 1 Nov 25 19:08 /u01/shared/data
+  ls -ld /u01/shared:
+    drwxr-xr-x. 8 oracle oracle 6 Nov 25 19:08 /u01/shared
+  ls -ld /u01:
+    drwxrwxr-x. 1 oracle oracle 20 Nov 25 19:09 /u01
+  ls -ld /:
+    drwxr-xr-x. 1 root root 53 Nov 25 19:09 /
+@[2020-11-25T19:09:22.741 UTC][startServer.sh:534][INFO] WebLogic version='12.2.1.4.0'. Version check passed. (The Operator requires WebLogic version '12.2.1.3' or higher).
+@[2020-11-25T19:09:22.765 UTC][startServer.sh:34][FINE] Copying '/weblogic-operator/introspector/boot.properties' to '/u01/data/domains/okewls/servers/wls-adminserver/security/boot.properties'.
+@[2020-11-25T19:09:22.788 UTC][startServer.sh:138][FINE] Copying files starting with '/weblogic-operator/introspector/Sit-Cfg-CFG--' to '/u01/data/domains/okewls/optconfig' without the prefix.
+@[2020-11-25T19:09:22.813 UTC][startServer.sh:34][FINE] Copying '/weblogic-operator/introspector/Sit-Cfg-CFG--introspector-situational-config.xml' to '/u01/data/domains/okewls/optconfig/introspector-situational-config.xml'.
+@[2020-11-25T19:09:22.835 UTC][startServer.sh:146][FINE] Printing contents of situational configuration file /weblogic-operator/introspector/Sit-Cfg-CFG--introspector-situational-config.xml:
+<?xml version='1.0' encoding='UTF-8'?>
+<d:domain xmlns:d="http://xmlns.oracle.com/weblogic/domain" xmlns:f="http://xmlns.oracle.com/weblogic/domain-fragment" xmlns:s="http://xmlns.oracle.com/weblogic/situational-config">
+  <s:expiration> 2099-07-16T19:20+01:00 </s:expiration>
+  <d:security-configuration>
+    <d:node-manager-user-name f:combine-mode="replace">weblogic</d:node-manager-user-name>
+    <d:node-manager-password-encrypted f:combine-mode="replace">{AES256}PPjb/lJXv+6ombRcNluc2uNTzYmKikvpI+033Cyd6F0=</d:node-manager-password-encrypted>
+  </d:security-configuration>
+  <d:log>
+    <d:file-name f:combine-mode="replace">/u01/shared/logs/okewls.log</d:file-name>
+  </d:log>
+  <d:server>
+    <d:name>wls-adminserver</d:name>
+    <d:log f:combine-mode="add">
+      <d:file-name f:combine-mode="add">/u01/shared/logs/wls-adminserver.log</d:file-name>
+    </d:log>
+    <d:web-server>
+      <d:web-server-log>
+        <d:file-name f:combine-mode="replace">/u01/shared/logs/wls-adminserver_access.log</d:file-name>
+      </d:web-server-log>
+    </d:web-server>
+    <d:default-file-store f:combine-mode="add">
+      <d:directory f:combine-mode="add">/u01/shared/data/store/okewls</d:directory>
+    </d:default-file-store>
+    <d:listen-address f:combine-mode="replace">okewls-wls-adminserver</d:listen-address>
+  </d:server>
+  <d:server-template>
+    <d:name>wls-cluster-template</d:name>
+    <d:log f:combine-mode="add">
+      <d:file-name f:combine-mode="add">/u01/shared/logs/wls-managed-server${id}.log</d:file-name>
+    </d:log>
+    <d:web-server>
+      <d:web-server-log>
+        <d:file-name f:combine-mode="replace">/u01/shared/logs/wls-managed-server${id}_access.log</d:file-name>
+      </d:web-server-log>
+    </d:web-server>
+    <d:default-file-store f:combine-mode="add">
+      <d:directory f:combine-mode="add">/u01/shared/data/store/okewls</d:directory>
+    </d:default-file-store>
+    <d:listen-address f:combine-mode="add">okewls-wls-managed-server${id}</d:listen-address>
+  </d:server-template>
+</d:domain>@[2020-11-25T19:09:22.859 UTC][startServer.sh:138][FINE] Copying files starting with '/weblogic-operator/introspector/Sit-Cfg-JMS--' to '/u01/data/domains/okewls/optconfig/jms' without the prefix.
+@[2020-11-25T19:09:22.901 UTC][startServer.sh:138][FINE] Copying files starting with '/weblogic-operator/introspector/Sit-Cfg-JDBC--' to '/u01/data/domains/okewls/optconfig/jdbc' without the prefix.
+@[2020-11-25T19:09:22.927 UTC][startServer.sh:138][FINE] Copying files starting with '/weblogic-operator/introspector/Sit-Cfg-WLDF--' to '/u01/data/domains/okewls/optconfig/diagnostics' without the prefix.
+@[2020-11-25T19:09:22.952 UTC][startServer.sh:55][FINE] Start node manager
+@[2020-11-25T19:09:22.978 UTC][startServer.sh:64][FINE] Starting node manager for domain-uid='okewls' and server='wls-adminserver'.
+@[2020-11-25T19:09:22.998 UTC][startServer.sh:236][FINE] JAVA_HOME='/u01/jdk'
+@[2020-11-25T19:09:23.019 UTC][startServer.sh:236][FINE] NODEMGR_HOME='/u01/nodemanager'
+@[2020-11-25T19:09:23.040 UTC][startServer.sh:236][FINE] DOMAIN_HOME='/u01/data/domains/okewls'
+@[2020-11-25T19:09:23.060 UTC][startServer.sh:236][FINE] DOMAIN_UID='okewls'
+@[2020-11-25T19:09:23.080 UTC][startServer.sh:236][FINE] ORACLE_HOME='/u01/app/oracle/middleware'
+@[2020-11-25T19:09:23.101 UTC][startServer.sh:236][FINE] MW_HOME='/u01/app/oracle/middleware'
+@[2020-11-25T19:09:23.129 UTC][startServer.sh:236][FINE] WL_HOME='/u01/app/oracle/middleware/wlserver'
+@[2020-11-25T19:09:23.149 UTC][startServer.sh:236][FINE] SERVER_NAME='wls-adminserver'
+@[2020-11-25T19:09:23.169 UTC][startServer.sh:236][FINE] ADMIN_NAME='wls-adminserver'
+@[2020-11-25T19:09:23.191 UTC][startServer.sh:236][FINE] AS_SERVICE_NAME='okewls-wls-adminserver'
+@[2020-11-25T19:09:23.213 UTC][startServer.sh:236][FINE] SERVICE_NAME='okewls-wls-adminserver'
+@[2020-11-25T19:09:23.234 UTC][startServer.sh:236][FINE] USER_MEM_ARGS='-XX:+UseContainerSupport -Djava.security.egd=file:/dev/./urandom '
+@[2020-11-25T19:09:23.269 UTC][startServer.sh:130][FINE] NODEMGR_HOME='/u01/nodemanager/okewls/wls-adminserver'
+@[2020-11-25T19:09:23.316 UTC][startServer.sh:131][FINE] LOG_HOME='/u01/shared/logs'
+@[2020-11-25T19:09:23.338 UTC][startServer.sh:132][FINE] SERVER_NAME='wls-adminserver'
+@[2020-11-25T19:09:23.357 UTC][startServer.sh:133][FINE] DOMAIN_UID='okewls'
+@[2020-11-25T19:09:23.378 UTC][startServer.sh:134][FINE] NODEMGR_LOG_HOME='/u01/shared/logs'
+@[2020-11-25T19:09:23.401 UTC][startServer.sh:135][FINE] FAIL_BOOT_ON_SITUATIONAL_CONFIG_ERROR='true'
+@[2020-11-25T19:09:23.424 UTC][startServer.sh:236][FINE] NODEMGR_LOG_HOME='/u01/shared/logs'
+@[2020-11-25T19:09:23.443 UTC][startServer.sh:236][FINE] nodemgr_log_file='/u01/shared/logs/wls-adminserver_nodemanager.log'
+@[2020-11-25T19:09:23.464 UTC][startServer.sh:236][FINE] nodemgr_out_file='/u01/shared/logs/wls-adminserver_nodemanager.out'
+@[2020-11-25T19:09:23.486 UTC][startServer.sh:236][FINE] nodemgr_lck_file='/u01/shared/logs/wls-adminserver_nodemanager.log.lck'
+@[2020-11-25T19:09:23.509 UTC][startServer.sh:145][FINE] remove nodemanager .lck file
+@[2020-11-25T19:09:23.548 UTC][startServer.sh:325][FINE] Start the nodemanager, node manager home is '/u01/nodemanager/okewls/wls-adminserver', log file is '/u01/shared/logs/wls-adminserver_nodemanager.log', out file is '/u01/shared/logs/wls-adminserver_nodemanager.out'.
+@[2020-11-25T19:09:27.642 UTC][startServer.sh:355][FINE] Nodemanager started in 4 seconds.
+@[2020-11-25T19:09:27.663 UTC][startServer.sh:402][FINE] Comparing domain secret MD5 generated by introspector '/weblogic-operator/introspector/DomainSecret.md5' with MD5 of current domain secret.
+@[2020-11-25T19:09:27.687 UTC][startServer.sh:384][FINE] Placing MD5 checksum of current domain secret 'DOMAIN_HOME/security/SerializedSystemIni.dat' in file '/tmp/CurrentDomainSecret.md5.startServer.sh.l1xxjHNSR'.
+@[2020-11-25T19:09:27.714 UTC][startServer.sh:431][FINE] Domain secret MD5 matches.
+@[2020-11-25T19:09:27.734 UTC][startServer.sh:80][FINE] Showing the server out file from /u01/shared/logs/wls-adminserver.out
+@[2020-11-25T19:09:27.756 UTC][startServer.sh:92][FINE] Start WebLogic Server via the nodemanager
+@[2020-11-25T19:09:27.785 UTC][wlst.sh:28][FINE] About to run wlst script '/weblogic-operator/scripts/start-server.py'
+@[2020-11-25T19:09:27.804 UTC][wlst.sh:236][FINE] JAVA_HOME='/u01/jdk'
+@[2020-11-25T19:09:27.823 UTC][wlst.sh:236][FINE] ORACLE_HOME='/u01/app/oracle/middleware'
+@[2020-11-25T19:09:27.841 UTC][wlst.sh:236][FINE] WL_HOME='/u01/app/oracle/middleware/wlserver'
+@[2020-11-25T19:09:27.860 UTC][wlst.sh:236][FINE] MW_HOME='/u01/app/oracle/middleware'
+@[2020-11-25T19:09:27.879 UTC][wlst.sh:48][FINE] Running wlst script '/weblogic-operator/scripts/start-server.py'
+
+Initializing WebLogic Scripting Tool (WLST) ...
+
+Welcome to WebLogic Server Administration Scripting Shell
+
+Type help() for help on available commands
+
+domain path is /u01/data/domains/okewls
+server name is wls-adminserver
+Connecting to Node Manager ...
+Successfully Connected to Node Manager.
+Starting server wls-adminserver ...
+<Nov 25, 2020 7:09:44 PM GMT> <INFO> <NodeManager> <Starting WebLogic server with command line: /u01/data/domains/okewls/bin/startWebLogic.sh >
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: PATH=/u01/jdk/jre/bin:/u01/jdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/u01/jdk/bin:/u01/app/oracle/middleware/oracle_common/common/bin:/u01/app/oracle/middleware:/u01/app/oracle/middleware/oracle_common/common/bin:/bin:/u01/oracle>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: JAVA_PROPERTIES=-DLogFile=/u01/shared/logs/wls-adminserver_nodemanager.log -DNodeManagerHome=/u01/nodemanager/okewls/wls-adminserver>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: MANAGED_SERV_NAME=>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: JRE_HOME=/u01/jdk/jre>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: ADMIN_PASSWORD=>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: ADMIN_HOST=wlsadmin>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: WDT_MODEL_SECRETS_NAME_DIR_PAIRS=__weblogic-credentials__=/weblogic-operator/secrets,__WEBLOGIC-CREDENTIALS__=/weblogic-operator/secrets>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: LOCAL_ADMIN_PORT=7001>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: PWD=/u01/nodemanager/okewls/wls-adminserver>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: SHUTDOWN_MARKER_FILE=/u01/shared/logs/wls-adminserver.shutdown>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: KUBERNETES_PORT_443_TCP=tcp://10.96.0.1:443>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: MEM_ARGS= >
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: SERVICE_NAME=okewls-wls-adminserver>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: JAVA_VM=-server>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: SERVER_OUT_FILE=/u01/shared/logs/wls-adminserver.out>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: USER_MEM_ARGS= >
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: OLDPWD=/u01/data/domains/okewls>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: DOMAIN_HOME=/u01/data/domains/okewls>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: INTERNAL_OPERATOR_CERT=LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUR3VENDQXFtZ0F3SUJBZ0lKQUwrcmZFMW1STzBXTUEwR0NTcUdTSWIzRFFFQkN3VUFNQnd4R2pBWUJnTlYNCkJBTVRFWGRsWW14dloybGpMVzl3WlhKaGRHOXlNQjRYRFRJd01URXlOVEU1TURZMU9Gb1hEVE13TVRFeU16RTUNCk1EWTFPRm93SERFYU1CZ0dBMVVFQXhNUmQyVmliRzluYVdNdGIzQmxjbUYwYjNJd2dnRWlNQTBHQ1NxR1NJYjMNCkRRRUJBUVVBQTRJQkR3QXdnZ0VLQW9JQkFRQ0lUaXBuQll4aUdVbVBLeUtCOFFUTTdNWGUvQVFBNFkvRnBFbEoNCjJETWZxUGlKYTE2TGRqZG9xQkFZWi84Ymp3Q3RaUjJscTAxSjcyejltaDFKMmdKRGdqOE9aMmtJQXFPLy9tYlcNCmU4bmlEWGh1ZVhwMFlhcUZhN1c2RE8xVUNGVDltZUpjZTUrRXArMnU2RGxBOXNrcEFnaXlxeE9ZZE15Wm9OOEMNClRlK0VJdm5lT2dXTmdzUXJiaHNRYjU0L0RXT2RqMU1GdkhLQlhIM1FjbE1kR0tveTVRdXVuZUtYWSt1VUNBbFINCmM0MUdtVlpKM29TcitCOEZHSGhkRXZDNWRjN1dsQlhiQnlPcVA5SUs5NzYxQnZXN3dMaU4rUFdaOEhmQ2Q5T3gNCnhBbkNxSFRTV054c0lRUFZTQzNnU2t4a0NaQUNwTTdhQVhCc216eDRjdkhSby94SkFnTUJBQUdqZ2dFRU1JSUINCkFEQWRCZ05WSFE0RUZnUVVhM2xIeW5PUFFtdjJZcGd6dk5MOG5FSGhOMGN3Q3dZRFZSMFBCQVFEQWdQNE1JSFINCkJnTlZIUkVFZ2Nrd2djYUNIbWx1ZEdWeWJtRnNMWGRsWW14dloybGpMVzl3WlhKaGRHOXlMWE4yWTRJdWFXNTANClpYSnVZV3d0ZDJWaWJHOW5hV010YjNCbGNtRjBiM0l0YzNaakxuZHNjeTF2Y0dWeVlYUnZjaTF1YzRJeWFXNTANClpYSnVZV3d0ZDJWaWJHOW5hV010YjNCbGNtRjBiM0l0YzNaakxuZHNjeTF2Y0dWeVlYUnZjaTF1Y3k1emRtT0MNClFHbHVkR1Z5Ym1Gc0xYZGxZbXh2WjJsakxXOXdaWEpoZEc5eUxYTjJZeTUzYkhNdGIzQmxjbUYwYjNJdGJuTXUNCmMzWmpMbU5zZFhOMFpYSXViRzlqWVd3d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFCTnJvVG1NVUs2UWdWeVMNCmRaMXU3dGI3b241eUJadWxiUEJlOTdmbVlyRnFkSk5yVUhCc3pVdlpQeFZsbDhxZXdpblZRRHhaYUQ1Umo4elANCldkODN5bm5rb2NUQWhSSkpQRmlyMzZ6cHg5L0NybEpuMUtTVXlCWVMyMVZzZ0JWdTd0UGZJZTNaRkV3MlFiY1ANCnBaNll1RUU0eW5ERlBpS2lManZiRkxSSVVDMCtYN0R5YlllZ1ZhV1F1dStOaU1JcSs3TVBXUEFpQW5Eb3hSQkoNCmdYS0NyWG9weGJwajAzc2JjbFlwOThWMHMvT1liYmJPSDJaZnVtYVcyTHZvM2YrbWpKSGVIaHBQTlJxcTZEaEINCjl2YnBkN1h3QURjeFFrSHl4Q0ZKbmpJMlVCS0xtSVFIeHhUMUpQNVk3T05tZ1FUR3JXODIwT3VWLzNkQ3NGSFANCkY4Nm1HSG89Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: BEA_JAVA_HOME=>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: LC_ALL=en_US.UTF-8>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: ADMIN_NAME=wls-adminserver>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: DEFAULT_SUN_JAVA_HOME=/u01/jdk>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: JAVA_OPTIONS=-Dweblogic.system.BootIdentityFile=/u01/data/domains/okewls/servers/wls-adminserver/security/boot.properties -Dweblogic.nodemanager.ServiceEnabled=true -Dweblogic.nmservice.RotationEnabled=true -XX:+UseContainerSupport -Djava.security.egd=file:/dev/./urandom  -Dweblogic.SituationalConfig.failBootOnError=true -Dweblogic.Stdout=/u01/shared/logs/wls-adminserver.out -Dweblogic.StdoutDebugEnabled=false>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: KUBERNETES_SERVICE_PORT_HTTPS=443>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: SHUTDOWN_IGNORE_SESSIONS=false>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: ADMIN_USERNAME=>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: SHLVL=2>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: ADMIN_PORT=7001>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: PROPERTIES_FILE_DIR=/u01/oracle/properties>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: SECURITY_JVM_ARGS=-Dweblogic.alternateTypesDirectory='/u01/app/oracle/middleware/wlserver/..'/oracle_common/modules/oracle.oamprovider,'/u01/app/oracle/middleware/wlserver/..'/oracle_common/modules/oracle.jps>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: SERVER_PID_FILE=/u01/shared/logs/wls-adminserver.pid>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: SERVER_OUT_IN_POD_LOG=true>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: KUBERNETES_PORT=tcp://10.96.0.1:443>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: DERBY_SYSTEM_HOME=/u01/data/domains/okewls/common/db>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: JAVA_HOME=/u01/jdk>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: TMP_UPDATE_SCRIPT=/tmp/Update.sh>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: APPLICATION_ARCHIVE_DIR=/u01/oracle/applications>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: KUBERNETES_SERVICE_HOST=10.96.0.1>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: NODEMGR_HOME=/u01/nodemanager/okewls/wls-adminserver>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: SERVER_NAME=wls-adminserver>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: ORACLE_HOME=/u01/app/oracle/middleware>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: SHUTDOWN_TYPE=Graceful>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: _=/u01/jdk/bin/java>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: KUBERNETES_PORT_443_TCP_ADDR=10.96.0.1>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: CLUSTER_NAME=wls-cluster>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: PATHSEP=:>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: SHUTDOWN_TIMEOUT=30>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: DYNAMIC_CONFIG_OVERRIDE=true>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: CAM_NODEMANAGER_JAR_PATH=/u01/app/oracle/middleware/wlserver/modules/features/oracle.wls.common.nodemanager.jar>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: KUBERNETES_PORT_443_TCP_PROTO=tcp>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: DOMAIN_UID=okewls>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: DOMAIN_NAME=okewls>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: CLASSPATH=/u01/jdk/lib/tools.jar:>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: KUBERNETES_SERVICE_PORT=443>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: DEFAULT_BEA_JAVA_HOME=>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: LOG_HOME=/u01/shared/logs>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: AS_SERVICE_NAME=okewls-wls-adminserver>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: MANAGED_SERVER_PORT=8001>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: SUN_JAVA_HOME=/u01/jdk>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: HOSTNAME=okewls-wls-adminserver>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: DEBUG_PORT=8453>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: CLASSPATHSEP=:>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: DATA_HOME=/u01/shared/data/store/okewls>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: KUBERNETES_PORT_443_TCP_PORT=443>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: HOME=/home/oracle>
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: UTILS_MEM_ARGS= >
+<Nov 25, 2020 7:09:44 PM GMT> <FINEST> <NodeManager> <Environment: LOCAL_ADMIN_PROTOCOL=t3>
+<Nov 25, 2020 7:09:44 PM GMT> <INFO> <NodeManager> <Working directory is '/u01/data/domains/okewls'>
+<Nov 25, 2020 7:09:44 PM GMT> <INFO> <NodeManager> <Server output log file is '/u01/shared/logs/wls-adminserver.out'>
+.
+.
+JAVA Memory arguments:  
+.
+CLASSPATH=/u01/jdk/lib/tools.jar:/u01/app/oracle/middleware/wlserver/server/lib/weblogic.jar:/u01/app/oracle/middleware/wlserver/../oracle_common/modules/thirdparty/ant-contrib-1.0b3.jar:/u01/app/oracle/middleware/wlserver/modules/features/oracle.wls.common.nodemanager.jar::/u01/app/oracle/middleware/wlserver/common/derby/lib/derbynet.jar:/u01/app/oracle/middleware/wlserver/common/derby/lib/derbyclient.jar:/u01/app/oracle/middleware/wlserver/common/derby/lib/derby.jar:/u01/jdk/lib/tools.jar:
+.
+PATH=/u01/data/domains/okewls/bin:/u01/app/oracle/middleware/wlserver/server/bin:/u01/app/oracle/middleware/wlserver/../oracle_common/modules/thirdparty/org.apache.ant/1.10.5.0.0/apache-ant-1.10.5/bin:/u01/jdk/jre/bin:/u01/jdk/bin:/u01/jdk/jre/bin:/u01/jdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/u01/jdk/bin:/u01/app/oracle/middleware/oracle_common/common/bin:/u01/app/oracle/middleware:/u01/app/oracle/middleware/oracle_common/common/bin:/bin:/u01/oracle
+.
+***************************************************
+*  To start WebLogic Server, use a username and   *
+*  password assigned to an admin-level user.  For *
+*  server administration, use the WebLogic Server *
+*  console at http://hostname:port/console        *
+***************************************************
+Starting WLS with line:
+/u01/jdk/bin/java -server     -cp /u01/app/oracle/middleware/wlserver/server/lib/weblogic-launcher.jar -Dlaunch.use.env.classpath=true -Dweblogic.Name=wls-adminserver -Djava.security.policy=/u01/app/oracle/middleware/wlserver/server/lib/weblogic.policy -Dweblogic.system.BootIdentityFile=/u01/data/domains/okewls/servers/wls-adminserver/security/boot.properties -Dweblogic.nodemanager.ServiceEnabled=true -Dweblogic.nmservice.RotationEnabled=true -XX:+UseContainerSupport -Djava.security.egd=file:/dev/./urandom  -Dweblogic.SituationalConfig.failBootOnError=true -Dweblogic.Stdout=/u01/shared/logs/wls-adminserver.out -Dweblogic.StdoutDebugEnabled=false -Djava.system.class.loader=com.oracle.classloader.weblogic.LaunchClassLoader  -javaagent:/u01/app/oracle/middleware/wlserver/server/lib/debugpatch-agent.jar -da -Dwls.home=/u01/app/oracle/middleware/wlserver/server -Dweblogic.home=/u01/app/oracle/middleware/wlserver/server      weblogic.Server
+<Nov 25, 2020 7:09:49 PM GMT> <Info> <Security> <BEA-090905> <Disabling the CryptoJ JCE Provider self-integrity check for better startup performance. To enable this check, specify -Dweblogic.security.allowCryptoJDefaultJCEVerification=true.> 
+<Nov 25, 2020 7:09:49 PM GMT> <Info> <Security> <BEA-090906> <Changing the default Random Number Generator in RSA CryptoJ from ECDRBG128 to HMACDRBG. To disable this change, specify -Dweblogic.security.allowCryptoJDefaultPRNG=true.> 
+<Nov 25, 2020 7:09:51 PM GMT> <Info> <WebLogicServer> <BEA-000377> <Starting WebLogic Server with Java HotSpot(TM) 64-Bit Server VM Version 25.271-b09 from Oracle Corporation.> 
+<Nov 25, 2020 7:09:51 PM GMT> <Info> <RCM> <BEA-2165021> <"ResourceManagement" is not enabled in this JVM. Enable "ResourceManagement" to use the WebLogic Server "Resource Consumption Management" feature. To enable "ResourceManagement", you must specify the following JVM options in the WebLogic Server instance in which the JVM runs: -XX:+UnlockCommercialFeatures -XX:+ResourceManagement.> 
+<Nov 25, 2020 7:09:52 PM GMT> <Info> <Management> <BEA-141107> <Version: WebLogic Server 12.2.1.4.0> 
+<Nov 25, 2020 7:09:55 PM GMT> <Info> <Management> <BEA-141330> <Loading situational config file: /u01/data/domains/okewls/optconfig/introspector-situational-config.xml> 
+<Nov 25, 2020 7:09:57 PM GMT> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING.> 
+<Nov 25, 2020 7:09:57 PM GMT> <Info> <WorkManager> <BEA-002900> <Initializing self-tuning thread pool.> 
+<Nov 25, 2020 7:09:57 PM GMT> <Info> <WorkManager> <BEA-002942> <CMM memory level becomes 0. Setting standby thread pool size to 256.> 
+<Nov 25, 2020 7:09:58,528 PM GMT> <Notice> <Log Management> <BEA-170019> <The server log file weblogic.logging.FileStreamHandler instance=728102637
+Current log file=/u01/shared/logs/wls-adminserver.log
+Rotation dir=/u01/shared/logs
+ is opened. All server side log events will be written to this file.> 
+<Nov 25, 2020 7:09:58,814 PM GMT> <Notice> <Security> <BEA-090946> <Security pre-initializing using security realm: myrealm> 
+<Nov 25, 2020 7:10:00,214 PM GMT> <Notice> <Security> <BEA-090947> <Security post-initializing using security realm: myrealm> 
+<Nov 25, 2020 7:10:02,633 PM GMT> <Notice> <Security> <BEA-090082> <Security initialized using administrative security realm: myrealm> 
+<Nov 25, 2020 7:10:03,216 PM GMT> <Notice> <JMX> <BEA-149512> <JMX Connector Server started at service:jmx:iiop://okewls-wls-adminserver:7001/jndi/weblogic.management.mbeanservers.runtime.> 
+<Nov 25, 2020 7:10:04,277 PM GMT> <Notice> <JMX> <BEA-149512> <JMX Connector Server started at service:jmx:iiop://okewls-wls-adminserver:7001/jndi/weblogic.management.mbeanservers.domainruntime.> 
+<Nov 25, 2020 7:10:04,428 PM GMT> <Notice> <JMX> <BEA-149512> <JMX Connector Server started at service:jmx:iiop://okewls-wls-adminserver:7001/jndi/weblogic.management.mbeanservers.edit.> 
+<Nov 25, 2020 7:10:06,188 PM GMT> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STANDBY.> 
+<Nov 25, 2020 7:10:06,190 PM GMT> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING.> 
+<Nov 25, 2020 7:10:06,334 PM GMT> <Notice> <Log Management> <BEA-170036> <The Logging monitoring service timer has started to check for logged message counts every 30 seconds.> 
+<Nov 25, 2020 7:10:12,987 PM GMT> <Notice> <Log Management> <BEA-170027> <The server has successfully established a connection with the Domain level Diagnostic Service.> 
+<Nov 25, 2020 7:10:14,574 PM GMT> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to ADMIN.> 
+<Nov 25, 2020 7:10:14,640 PM GMT> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to RESUMING.> 
+Successfully started server wls-adminserver ...
+Successfully disconnected from Node Manager.
+
+
+Exiting WebLogic Scripting Tool.
+
+@[2020-11-25T19:10:15.034 UTC][wlst.sh:54][FINE] WLST script '/weblogic-operator/scripts/start-server.py' completed.
+@[2020-11-25T19:10:15.075 UTC][startServer.sh:569][FINE] Wait indefinitely so that the Kubernetes pod does not exit and try to restart
+@[2020-11-25T19:10:15.087 UTC][monitorLog.sh:19][FINE] Monitoring server log file /u01/shared/logs/wls-adminserver.out every 3 seconds for selected known log messages.
+@[2020-11-25T19:10:15.158 UTC][monitorLog.sh:34][FINE] WebLogic Server started successfully.
+<Nov 25, 2020 7:10:14,745 PM GMT> <Notice> <WebLogicServer> <BEA-000329> <Started the WebLogic Server Administration Server "wls-adminserver" for domain "okewls" running in production mode.> 
+<Nov 25, 2020 7:10:14,747 PM GMT> <Notice> <Server> <BEA-002613> <Channel "T3Channel" is now listening on 10.244.1.133:30012 for protocols t3, http.> 
+<Nov 25, 2020 7:10:14,748 PM GMT> <Notice> <Server> <BEA-002613> <Channel "Default" is now listening on 10.244.1.133:7001 for protocols iiop, t3, ldap, snmp, http.> 
+<Nov 25, 2020 7:10:14,748 PM GMT> <Notice> <Server> <BEA-002613> <Channel "T3Channel" is now listening on 10.244.1.133:30012 for protocols t3, http.> 
+<Nov 25, 2020 7:10:14,749 PM GMT> <Notice> <Server> <BEA-002613> <Channel "Default" is now listening on 10.244.1.133:7001 for protocols iiop, t3, ldap, snmp, http.> 
+<Nov 25, 2020 7:10:14,765 PM GMT> <Notice> <WebLogicServer> <BEA-000360> <The server started in RUNNING mode.> 
+<Nov 25, 2020 7:10:14,786 PM GMT> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to RUNNING.> 
+==== END logs for container weblogic-server of pod wls-domain-ns/okewls-wls-adminserver ====

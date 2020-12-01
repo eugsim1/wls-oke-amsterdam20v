@@ -1,0 +1,2076 @@
+{
+    "kind": "PodList",
+    "apiVersion": "v1",
+    "metadata": {
+        "selfLink": "/api/v1/namespaces/wls-domain-ns/pods",
+        "resourceVersion": "190649"
+    },
+    "items": [
+        {
+            "metadata": {
+                "name": "okewls-wls-adminserver",
+                "namespace": "wls-domain-ns",
+                "selfLink": "/api/v1/namespaces/wls-domain-ns/pods/okewls-wls-adminserver",
+                "uid": "cf466e04-fff1-4499-a39c-f3184057c7ef",
+                "resourceVersion": "4815",
+                "creationTimestamp": "2020-11-25T19:09:20Z",
+                "labels": {
+                    "weblogic.createdByOperator": "true",
+                    "weblogic.domainName": "okewls",
+                    "weblogic.domainUID": "okewls",
+                    "weblogic.serverName": "wls-adminserver"
+                },
+                "annotations": {
+                    "prometheus.io/path": "/wls-exporter/metrics",
+                    "prometheus.io/port": "7001",
+                    "prometheus.io/scrape": "true",
+                    "weblogic.sha256": "0a10060a4174e4788b73ac5c3025cf8547641cb3c8ed678002280223989d5438"
+                },
+                "ownerReferences": [
+                    {
+                        "apiVersion": "weblogic.oracle/v8",
+                        "kind": "Domain",
+                        "name": "okewls",
+                        "uid": "2788b87b-1553-4613-9d8e-6f10a9415ec1",
+                        "controller": true
+                    }
+                ],
+                "managedFields": [
+                    {
+                        "manager": "OpenAPI-Generator",
+                        "operation": "Update",
+                        "apiVersion": "v1",
+                        "time": "2020-11-25T19:09:20Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    ".": {},
+                                    "f:prometheus.io/path": {},
+                                    "f:prometheus.io/port": {},
+                                    "f:prometheus.io/scrape": {},
+                                    "f:weblogic.sha256": {}
+                                },
+                                "f:labels": {
+                                    ".": {},
+                                    "f:weblogic.createdByOperator": {},
+                                    "f:weblogic.domainName": {},
+                                    "f:weblogic.domainUID": {},
+                                    "f:weblogic.serverName": {}
+                                },
+                                "f:ownerReferences": {
+                                    ".": {},
+                                    "k:{\"uid\":\"2788b87b-1553-4613-9d8e-6f10a9415ec1\"}": {
+                                        ".": {},
+                                        "f:apiVersion": {},
+                                        "f:controller": {},
+                                        "f:kind": {},
+                                        "f:name": {},
+                                        "f:uid": {}
+                                    }
+                                }
+                            },
+                            "f:spec": {
+                                "f:containers": {
+                                    "k:{\"name\":\"weblogic-server\"}": {
+                                        ".": {},
+                                        "f:command": {},
+                                        "f:env": {
+                                            ".": {},
+                                            "k:{\"name\":\"ADMIN_NAME\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"ADMIN_PASSWORD\"}": {
+                                                ".": {},
+                                                "f:name": {}
+                                            },
+                                            "k:{\"name\":\"ADMIN_PORT\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"ADMIN_USERNAME\"}": {
+                                                ".": {},
+                                                "f:name": {}
+                                            },
+                                            "k:{\"name\":\"AS_SERVICE_NAME\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"DATA_HOME\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"DOMAIN_HOME\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"DOMAIN_NAME\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"DOMAIN_UID\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"DYNAMIC_CONFIG_OVERRIDE\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"INTERNAL_OPERATOR_CERT\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"JAVA_OPTIONS\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"LOCAL_ADMIN_PORT\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"LOCAL_ADMIN_PROTOCOL\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"LOG_HOME\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"NODEMGR_HOME\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"SERVER_NAME\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"SERVER_OUT_IN_POD_LOG\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"SERVICE_NAME\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"SHUTDOWN_IGNORE_SESSIONS\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"SHUTDOWN_TIMEOUT\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"SHUTDOWN_TYPE\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"USER_MEM_ARGS\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            }
+                                        },
+                                        "f:image": {},
+                                        "f:imagePullPolicy": {},
+                                        "f:lifecycle": {
+                                            ".": {},
+                                            "f:preStop": {
+                                                ".": {},
+                                                "f:exec": {
+                                                    ".": {},
+                                                    "f:command": {}
+                                                }
+                                            }
+                                        },
+                                        "f:livenessProbe": {
+                                            ".": {},
+                                            "f:exec": {
+                                                ".": {},
+                                                "f:command": {}
+                                            },
+                                            "f:failureThreshold": {},
+                                            "f:initialDelaySeconds": {},
+                                            "f:periodSeconds": {},
+                                            "f:successThreshold": {},
+                                            "f:timeoutSeconds": {}
+                                        },
+                                        "f:name": {},
+                                        "f:ports": {
+                                            ".": {},
+                                            "k:{\"containerPort\":7001,\"protocol\":\"TCP\"}": {
+                                                ".": {},
+                                                "f:containerPort": {},
+                                                "f:name": {},
+                                                "f:protocol": {}
+                                            },
+                                            "k:{\"containerPort\":30012,\"protocol\":\"TCP\"}": {
+                                                ".": {},
+                                                "f:containerPort": {},
+                                                "f:name": {},
+                                                "f:protocol": {}
+                                            }
+                                        },
+                                        "f:readinessProbe": {
+                                            ".": {},
+                                            "f:failureThreshold": {},
+                                            "f:httpGet": {
+                                                ".": {},
+                                                "f:path": {},
+                                                "f:port": {},
+                                                "f:scheme": {}
+                                            },
+                                            "f:initialDelaySeconds": {},
+                                            "f:periodSeconds": {},
+                                            "f:successThreshold": {},
+                                            "f:timeoutSeconds": {}
+                                        },
+                                        "f:resources": {},
+                                        "f:securityContext": {},
+                                        "f:terminationMessagePath": {},
+                                        "f:terminationMessagePolicy": {},
+                                        "f:volumeMounts": {
+                                            ".": {},
+                                            "k:{\"mountPath\":\"/u01/shared\"}": {
+                                                ".": {},
+                                                "f:mountPath": {},
+                                                "f:name": {}
+                                            },
+                                            "k:{\"mountPath\":\"/weblogic-operator/debug\"}": {
+                                                ".": {},
+                                                "f:mountPath": {},
+                                                "f:name": {},
+                                                "f:readOnly": {}
+                                            },
+                                            "k:{\"mountPath\":\"/weblogic-operator/introspector\"}": {
+                                                ".": {},
+                                                "f:mountPath": {},
+                                                "f:name": {}
+                                            },
+                                            "k:{\"mountPath\":\"/weblogic-operator/scripts\"}": {
+                                                ".": {},
+                                                "f:mountPath": {},
+                                                "f:name": {},
+                                                "f:readOnly": {}
+                                            }
+                                        }
+                                    }
+                                },
+                                "f:dnsPolicy": {},
+                                "f:enableServiceLinks": {},
+                                "f:hostname": {},
+                                "f:imagePullSecrets": {
+                                    ".": {},
+                                    "k:{\"name\":\"ocirsecrets\"}": {
+                                        ".": {},
+                                        "f:name": {}
+                                    }
+                                },
+                                "f:nodeSelector": {
+                                    ".": {},
+                                    "f:usage": {}
+                                },
+                                "f:restartPolicy": {},
+                                "f:schedulerName": {},
+                                "f:securityContext": {},
+                                "f:terminationGracePeriodSeconds": {},
+                                "f:volumes": {
+                                    ".": {},
+                                    "k:{\"name\":\"weblogic-domain-debug-cm-volume\"}": {
+                                        ".": {},
+                                        "f:configMap": {
+                                            ".": {},
+                                            "f:defaultMode": {},
+                                            "f:name": {},
+                                            "f:optional": {}
+                                        },
+                                        "f:name": {}
+                                    },
+                                    "k:{\"name\":\"weblogic-domain-introspect-cm-volume\"}": {
+                                        ".": {},
+                                        "f:configMap": {
+                                            ".": {},
+                                            "f:defaultMode": {},
+                                            "f:name": {}
+                                        },
+                                        "f:name": {}
+                                    },
+                                    "k:{\"name\":\"weblogic-domain-storage-volume\"}": {
+                                        ".": {},
+                                        "f:name": {},
+                                        "f:persistentVolumeClaim": {
+                                            ".": {},
+                                            "f:claimName": {}
+                                        }
+                                    },
+                                    "k:{\"name\":\"weblogic-scripts-cm-volume\"}": {
+                                        ".": {},
+                                        "f:configMap": {
+                                            ".": {},
+                                            "f:defaultMode": {},
+                                            "f:name": {}
+                                        },
+                                        "f:name": {}
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "manager": "kubelet",
+                        "operation": "Update",
+                        "apiVersion": "v1",
+                        "time": "2020-11-25T19:10:19Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:status": {
+                                "f:conditions": {
+                                    "k:{\"type\":\"ContainersReady\"}": {
+                                        ".": {},
+                                        "f:lastProbeTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    },
+                                    "k:{\"type\":\"Initialized\"}": {
+                                        ".": {},
+                                        "f:lastProbeTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    },
+                                    "k:{\"type\":\"Ready\"}": {
+                                        ".": {},
+                                        "f:lastProbeTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    }
+                                },
+                                "f:containerStatuses": {},
+                                "f:hostIP": {},
+                                "f:phase": {},
+                                "f:podIP": {},
+                                "f:podIPs": {
+                                    ".": {},
+                                    "k:{\"ip\":\"10.244.1.133\"}": {
+                                        ".": {},
+                                        "f:ip": {}
+                                    }
+                                },
+                                "f:startTime": {}
+                            }
+                        }
+                    }
+                ]
+            },
+            "spec": {
+                "volumes": [
+                    {
+                        "name": "weblogic-scripts-cm-volume",
+                        "configMap": {
+                            "name": "weblogic-scripts-cm",
+                            "defaultMode": 365
+                        }
+                    },
+                    {
+                        "name": "weblogic-domain-debug-cm-volume",
+                        "configMap": {
+                            "name": "okewls-weblogic-domain-debug-cm",
+                            "defaultMode": 365,
+                            "optional": true
+                        }
+                    },
+                    {
+                        "name": "weblogic-domain-introspect-cm-volume",
+                        "configMap": {
+                            "name": "okewls-weblogic-domain-introspect-cm",
+                            "defaultMode": 365
+                        }
+                    },
+                    {
+                        "name": "weblogic-domain-storage-volume",
+                        "persistentVolumeClaim": {
+                            "claimName": "wls-oke-fss-pvc"
+                        }
+                    },
+                    {
+                        "name": "default-token-tbvv8",
+                        "secret": {
+                            "secretName": "default-token-tbvv8",
+                            "defaultMode": 420
+                        }
+                    }
+                ],
+                "containers": [
+                    {
+                        "name": "weblogic-server",
+                        "image": "ams.ocir.io/oraseemeatechse/wls/okewls/wls-domain-base:12.2.1.4.201020-201106-20-11-25_18-57-06",
+                        "command": [
+                            "/weblogic-operator/scripts/startServer.sh"
+                        ],
+                        "ports": [
+                            {
+                                "name": "t3channel",
+                                "containerPort": 30012,
+                                "protocol": "TCP"
+                            },
+                            {
+                                "name": "default",
+                                "containerPort": 7001,
+                                "protocol": "TCP"
+                            }
+                        ],
+                        "env": [
+                            {
+                                "name": "JAVA_OPTIONS",
+                                "value": "-Dweblogic.StdoutDebugEnabled=false"
+                            },
+                            {
+                                "name": "USER_MEM_ARGS",
+                                "value": "-XX:+UseContainerSupport -Djava.security.egd=file:/dev/./urandom "
+                            },
+                            {
+                                "name": "DOMAIN_NAME",
+                                "value": "okewls"
+                            },
+                            {
+                                "name": "DOMAIN_HOME",
+                                "value": "/u01/data/domains/okewls"
+                            },
+                            {
+                                "name": "ADMIN_NAME",
+                                "value": "wls-adminserver"
+                            },
+                            {
+                                "name": "ADMIN_PORT",
+                                "value": "7001"
+                            },
+                            {
+                                "name": "SERVER_NAME",
+                                "value": "wls-adminserver"
+                            },
+                            {
+                                "name": "DOMAIN_UID",
+                                "value": "okewls"
+                            },
+                            {
+                                "name": "NODEMGR_HOME",
+                                "value": "/u01/nodemanager"
+                            },
+                            {
+                                "name": "LOG_HOME",
+                                "value": "/u01/shared/logs"
+                            },
+                            {
+                                "name": "SERVER_OUT_IN_POD_LOG",
+                                "value": "true"
+                            },
+                            {
+                                "name": "SERVICE_NAME",
+                                "value": "okewls-wls-adminserver"
+                            },
+                            {
+                                "name": "AS_SERVICE_NAME",
+                                "value": "okewls-wls-adminserver"
+                            },
+                            {
+                                "name": "DATA_HOME",
+                                "value": "/u01/shared/data/store/okewls"
+                            },
+                            {
+                                "name": "ADMIN_USERNAME"
+                            },
+                            {
+                                "name": "ADMIN_PASSWORD"
+                            },
+                            {
+                                "name": "LOCAL_ADMIN_PORT",
+                                "value": "7001"
+                            },
+                            {
+                                "name": "LOCAL_ADMIN_PROTOCOL",
+                                "value": "t3"
+                            },
+                            {
+                                "name": "SHUTDOWN_TYPE",
+                                "value": "Graceful"
+                            },
+                            {
+                                "name": "SHUTDOWN_TIMEOUT",
+                                "value": "30"
+                            },
+                            {
+                                "name": "SHUTDOWN_IGNORE_SESSIONS",
+                                "value": "false"
+                            },
+                            {
+                                "name": "DYNAMIC_CONFIG_OVERRIDE",
+                                "value": "true"
+                            },
+                            {
+                                "name": "INTERNAL_OPERATOR_CERT",
+                                "value": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUR3VENDQXFtZ0F3SUJBZ0lKQUwrcmZFMW1STzBXTUEwR0NTcUdTSWIzRFFFQkN3VUFNQnd4R2pBWUJnTlYNCkJBTVRFWGRsWW14dloybGpMVzl3WlhKaGRHOXlNQjRYRFRJd01URXlOVEU1TURZMU9Gb1hEVE13TVRFeU16RTUNCk1EWTFPRm93SERFYU1CZ0dBMVVFQXhNUmQyVmliRzluYVdNdGIzQmxjbUYwYjNJd2dnRWlNQTBHQ1NxR1NJYjMNCkRRRUJBUVVBQTRJQkR3QXdnZ0VLQW9JQkFRQ0lUaXBuQll4aUdVbVBLeUtCOFFUTTdNWGUvQVFBNFkvRnBFbEoNCjJETWZxUGlKYTE2TGRqZG9xQkFZWi84Ymp3Q3RaUjJscTAxSjcyejltaDFKMmdKRGdqOE9aMmtJQXFPLy9tYlcNCmU4bmlEWGh1ZVhwMFlhcUZhN1c2RE8xVUNGVDltZUpjZTUrRXArMnU2RGxBOXNrcEFnaXlxeE9ZZE15Wm9OOEMNClRlK0VJdm5lT2dXTmdzUXJiaHNRYjU0L0RXT2RqMU1GdkhLQlhIM1FjbE1kR0tveTVRdXVuZUtYWSt1VUNBbFINCmM0MUdtVlpKM29TcitCOEZHSGhkRXZDNWRjN1dsQlhiQnlPcVA5SUs5NzYxQnZXN3dMaU4rUFdaOEhmQ2Q5T3gNCnhBbkNxSFRTV054c0lRUFZTQzNnU2t4a0NaQUNwTTdhQVhCc216eDRjdkhSby94SkFnTUJBQUdqZ2dFRU1JSUINCkFEQWRCZ05WSFE0RUZnUVVhM2xIeW5PUFFtdjJZcGd6dk5MOG5FSGhOMGN3Q3dZRFZSMFBCQVFEQWdQNE1JSFINCkJnTlZIUkVFZ2Nrd2djYUNIbWx1ZEdWeWJtRnNMWGRsWW14dloybGpMVzl3WlhKaGRHOXlMWE4yWTRJdWFXNTANClpYSnVZV3d0ZDJWaWJHOW5hV010YjNCbGNtRjBiM0l0YzNaakxuZHNjeTF2Y0dWeVlYUnZjaTF1YzRJeWFXNTANClpYSnVZV3d0ZDJWaWJHOW5hV010YjNCbGNtRjBiM0l0YzNaakxuZHNjeTF2Y0dWeVlYUnZjaTF1Y3k1emRtT0MNClFHbHVkR1Z5Ym1Gc0xYZGxZbXh2WjJsakxXOXdaWEpoZEc5eUxYTjJZeTUzYkhNdGIzQmxjbUYwYjNJdGJuTXUNCmMzWmpMbU5zZFhOMFpYSXViRzlqWVd3d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFCTnJvVG1NVUs2UWdWeVMNCmRaMXU3dGI3b241eUJadWxiUEJlOTdmbVlyRnFkSk5yVUhCc3pVdlpQeFZsbDhxZXdpblZRRHhaYUQ1Umo4elANCldkODN5bm5rb2NUQWhSSkpQRmlyMzZ6cHg5L0NybEpuMUtTVXlCWVMyMVZzZ0JWdTd0UGZJZTNaRkV3MlFiY1ANCnBaNll1RUU0eW5ERlBpS2lManZiRkxSSVVDMCtYN0R5YlllZ1ZhV1F1dStOaU1JcSs3TVBXUEFpQW5Eb3hSQkoNCmdYS0NyWG9weGJwajAzc2JjbFlwOThWMHMvT1liYmJPSDJaZnVtYVcyTHZvM2YrbWpKSGVIaHBQTlJxcTZEaEINCjl2YnBkN1h3QURjeFFrSHl4Q0ZKbmpJMlVCS0xtSVFIeHhUMUpQNVk3T05tZ1FUR3JXODIwT3VWLzNkQ3NGSFANCkY4Nm1HSG89Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K"
+                            }
+                        ],
+                        "resources": {},
+                        "volumeMounts": [
+                            {
+                                "name": "weblogic-scripts-cm-volume",
+                                "readOnly": true,
+                                "mountPath": "/weblogic-operator/scripts"
+                            },
+                            {
+                                "name": "weblogic-domain-debug-cm-volume",
+                                "readOnly": true,
+                                "mountPath": "/weblogic-operator/debug"
+                            },
+                            {
+                                "name": "weblogic-domain-introspect-cm-volume",
+                                "mountPath": "/weblogic-operator/introspector"
+                            },
+                            {
+                                "name": "weblogic-domain-storage-volume",
+                                "mountPath": "/u01/shared"
+                            },
+                            {
+                                "name": "default-token-tbvv8",
+                                "readOnly": true,
+                                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount"
+                            }
+                        ],
+                        "livenessProbe": {
+                            "exec": {
+                                "command": [
+                                    "/weblogic-operator/scripts/livenessProbe.sh"
+                                ]
+                            },
+                            "initialDelaySeconds": 30,
+                            "timeoutSeconds": 5,
+                            "periodSeconds": 45,
+                            "successThreshold": 1,
+                            "failureThreshold": 1
+                        },
+                        "readinessProbe": {
+                            "httpGet": {
+                                "path": "/weblogic/ready",
+                                "port": 7001,
+                                "scheme": "HTTP"
+                            },
+                            "initialDelaySeconds": 30,
+                            "timeoutSeconds": 5,
+                            "periodSeconds": 5,
+                            "successThreshold": 1,
+                            "failureThreshold": 1
+                        },
+                        "lifecycle": {
+                            "preStop": {
+                                "exec": {
+                                    "command": [
+                                        "/weblogic-operator/scripts/stopServer.sh"
+                                    ]
+                                }
+                            }
+                        },
+                        "terminationMessagePath": "/dev/termination-log",
+                        "terminationMessagePolicy": "File",
+                        "imagePullPolicy": "IfNotPresent",
+                        "securityContext": {}
+                    }
+                ],
+                "restartPolicy": "Always",
+                "terminationGracePeriodSeconds": 40,
+                "dnsPolicy": "ClusterFirst",
+                "nodeSelector": {
+                    "usage": "weblogic"
+                },
+                "serviceAccountName": "default",
+                "serviceAccount": "default",
+                "nodeName": "10.0.4.3",
+                "securityContext": {},
+                "imagePullSecrets": [
+                    {
+                        "name": "ocirsecrets"
+                    }
+                ],
+                "hostname": "okewls-wls-adminserver",
+                "schedulerName": "default-scheduler",
+                "tolerations": [
+                    {
+                        "key": "node.kubernetes.io/not-ready",
+                        "operator": "Exists",
+                        "effect": "NoExecute",
+                        "tolerationSeconds": 300
+                    },
+                    {
+                        "key": "node.kubernetes.io/unreachable",
+                        "operator": "Exists",
+                        "effect": "NoExecute",
+                        "tolerationSeconds": 300
+                    }
+                ],
+                "priority": 0,
+                "enableServiceLinks": true
+            },
+            "status": {
+                "phase": "Running",
+                "conditions": [
+                    {
+                        "type": "Initialized",
+                        "status": "True",
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2020-11-25T19:09:20Z"
+                    },
+                    {
+                        "type": "Ready",
+                        "status": "True",
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2020-11-25T19:10:19Z"
+                    },
+                    {
+                        "type": "ContainersReady",
+                        "status": "True",
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2020-11-25T19:10:19Z"
+                    },
+                    {
+                        "type": "PodScheduled",
+                        "status": "True",
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2020-11-25T19:09:20Z"
+                    }
+                ],
+                "hostIP": "10.0.4.3",
+                "podIP": "10.244.1.133",
+                "podIPs": [
+                    {
+                        "ip": "10.244.1.133"
+                    }
+                ],
+                "startTime": "2020-11-25T19:09:20Z",
+                "containerStatuses": [
+                    {
+                        "name": "weblogic-server",
+                        "state": {
+                            "running": {
+                                "startedAt": "2020-11-25T19:09:22Z"
+                            }
+                        },
+                        "lastState": {},
+                        "ready": true,
+                        "restartCount": 0,
+                        "image": "ams.ocir.io/oraseemeatechse/wls/okewls/wls-domain-base:12.2.1.4.201020-201106-20-11-25_18-57-06",
+                        "imageID": "docker-pullable://ams.ocir.io/oraseemeatechse/wls/okewls/wls-domain-base@sha256:8123200d50799aec1bd7b94a24b2bf92df96665d69a3590ce09ccbcb5d91eb3a",
+                        "containerID": "docker://92b812f81b8589fca85f246ebb97cb7849437d707a48d93e91ce44be682f58f1",
+                        "started": true
+                    }
+                ],
+                "qosClass": "BestEffort"
+            }
+        },
+        {
+            "metadata": {
+                "name": "okewls-wls-managed-server1",
+                "namespace": "wls-domain-ns",
+                "selfLink": "/api/v1/namespaces/wls-domain-ns/pods/okewls-wls-managed-server1",
+                "uid": "88b21390-6c8d-49ca-9863-abcae8e31727",
+                "resourceVersion": "5219",
+                "creationTimestamp": "2020-11-25T19:10:19Z",
+                "labels": {
+                    "weblogic.clusterName": "wls-cluster",
+                    "weblogic.createdByOperator": "true",
+                    "weblogic.domainName": "okewls",
+                    "weblogic.domainUID": "okewls",
+                    "weblogic.serverName": "wls-managed-server1"
+                },
+                "annotations": {
+                    "prometheus.io/path": "/wls-exporter/metrics",
+                    "prometheus.io/port": "8001",
+                    "prometheus.io/scrape": "true",
+                    "weblogic.sha256": "8a72f9acffafe878acb8d327e55a04fe941b9dc3f41624dc72a13297627a4f91"
+                },
+                "ownerReferences": [
+                    {
+                        "apiVersion": "weblogic.oracle/v8",
+                        "kind": "Domain",
+                        "name": "okewls",
+                        "uid": "2788b87b-1553-4613-9d8e-6f10a9415ec1",
+                        "controller": true
+                    }
+                ],
+                "managedFields": [
+                    {
+                        "manager": "OpenAPI-Generator",
+                        "operation": "Update",
+                        "apiVersion": "v1",
+                        "time": "2020-11-25T19:10:19Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    ".": {},
+                                    "f:prometheus.io/path": {},
+                                    "f:prometheus.io/port": {},
+                                    "f:prometheus.io/scrape": {},
+                                    "f:weblogic.sha256": {}
+                                },
+                                "f:labels": {
+                                    ".": {},
+                                    "f:weblogic.clusterName": {},
+                                    "f:weblogic.createdByOperator": {},
+                                    "f:weblogic.domainName": {},
+                                    "f:weblogic.domainUID": {},
+                                    "f:weblogic.serverName": {}
+                                },
+                                "f:ownerReferences": {
+                                    ".": {},
+                                    "k:{\"uid\":\"2788b87b-1553-4613-9d8e-6f10a9415ec1\"}": {
+                                        ".": {},
+                                        "f:apiVersion": {},
+                                        "f:controller": {},
+                                        "f:kind": {},
+                                        "f:name": {},
+                                        "f:uid": {}
+                                    }
+                                }
+                            },
+                            "f:spec": {
+                                "f:affinity": {
+                                    ".": {},
+                                    "f:podAntiAffinity": {
+                                        ".": {},
+                                        "f:preferredDuringSchedulingIgnoredDuringExecution": {}
+                                    }
+                                },
+                                "f:containers": {
+                                    "k:{\"name\":\"weblogic-server\"}": {
+                                        ".": {},
+                                        "f:command": {},
+                                        "f:env": {
+                                            ".": {},
+                                            "k:{\"name\":\"ADMIN_NAME\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"ADMIN_PASSWORD\"}": {
+                                                ".": {},
+                                                "f:name": {}
+                                            },
+                                            "k:{\"name\":\"ADMIN_PORT\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"ADMIN_USERNAME\"}": {
+                                                ".": {},
+                                                "f:name": {}
+                                            },
+                                            "k:{\"name\":\"AS_SERVICE_NAME\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"DATA_HOME\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"DOMAIN_HOME\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"DOMAIN_NAME\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"DOMAIN_UID\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"DYNAMIC_CONFIG_OVERRIDE\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"JAVA_OPTIONS\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"LOCAL_ADMIN_PORT\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"LOCAL_ADMIN_PROTOCOL\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"LOG_HOME\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"NODEMGR_HOME\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"SERVER_NAME\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"SERVER_OUT_IN_POD_LOG\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"SERVICE_NAME\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"SHUTDOWN_IGNORE_SESSIONS\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"SHUTDOWN_TIMEOUT\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"SHUTDOWN_TYPE\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"USER_MEM_ARGS\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            }
+                                        },
+                                        "f:image": {},
+                                        "f:imagePullPolicy": {},
+                                        "f:lifecycle": {
+                                            ".": {},
+                                            "f:preStop": {
+                                                ".": {},
+                                                "f:exec": {
+                                                    ".": {},
+                                                    "f:command": {}
+                                                }
+                                            }
+                                        },
+                                        "f:livenessProbe": {
+                                            ".": {},
+                                            "f:exec": {
+                                                ".": {},
+                                                "f:command": {}
+                                            },
+                                            "f:failureThreshold": {},
+                                            "f:initialDelaySeconds": {},
+                                            "f:periodSeconds": {},
+                                            "f:successThreshold": {},
+                                            "f:timeoutSeconds": {}
+                                        },
+                                        "f:name": {},
+                                        "f:ports": {
+                                            ".": {},
+                                            "k:{\"containerPort\":8001,\"protocol\":\"TCP\"}": {
+                                                ".": {},
+                                                "f:containerPort": {},
+                                                "f:name": {},
+                                                "f:protocol": {}
+                                            }
+                                        },
+                                        "f:readinessProbe": {
+                                            ".": {},
+                                            "f:failureThreshold": {},
+                                            "f:httpGet": {
+                                                ".": {},
+                                                "f:path": {},
+                                                "f:port": {},
+                                                "f:scheme": {}
+                                            },
+                                            "f:initialDelaySeconds": {},
+                                            "f:periodSeconds": {},
+                                            "f:successThreshold": {},
+                                            "f:timeoutSeconds": {}
+                                        },
+                                        "f:resources": {},
+                                        "f:securityContext": {},
+                                        "f:terminationMessagePath": {},
+                                        "f:terminationMessagePolicy": {},
+                                        "f:volumeMounts": {
+                                            ".": {},
+                                            "k:{\"mountPath\":\"/u01/shared\"}": {
+                                                ".": {},
+                                                "f:mountPath": {},
+                                                "f:name": {}
+                                            },
+                                            "k:{\"mountPath\":\"/weblogic-operator/debug\"}": {
+                                                ".": {},
+                                                "f:mountPath": {},
+                                                "f:name": {},
+                                                "f:readOnly": {}
+                                            },
+                                            "k:{\"mountPath\":\"/weblogic-operator/introspector\"}": {
+                                                ".": {},
+                                                "f:mountPath": {},
+                                                "f:name": {}
+                                            },
+                                            "k:{\"mountPath\":\"/weblogic-operator/scripts\"}": {
+                                                ".": {},
+                                                "f:mountPath": {},
+                                                "f:name": {},
+                                                "f:readOnly": {}
+                                            }
+                                        }
+                                    }
+                                },
+                                "f:dnsPolicy": {},
+                                "f:enableServiceLinks": {},
+                                "f:imagePullSecrets": {
+                                    ".": {},
+                                    "k:{\"name\":\"ocirsecrets\"}": {
+                                        ".": {},
+                                        "f:name": {}
+                                    }
+                                },
+                                "f:nodeSelector": {
+                                    ".": {},
+                                    "f:usage": {}
+                                },
+                                "f:restartPolicy": {},
+                                "f:schedulerName": {},
+                                "f:securityContext": {},
+                                "f:terminationGracePeriodSeconds": {},
+                                "f:volumes": {
+                                    ".": {},
+                                    "k:{\"name\":\"weblogic-domain-debug-cm-volume\"}": {
+                                        ".": {},
+                                        "f:configMap": {
+                                            ".": {},
+                                            "f:defaultMode": {},
+                                            "f:name": {},
+                                            "f:optional": {}
+                                        },
+                                        "f:name": {}
+                                    },
+                                    "k:{\"name\":\"weblogic-domain-introspect-cm-volume\"}": {
+                                        ".": {},
+                                        "f:configMap": {
+                                            ".": {},
+                                            "f:defaultMode": {},
+                                            "f:name": {}
+                                        },
+                                        "f:name": {}
+                                    },
+                                    "k:{\"name\":\"weblogic-domain-storage-volume\"}": {
+                                        ".": {},
+                                        "f:name": {},
+                                        "f:persistentVolumeClaim": {
+                                            ".": {},
+                                            "f:claimName": {}
+                                        }
+                                    },
+                                    "k:{\"name\":\"weblogic-scripts-cm-volume\"}": {
+                                        ".": {},
+                                        "f:configMap": {
+                                            ".": {},
+                                            "f:defaultMode": {},
+                                            "f:name": {}
+                                        },
+                                        "f:name": {}
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "manager": "kubelet",
+                        "operation": "Update",
+                        "apiVersion": "v1",
+                        "time": "2020-11-25T19:11:36Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:status": {
+                                "f:conditions": {
+                                    "k:{\"type\":\"ContainersReady\"}": {
+                                        ".": {},
+                                        "f:lastProbeTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    },
+                                    "k:{\"type\":\"Initialized\"}": {
+                                        ".": {},
+                                        "f:lastProbeTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    },
+                                    "k:{\"type\":\"Ready\"}": {
+                                        ".": {},
+                                        "f:lastProbeTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    }
+                                },
+                                "f:containerStatuses": {},
+                                "f:hostIP": {},
+                                "f:phase": {},
+                                "f:podIP": {},
+                                "f:podIPs": {
+                                    ".": {},
+                                    "k:{\"ip\":\"10.244.1.3\"}": {
+                                        ".": {},
+                                        "f:ip": {}
+                                    }
+                                },
+                                "f:startTime": {}
+                            }
+                        }
+                    }
+                ]
+            },
+            "spec": {
+                "volumes": [
+                    {
+                        "name": "weblogic-scripts-cm-volume",
+                        "configMap": {
+                            "name": "weblogic-scripts-cm",
+                            "defaultMode": 365
+                        }
+                    },
+                    {
+                        "name": "weblogic-domain-debug-cm-volume",
+                        "configMap": {
+                            "name": "okewls-weblogic-domain-debug-cm",
+                            "defaultMode": 365,
+                            "optional": true
+                        }
+                    },
+                    {
+                        "name": "weblogic-domain-introspect-cm-volume",
+                        "configMap": {
+                            "name": "okewls-weblogic-domain-introspect-cm",
+                            "defaultMode": 365
+                        }
+                    },
+                    {
+                        "name": "weblogic-domain-storage-volume",
+                        "persistentVolumeClaim": {
+                            "claimName": "wls-oke-fss-pvc"
+                        }
+                    },
+                    {
+                        "name": "default-token-tbvv8",
+                        "secret": {
+                            "secretName": "default-token-tbvv8",
+                            "defaultMode": 420
+                        }
+                    }
+                ],
+                "containers": [
+                    {
+                        "name": "weblogic-server",
+                        "image": "ams.ocir.io/oraseemeatechse/wls/okewls/wls-domain-base:12.2.1.4.201020-201106-20-11-25_18-57-06",
+                        "command": [
+                            "/weblogic-operator/scripts/startServer.sh"
+                        ],
+                        "ports": [
+                            {
+                                "name": "default",
+                                "containerPort": 8001,
+                                "protocol": "TCP"
+                            }
+                        ],
+                        "env": [
+                            {
+                                "name": "JAVA_OPTIONS",
+                                "value": "-Dweblogic.StdoutDebugEnabled=false"
+                            },
+                            {
+                                "name": "USER_MEM_ARGS",
+                                "value": "-XX:+UseContainerSupport -Djava.security.egd=file:/dev/./urandom "
+                            },
+                            {
+                                "name": "DOMAIN_NAME",
+                                "value": "okewls"
+                            },
+                            {
+                                "name": "DOMAIN_HOME",
+                                "value": "/u01/data/domains/okewls"
+                            },
+                            {
+                                "name": "ADMIN_NAME",
+                                "value": "wls-adminserver"
+                            },
+                            {
+                                "name": "ADMIN_PORT",
+                                "value": "7001"
+                            },
+                            {
+                                "name": "SERVER_NAME",
+                                "value": "wls-managed-server1"
+                            },
+                            {
+                                "name": "DOMAIN_UID",
+                                "value": "okewls"
+                            },
+                            {
+                                "name": "NODEMGR_HOME",
+                                "value": "/u01/nodemanager"
+                            },
+                            {
+                                "name": "LOG_HOME",
+                                "value": "/u01/shared/logs"
+                            },
+                            {
+                                "name": "SERVER_OUT_IN_POD_LOG",
+                                "value": "true"
+                            },
+                            {
+                                "name": "SERVICE_NAME",
+                                "value": "okewls-wls-managed-server1"
+                            },
+                            {
+                                "name": "AS_SERVICE_NAME",
+                                "value": "okewls-wls-adminserver"
+                            },
+                            {
+                                "name": "DATA_HOME",
+                                "value": "/u01/shared/data/store/okewls"
+                            },
+                            {
+                                "name": "ADMIN_USERNAME"
+                            },
+                            {
+                                "name": "ADMIN_PASSWORD"
+                            },
+                            {
+                                "name": "LOCAL_ADMIN_PORT",
+                                "value": "8001"
+                            },
+                            {
+                                "name": "LOCAL_ADMIN_PROTOCOL",
+                                "value": "t3"
+                            },
+                            {
+                                "name": "SHUTDOWN_TYPE",
+                                "value": "Graceful"
+                            },
+                            {
+                                "name": "SHUTDOWN_TIMEOUT",
+                                "value": "30"
+                            },
+                            {
+                                "name": "SHUTDOWN_IGNORE_SESSIONS",
+                                "value": "false"
+                            },
+                            {
+                                "name": "DYNAMIC_CONFIG_OVERRIDE",
+                                "value": "true"
+                            }
+                        ],
+                        "resources": {},
+                        "volumeMounts": [
+                            {
+                                "name": "weblogic-scripts-cm-volume",
+                                "readOnly": true,
+                                "mountPath": "/weblogic-operator/scripts"
+                            },
+                            {
+                                "name": "weblogic-domain-debug-cm-volume",
+                                "readOnly": true,
+                                "mountPath": "/weblogic-operator/debug"
+                            },
+                            {
+                                "name": "weblogic-domain-introspect-cm-volume",
+                                "mountPath": "/weblogic-operator/introspector"
+                            },
+                            {
+                                "name": "weblogic-domain-storage-volume",
+                                "mountPath": "/u01/shared"
+                            },
+                            {
+                                "name": "default-token-tbvv8",
+                                "readOnly": true,
+                                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount"
+                            }
+                        ],
+                        "livenessProbe": {
+                            "exec": {
+                                "command": [
+                                    "/weblogic-operator/scripts/livenessProbe.sh"
+                                ]
+                            },
+                            "initialDelaySeconds": 30,
+                            "timeoutSeconds": 5,
+                            "periodSeconds": 45,
+                            "successThreshold": 1,
+                            "failureThreshold": 1
+                        },
+                        "readinessProbe": {
+                            "httpGet": {
+                                "path": "/weblogic/ready",
+                                "port": 8001,
+                                "scheme": "HTTP"
+                            },
+                            "initialDelaySeconds": 30,
+                            "timeoutSeconds": 5,
+                            "periodSeconds": 5,
+                            "successThreshold": 1,
+                            "failureThreshold": 1
+                        },
+                        "lifecycle": {
+                            "preStop": {
+                                "exec": {
+                                    "command": [
+                                        "/weblogic-operator/scripts/stopServer.sh"
+                                    ]
+                                }
+                            }
+                        },
+                        "terminationMessagePath": "/dev/termination-log",
+                        "terminationMessagePolicy": "File",
+                        "imagePullPolicy": "IfNotPresent",
+                        "securityContext": {}
+                    }
+                ],
+                "restartPolicy": "Always",
+                "terminationGracePeriodSeconds": 40,
+                "dnsPolicy": "ClusterFirst",
+                "nodeSelector": {
+                    "usage": "weblogic"
+                },
+                "serviceAccountName": "default",
+                "serviceAccount": "default",
+                "nodeName": "10.0.4.5",
+                "securityContext": {},
+                "imagePullSecrets": [
+                    {
+                        "name": "ocirsecrets"
+                    }
+                ],
+                "affinity": {
+                    "podAntiAffinity": {
+                        "preferredDuringSchedulingIgnoredDuringExecution": [
+                            {
+                                "weight": 100,
+                                "podAffinityTerm": {
+                                    "labelSelector": {
+                                        "matchExpressions": [
+                                            {
+                                                "key": "weblogic.clusterName",
+                                                "operator": "In",
+                                                "values": [
+                                                    "wls-cluster"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "topologyKey": "kubernetes.io/hostname"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "schedulerName": "default-scheduler",
+                "tolerations": [
+                    {
+                        "key": "node.kubernetes.io/not-ready",
+                        "operator": "Exists",
+                        "effect": "NoExecute",
+                        "tolerationSeconds": 300
+                    },
+                    {
+                        "key": "node.kubernetes.io/unreachable",
+                        "operator": "Exists",
+                        "effect": "NoExecute",
+                        "tolerationSeconds": 300
+                    }
+                ],
+                "priority": 0,
+                "enableServiceLinks": true
+            },
+            "status": {
+                "phase": "Running",
+                "conditions": [
+                    {
+                        "type": "Initialized",
+                        "status": "True",
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2020-11-25T19:10:19Z"
+                    },
+                    {
+                        "type": "Ready",
+                        "status": "True",
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2020-11-25T19:11:36Z"
+                    },
+                    {
+                        "type": "ContainersReady",
+                        "status": "True",
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2020-11-25T19:11:36Z"
+                    },
+                    {
+                        "type": "PodScheduled",
+                        "status": "True",
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2020-11-25T19:10:19Z"
+                    }
+                ],
+                "hostIP": "10.0.4.5",
+                "podIP": "10.244.1.3",
+                "podIPs": [
+                    {
+                        "ip": "10.244.1.3"
+                    }
+                ],
+                "startTime": "2020-11-25T19:10:19Z",
+                "containerStatuses": [
+                    {
+                        "name": "weblogic-server",
+                        "state": {
+                            "running": {
+                                "startedAt": "2020-11-25T19:10:22Z"
+                            }
+                        },
+                        "lastState": {},
+                        "ready": true,
+                        "restartCount": 0,
+                        "image": "ams.ocir.io/oraseemeatechse/wls/okewls/wls-domain-base:12.2.1.4.201020-201106-20-11-25_18-57-06",
+                        "imageID": "docker-pullable://ams.ocir.io/oraseemeatechse/wls/okewls/wls-domain-base@sha256:8123200d50799aec1bd7b94a24b2bf92df96665d69a3590ce09ccbcb5d91eb3a",
+                        "containerID": "docker://003b5201934a87d68a791771277c1a45fe9573040fa43448b7910e0f78113c27",
+                        "started": true
+                    }
+                ],
+                "qosClass": "BestEffort"
+            }
+        },
+        {
+            "metadata": {
+                "name": "okewls-wls-managed-server2",
+                "namespace": "wls-domain-ns",
+                "selfLink": "/api/v1/namespaces/wls-domain-ns/pods/okewls-wls-managed-server2",
+                "uid": "483474ca-1201-47f8-9845-ff656ee8169d",
+                "resourceVersion": "5188",
+                "creationTimestamp": "2020-11-25T19:10:19Z",
+                "labels": {
+                    "weblogic.clusterName": "wls-cluster",
+                    "weblogic.createdByOperator": "true",
+                    "weblogic.domainName": "okewls",
+                    "weblogic.domainUID": "okewls",
+                    "weblogic.serverName": "wls-managed-server2"
+                },
+                "annotations": {
+                    "prometheus.io/path": "/wls-exporter/metrics",
+                    "prometheus.io/port": "8001",
+                    "prometheus.io/scrape": "true",
+                    "weblogic.sha256": "d45e082402c7061ee164bd8c08301543fd5fcef3b7c984feb5f84dbd5aaea57e"
+                },
+                "ownerReferences": [
+                    {
+                        "apiVersion": "weblogic.oracle/v8",
+                        "kind": "Domain",
+                        "name": "okewls",
+                        "uid": "2788b87b-1553-4613-9d8e-6f10a9415ec1",
+                        "controller": true
+                    }
+                ],
+                "managedFields": [
+                    {
+                        "manager": "OpenAPI-Generator",
+                        "operation": "Update",
+                        "apiVersion": "v1",
+                        "time": "2020-11-25T19:10:19Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    ".": {},
+                                    "f:prometheus.io/path": {},
+                                    "f:prometheus.io/port": {},
+                                    "f:prometheus.io/scrape": {},
+                                    "f:weblogic.sha256": {}
+                                },
+                                "f:labels": {
+                                    ".": {},
+                                    "f:weblogic.clusterName": {},
+                                    "f:weblogic.createdByOperator": {},
+                                    "f:weblogic.domainName": {},
+                                    "f:weblogic.domainUID": {},
+                                    "f:weblogic.serverName": {}
+                                },
+                                "f:ownerReferences": {
+                                    ".": {},
+                                    "k:{\"uid\":\"2788b87b-1553-4613-9d8e-6f10a9415ec1\"}": {
+                                        ".": {},
+                                        "f:apiVersion": {},
+                                        "f:controller": {},
+                                        "f:kind": {},
+                                        "f:name": {},
+                                        "f:uid": {}
+                                    }
+                                }
+                            },
+                            "f:spec": {
+                                "f:affinity": {
+                                    ".": {},
+                                    "f:podAntiAffinity": {
+                                        ".": {},
+                                        "f:preferredDuringSchedulingIgnoredDuringExecution": {}
+                                    }
+                                },
+                                "f:containers": {
+                                    "k:{\"name\":\"weblogic-server\"}": {
+                                        ".": {},
+                                        "f:command": {},
+                                        "f:env": {
+                                            ".": {},
+                                            "k:{\"name\":\"ADMIN_NAME\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"ADMIN_PASSWORD\"}": {
+                                                ".": {},
+                                                "f:name": {}
+                                            },
+                                            "k:{\"name\":\"ADMIN_PORT\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"ADMIN_USERNAME\"}": {
+                                                ".": {},
+                                                "f:name": {}
+                                            },
+                                            "k:{\"name\":\"AS_SERVICE_NAME\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"DATA_HOME\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"DOMAIN_HOME\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"DOMAIN_NAME\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"DOMAIN_UID\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"DYNAMIC_CONFIG_OVERRIDE\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"JAVA_OPTIONS\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"LOCAL_ADMIN_PORT\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"LOCAL_ADMIN_PROTOCOL\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"LOG_HOME\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"NODEMGR_HOME\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"SERVER_NAME\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"SERVER_OUT_IN_POD_LOG\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"SERVICE_NAME\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"SHUTDOWN_IGNORE_SESSIONS\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"SHUTDOWN_TIMEOUT\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"SHUTDOWN_TYPE\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            },
+                                            "k:{\"name\":\"USER_MEM_ARGS\"}": {
+                                                ".": {},
+                                                "f:name": {},
+                                                "f:value": {}
+                                            }
+                                        },
+                                        "f:image": {},
+                                        "f:imagePullPolicy": {},
+                                        "f:lifecycle": {
+                                            ".": {},
+                                            "f:preStop": {
+                                                ".": {},
+                                                "f:exec": {
+                                                    ".": {},
+                                                    "f:command": {}
+                                                }
+                                            }
+                                        },
+                                        "f:livenessProbe": {
+                                            ".": {},
+                                            "f:exec": {
+                                                ".": {},
+                                                "f:command": {}
+                                            },
+                                            "f:failureThreshold": {},
+                                            "f:initialDelaySeconds": {},
+                                            "f:periodSeconds": {},
+                                            "f:successThreshold": {},
+                                            "f:timeoutSeconds": {}
+                                        },
+                                        "f:name": {},
+                                        "f:ports": {
+                                            ".": {},
+                                            "k:{\"containerPort\":8001,\"protocol\":\"TCP\"}": {
+                                                ".": {},
+                                                "f:containerPort": {},
+                                                "f:name": {},
+                                                "f:protocol": {}
+                                            }
+                                        },
+                                        "f:readinessProbe": {
+                                            ".": {},
+                                            "f:failureThreshold": {},
+                                            "f:httpGet": {
+                                                ".": {},
+                                                "f:path": {},
+                                                "f:port": {},
+                                                "f:scheme": {}
+                                            },
+                                            "f:initialDelaySeconds": {},
+                                            "f:periodSeconds": {},
+                                            "f:successThreshold": {},
+                                            "f:timeoutSeconds": {}
+                                        },
+                                        "f:resources": {},
+                                        "f:securityContext": {},
+                                        "f:terminationMessagePath": {},
+                                        "f:terminationMessagePolicy": {},
+                                        "f:volumeMounts": {
+                                            ".": {},
+                                            "k:{\"mountPath\":\"/u01/shared\"}": {
+                                                ".": {},
+                                                "f:mountPath": {},
+                                                "f:name": {}
+                                            },
+                                            "k:{\"mountPath\":\"/weblogic-operator/debug\"}": {
+                                                ".": {},
+                                                "f:mountPath": {},
+                                                "f:name": {},
+                                                "f:readOnly": {}
+                                            },
+                                            "k:{\"mountPath\":\"/weblogic-operator/introspector\"}": {
+                                                ".": {},
+                                                "f:mountPath": {},
+                                                "f:name": {}
+                                            },
+                                            "k:{\"mountPath\":\"/weblogic-operator/scripts\"}": {
+                                                ".": {},
+                                                "f:mountPath": {},
+                                                "f:name": {},
+                                                "f:readOnly": {}
+                                            }
+                                        }
+                                    }
+                                },
+                                "f:dnsPolicy": {},
+                                "f:enableServiceLinks": {},
+                                "f:imagePullSecrets": {
+                                    ".": {},
+                                    "k:{\"name\":\"ocirsecrets\"}": {
+                                        ".": {},
+                                        "f:name": {}
+                                    }
+                                },
+                                "f:nodeSelector": {
+                                    ".": {},
+                                    "f:usage": {}
+                                },
+                                "f:restartPolicy": {},
+                                "f:schedulerName": {},
+                                "f:securityContext": {},
+                                "f:terminationGracePeriodSeconds": {},
+                                "f:volumes": {
+                                    ".": {},
+                                    "k:{\"name\":\"weblogic-domain-debug-cm-volume\"}": {
+                                        ".": {},
+                                        "f:configMap": {
+                                            ".": {},
+                                            "f:defaultMode": {},
+                                            "f:name": {},
+                                            "f:optional": {}
+                                        },
+                                        "f:name": {}
+                                    },
+                                    "k:{\"name\":\"weblogic-domain-introspect-cm-volume\"}": {
+                                        ".": {},
+                                        "f:configMap": {
+                                            ".": {},
+                                            "f:defaultMode": {},
+                                            "f:name": {}
+                                        },
+                                        "f:name": {}
+                                    },
+                                    "k:{\"name\":\"weblogic-domain-storage-volume\"}": {
+                                        ".": {},
+                                        "f:name": {},
+                                        "f:persistentVolumeClaim": {
+                                            ".": {},
+                                            "f:claimName": {}
+                                        }
+                                    },
+                                    "k:{\"name\":\"weblogic-scripts-cm-volume\"}": {
+                                        ".": {},
+                                        "f:configMap": {
+                                            ".": {},
+                                            "f:defaultMode": {},
+                                            "f:name": {}
+                                        },
+                                        "f:name": {}
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "manager": "kubelet",
+                        "operation": "Update",
+                        "apiVersion": "v1",
+                        "time": "2020-11-25T19:11:30Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:status": {
+                                "f:conditions": {
+                                    "k:{\"type\":\"ContainersReady\"}": {
+                                        ".": {},
+                                        "f:lastProbeTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    },
+                                    "k:{\"type\":\"Initialized\"}": {
+                                        ".": {},
+                                        "f:lastProbeTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    },
+                                    "k:{\"type\":\"Ready\"}": {
+                                        ".": {},
+                                        "f:lastProbeTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    }
+                                },
+                                "f:containerStatuses": {},
+                                "f:hostIP": {},
+                                "f:phase": {},
+                                "f:podIP": {},
+                                "f:podIPs": {
+                                    ".": {},
+                                    "k:{\"ip\":\"10.244.1.134\"}": {
+                                        ".": {},
+                                        "f:ip": {}
+                                    }
+                                },
+                                "f:startTime": {}
+                            }
+                        }
+                    }
+                ]
+            },
+            "spec": {
+                "volumes": [
+                    {
+                        "name": "weblogic-scripts-cm-volume",
+                        "configMap": {
+                            "name": "weblogic-scripts-cm",
+                            "defaultMode": 365
+                        }
+                    },
+                    {
+                        "name": "weblogic-domain-debug-cm-volume",
+                        "configMap": {
+                            "name": "okewls-weblogic-domain-debug-cm",
+                            "defaultMode": 365,
+                            "optional": true
+                        }
+                    },
+                    {
+                        "name": "weblogic-domain-introspect-cm-volume",
+                        "configMap": {
+                            "name": "okewls-weblogic-domain-introspect-cm",
+                            "defaultMode": 365
+                        }
+                    },
+                    {
+                        "name": "weblogic-domain-storage-volume",
+                        "persistentVolumeClaim": {
+                            "claimName": "wls-oke-fss-pvc"
+                        }
+                    },
+                    {
+                        "name": "default-token-tbvv8",
+                        "secret": {
+                            "secretName": "default-token-tbvv8",
+                            "defaultMode": 420
+                        }
+                    }
+                ],
+                "containers": [
+                    {
+                        "name": "weblogic-server",
+                        "image": "ams.ocir.io/oraseemeatechse/wls/okewls/wls-domain-base:12.2.1.4.201020-201106-20-11-25_18-57-06",
+                        "command": [
+                            "/weblogic-operator/scripts/startServer.sh"
+                        ],
+                        "ports": [
+                            {
+                                "name": "default",
+                                "containerPort": 8001,
+                                "protocol": "TCP"
+                            }
+                        ],
+                        "env": [
+                            {
+                                "name": "JAVA_OPTIONS",
+                                "value": "-Dweblogic.StdoutDebugEnabled=false"
+                            },
+                            {
+                                "name": "USER_MEM_ARGS",
+                                "value": "-XX:+UseContainerSupport -Djava.security.egd=file:/dev/./urandom "
+                            },
+                            {
+                                "name": "DOMAIN_NAME",
+                                "value": "okewls"
+                            },
+                            {
+                                "name": "DOMAIN_HOME",
+                                "value": "/u01/data/domains/okewls"
+                            },
+                            {
+                                "name": "ADMIN_NAME",
+                                "value": "wls-adminserver"
+                            },
+                            {
+                                "name": "ADMIN_PORT",
+                                "value": "7001"
+                            },
+                            {
+                                "name": "SERVER_NAME",
+                                "value": "wls-managed-server2"
+                            },
+                            {
+                                "name": "DOMAIN_UID",
+                                "value": "okewls"
+                            },
+                            {
+                                "name": "NODEMGR_HOME",
+                                "value": "/u01/nodemanager"
+                            },
+                            {
+                                "name": "LOG_HOME",
+                                "value": "/u01/shared/logs"
+                            },
+                            {
+                                "name": "SERVER_OUT_IN_POD_LOG",
+                                "value": "true"
+                            },
+                            {
+                                "name": "SERVICE_NAME",
+                                "value": "okewls-wls-managed-server2"
+                            },
+                            {
+                                "name": "AS_SERVICE_NAME",
+                                "value": "okewls-wls-adminserver"
+                            },
+                            {
+                                "name": "DATA_HOME",
+                                "value": "/u01/shared/data/store/okewls"
+                            },
+                            {
+                                "name": "ADMIN_USERNAME"
+                            },
+                            {
+                                "name": "ADMIN_PASSWORD"
+                            },
+                            {
+                                "name": "LOCAL_ADMIN_PORT",
+                                "value": "8001"
+                            },
+                            {
+                                "name": "LOCAL_ADMIN_PROTOCOL",
+                                "value": "t3"
+                            },
+                            {
+                                "name": "SHUTDOWN_TYPE",
+                                "value": "Graceful"
+                            },
+                            {
+                                "name": "SHUTDOWN_TIMEOUT",
+                                "value": "30"
+                            },
+                            {
+                                "name": "SHUTDOWN_IGNORE_SESSIONS",
+                                "value": "false"
+                            },
+                            {
+                                "name": "DYNAMIC_CONFIG_OVERRIDE",
+                                "value": "true"
+                            }
+                        ],
+                        "resources": {},
+                        "volumeMounts": [
+                            {
+                                "name": "weblogic-scripts-cm-volume",
+                                "readOnly": true,
+                                "mountPath": "/weblogic-operator/scripts"
+                            },
+                            {
+                                "name": "weblogic-domain-debug-cm-volume",
+                                "readOnly": true,
+                                "mountPath": "/weblogic-operator/debug"
+                            },
+                            {
+                                "name": "weblogic-domain-introspect-cm-volume",
+                                "mountPath": "/weblogic-operator/introspector"
+                            },
+                            {
+                                "name": "weblogic-domain-storage-volume",
+                                "mountPath": "/u01/shared"
+                            },
+                            {
+                                "name": "default-token-tbvv8",
+                                "readOnly": true,
+                                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount"
+                            }
+                        ],
+                        "livenessProbe": {
+                            "exec": {
+                                "command": [
+                                    "/weblogic-operator/scripts/livenessProbe.sh"
+                                ]
+                            },
+                            "initialDelaySeconds": 30,
+                            "timeoutSeconds": 5,
+                            "periodSeconds": 45,
+                            "successThreshold": 1,
+                            "failureThreshold": 1
+                        },
+                        "readinessProbe": {
+                            "httpGet": {
+                                "path": "/weblogic/ready",
+                                "port": 8001,
+                                "scheme": "HTTP"
+                            },
+                            "initialDelaySeconds": 30,
+                            "timeoutSeconds": 5,
+                            "periodSeconds": 5,
+                            "successThreshold": 1,
+                            "failureThreshold": 1
+                        },
+                        "lifecycle": {
+                            "preStop": {
+                                "exec": {
+                                    "command": [
+                                        "/weblogic-operator/scripts/stopServer.sh"
+                                    ]
+                                }
+                            }
+                        },
+                        "terminationMessagePath": "/dev/termination-log",
+                        "terminationMessagePolicy": "File",
+                        "imagePullPolicy": "IfNotPresent",
+                        "securityContext": {}
+                    }
+                ],
+                "restartPolicy": "Always",
+                "terminationGracePeriodSeconds": 40,
+                "dnsPolicy": "ClusterFirst",
+                "nodeSelector": {
+                    "usage": "weblogic"
+                },
+                "serviceAccountName": "default",
+                "serviceAccount": "default",
+                "nodeName": "10.0.4.3",
+                "securityContext": {},
+                "imagePullSecrets": [
+                    {
+                        "name": "ocirsecrets"
+                    }
+                ],
+                "affinity": {
+                    "podAntiAffinity": {
+                        "preferredDuringSchedulingIgnoredDuringExecution": [
+                            {
+                                "weight": 100,
+                                "podAffinityTerm": {
+                                    "labelSelector": {
+                                        "matchExpressions": [
+                                            {
+                                                "key": "weblogic.clusterName",
+                                                "operator": "In",
+                                                "values": [
+                                                    "wls-cluster"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "topologyKey": "kubernetes.io/hostname"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "schedulerName": "default-scheduler",
+                "tolerations": [
+                    {
+                        "key": "node.kubernetes.io/not-ready",
+                        "operator": "Exists",
+                        "effect": "NoExecute",
+                        "tolerationSeconds": 300
+                    },
+                    {
+                        "key": "node.kubernetes.io/unreachable",
+                        "operator": "Exists",
+                        "effect": "NoExecute",
+                        "tolerationSeconds": 300
+                    }
+                ],
+                "priority": 0,
+                "enableServiceLinks": true
+            },
+            "status": {
+                "phase": "Running",
+                "conditions": [
+                    {
+                        "type": "Initialized",
+                        "status": "True",
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2020-11-25T19:10:19Z"
+                    },
+                    {
+                        "type": "Ready",
+                        "status": "True",
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2020-11-25T19:11:30Z"
+                    },
+                    {
+                        "type": "ContainersReady",
+                        "status": "True",
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2020-11-25T19:11:30Z"
+                    },
+                    {
+                        "type": "PodScheduled",
+                        "status": "True",
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2020-11-25T19:10:19Z"
+                    }
+                ],
+                "hostIP": "10.0.4.3",
+                "podIP": "10.244.1.134",
+                "podIPs": [
+                    {
+                        "ip": "10.244.1.134"
+                    }
+                ],
+                "startTime": "2020-11-25T19:10:19Z",
+                "containerStatuses": [
+                    {
+                        "name": "weblogic-server",
+                        "state": {
+                            "running": {
+                                "startedAt": "2020-11-25T19:10:22Z"
+                            }
+                        },
+                        "lastState": {},
+                        "ready": true,
+                        "restartCount": 0,
+                        "image": "ams.ocir.io/oraseemeatechse/wls/okewls/wls-domain-base:12.2.1.4.201020-201106-20-11-25_18-57-06",
+                        "imageID": "docker-pullable://ams.ocir.io/oraseemeatechse/wls/okewls/wls-domain-base@sha256:8123200d50799aec1bd7b94a24b2bf92df96665d69a3590ce09ccbcb5d91eb3a",
+                        "containerID": "docker://31bc86f3136f697611e28236f3cb3045156f83a90cebff25700573d06667d714",
+                        "started": true
+                    }
+                ],
+                "qosClass": "BestEffort"
+            }
+        }
+    ]
+}

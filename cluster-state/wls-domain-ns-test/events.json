@@ -1,0 +1,9 @@
+{
+    "kind": "EventList",
+    "apiVersion": "v1",
+    "metadata": {
+        "selfLink": "/api/v1/namespaces/wls-domain-ns-test/events",
+        "resourceVersion": "190652"
+    },
+    "items": []
+}

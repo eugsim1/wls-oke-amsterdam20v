@@ -1,0 +1,9 @@
+{
+    "kind": "DeploymentList",
+    "apiVersion": "apps/v1",
+    "metadata": {
+        "selfLink": "/apis/apps/v1/namespaces/wls-domain-ns-test/deployments",
+        "resourceVersion": "190653"
+    },
+    "items": []
+}

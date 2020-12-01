@@ -1,0 +1,65 @@
+==== START logs for container nginx-ingress-controller of pod ingress-nginx/nginx-ingress-controller-859cfff899-d6wwv ====
+W1125 19:08:00.224922       6 flags.go:243] SSL certificate chain completion is disabled (--enable-ssl-chain-completion=false)
+W1125 19:08:00.225179       6 client_config.go:541] Neither --kubeconfig nor --master was specified.  Using the inClusterConfig.  This might not work.
+I1125 19:08:00.225962       6 main.go:182] Creating API client for https://10.96.0.1:443
+-------------------------------------------------------------------------------
+NGINX Ingress controller
+  Release:       0.26.1
+  Build:         git-2de5a893a
+  Repository:    https://github.com/kubernetes/ingress-nginx
+  nginx version: openresty/1.15.8.2
+
+-------------------------------------------------------------------------------
+
+I1125 19:08:00.263436       6 main.go:226] Running in Kubernetes cluster version v1.18 (v1.18.10) - git (clean) commit 79f4a3a6e44e0717ac55cfc401801555ee07a37f - platform linux/amd64
+I1125 19:08:01.345654       6 main.go:101] SSL fake certificate created /etc/ingress-controller/ssl/default-fake-certificate.pem
+I1125 19:08:02.210317       6 nginx.go:263] Starting NGINX Ingress controller
+I1125 19:08:02.721168       6 event.go:255] Event(v1.ObjectReference{Kind:"ConfigMap", Namespace:"ingress-nginx", Name:"nginx-configuration", UID:"049ea757-697d-49f7-9e02-0a0b5a0b7ef5", APIVersion:"v1", ResourceVersion:"3181", FieldPath:""}): type: 'Normal' reason: 'CREATE' ConfigMap ingress-nginx/nginx-configuration
+I1125 19:08:02.733035       6 event.go:255] Event(v1.ObjectReference{Kind:"ConfigMap", Namespace:"ingress-nginx", Name:"udp-services", UID:"bbcba032-4c48-4c13-9218-2cfe0453df9f", APIVersion:"v1", ResourceVersion:"3180", FieldPath:""}): type: 'Normal' reason: 'CREATE' ConfigMap ingress-nginx/udp-services
+I1125 19:08:02.733138       6 event.go:255] Event(v1.ObjectReference{Kind:"ConfigMap", Namespace:"ingress-nginx", Name:"tcp-services", UID:"7c3d427e-7dea-4e8e-a063-c953803fd577", APIVersion:"v1", ResourceVersion:"3182", FieldPath:""}): type: 'Normal' reason: 'CREATE' ConfigMap ingress-nginx/tcp-services
+I1125 19:08:03.632235       6 store.go:347] ignoring add for ingress wls-cluster-ingress based on annotation kubernetes.io/ingress.class with value 
+I1125 19:08:03.633255       6 event.go:255] Event(v1.ObjectReference{Kind:"Ingress", Namespace:"jenkins-ns", Name:"jenkins-dashboard-ingress", UID:"da7bc471-891c-4831-8b5c-2ed79a7d494b", APIVersion:"networking.k8s.io/v1beta1", ResourceVersion:"3209", FieldPath:""}): type: 'Normal' reason: 'CREATE' Ingress jenkins-ns/jenkins-dashboard-ingress
+I1125 19:08:03.633331       6 event.go:255] Event(v1.ObjectReference{Kind:"Ingress", Namespace:"wls-domain-ns", Name:"wls-admin-ingress", UID:"7606c6f2-d327-4916-a89a-d92c270a6511", APIVersion:"networking.k8s.io/v1beta1", ResourceVersion:"3206", FieldPath:""}): type: 'Normal' reason: 'CREATE' Ingress wls-domain-ns/wls-admin-ingress
+I1125 19:08:03.726301       6 nginx.go:307] Starting NGINX process
+I1125 19:08:03.726612       6 leaderelection.go:241] attempting to acquire leader lease  ingress-nginx/ingress-controller-leader-nginx...
+W1125 19:08:03.727208       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-wls-adminserver": no object matching key "wls-domain-ns/okewls-wls-adminserver" in local store
+W1125 19:08:03.727386       6 controller.go:920] Service "jenkins-ns/jenkins-service" does not have any active Endpoint.
+I1125 19:08:03.727478       6 controller.go:134] Configuration changes detected, backend reload required.
+I1125 19:08:03.746606       6 leaderelection.go:251] successfully acquired lease ingress-nginx/ingress-controller-leader-nginx
+I1125 19:08:03.750629       6 status.go:86] new leader elected: nginx-ingress-controller-859cfff899-d6wwv
+I1125 19:08:03.804968       6 status.go:274] updating Ingress wls-domain-ns/wls-admin-ingress status from [] to [{10.0.3.6 }]
+I1125 19:08:03.806177       6 status.go:274] updating Ingress jenkins-ns/jenkins-dashboard-ingress status from [] to [{10.0.3.6 }]
+I1125 19:08:03.831779       6 event.go:255] Event(v1.ObjectReference{Kind:"Ingress", Namespace:"wls-domain-ns", Name:"wls-admin-ingress", UID:"7606c6f2-d327-4916-a89a-d92c270a6511", APIVersion:"networking.k8s.io/v1beta1", ResourceVersion:"4165", FieldPath:""}): type: 'Normal' reason: 'UPDATE' Ingress wls-domain-ns/wls-admin-ingress
+I1125 19:08:03.831850       6 event.go:255] Event(v1.ObjectReference{Kind:"Ingress", Namespace:"jenkins-ns", Name:"jenkins-dashboard-ingress", UID:"da7bc471-891c-4831-8b5c-2ed79a7d494b", APIVersion:"networking.k8s.io/v1beta1", ResourceVersion:"4164", FieldPath:""}): type: 'Normal' reason: 'UPDATE' Ingress jenkins-ns/jenkins-dashboard-ingress
+I1125 19:08:04.366774       6 controller.go:150] Backend successfully reloaded.
+I1125 19:08:04.366911       6 controller.go:159] Initial sync, sleeping for 1 second.
+W1125 19:08:07.060536       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-wls-adminserver": no object matching key "wls-domain-ns/okewls-wls-adminserver" in local store
+W1125 19:08:07.060648       6 controller.go:920] Service "jenkins-ns/jenkins-service" does not have any active Endpoint.
+W1125 19:08:10.393940       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-wls-adminserver": no object matching key "wls-domain-ns/okewls-wls-adminserver" in local store
+W1125 19:08:10.394020       6 controller.go:920] Service "jenkins-ns/jenkins-service" does not have any active Endpoint.
+W1125 19:08:13.728397       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-wls-adminserver": no object matching key "wls-domain-ns/okewls-wls-adminserver" in local store
+W1125 19:08:13.732894       6 controller.go:920] Service "jenkins-ns/jenkins-service" does not have any active Endpoint.
+W1125 19:08:17.060942       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-wls-adminserver": no object matching key "wls-domain-ns/okewls-wls-adminserver" in local store
+W1125 19:08:17.061083       6 controller.go:920] Service "jenkins-ns/jenkins-service" does not have any active Endpoint.
+W1125 19:08:20.429204       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-wls-adminserver": no object matching key "wls-domain-ns/okewls-wls-adminserver" in local store
+W1125 19:08:23.762945       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-wls-adminserver": no object matching key "wls-domain-ns/okewls-wls-adminserver" in local store
+W1125 19:08:27.060955       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-wls-adminserver": no object matching key "wls-domain-ns/okewls-wls-adminserver" in local store
+W1125 19:08:30.393906       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-wls-adminserver": no object matching key "wls-domain-ns/okewls-wls-adminserver" in local store
+W1125 19:08:33.727935       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-wls-adminserver": no object matching key "wls-domain-ns/okewls-wls-adminserver" in local store
+W1125 19:08:37.060989       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-wls-adminserver": no object matching key "wls-domain-ns/okewls-wls-adminserver" in local store
+W1125 19:08:40.393885       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-wls-adminserver": no object matching key "wls-domain-ns/okewls-wls-adminserver" in local store
+W1125 19:08:43.728074       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-wls-adminserver": no object matching key "wls-domain-ns/okewls-wls-adminserver" in local store
+W1125 19:08:47.060948       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-wls-adminserver": no object matching key "wls-domain-ns/okewls-wls-adminserver" in local store
+W1125 19:08:50.393976       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-wls-adminserver": no object matching key "wls-domain-ns/okewls-wls-adminserver" in local store
+W1125 19:08:53.728013       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-wls-adminserver": no object matching key "wls-domain-ns/okewls-wls-adminserver" in local store
+W1125 19:08:57.061483       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-wls-adminserver": no object matching key "wls-domain-ns/okewls-wls-adminserver" in local store
+W1125 19:09:20.565622       6 controller.go:811] Error obtaining Endpoints for Service "wls-domain-ns/okewls-wls-adminserver": no object matching key "wls-domain-ns/okewls-wls-adminserver" in local store
+I1125 19:09:23.899333       6 controller.go:134] Configuration changes detected, backend reload required.
+I1125 19:09:24.008649       6 controller.go:150] Backend successfully reloaded.
+10.244.1.129 - - [25/Nov/2020:19:54:57 +0000] "GET /console HTTP/1.1" 302 245 "-" "curl/7.29.0" 79 0.011 [wls-domain-ns-okewls-wls-adminserver-7001] [] 10.244.1.133:7001 245 0.012 302 a12530bfa532b8d507d93b39de7be914
+10.244.1.129 - - [25/Nov/2020:19:54:57 +0000] "GET /console/ HTTP/1.1" 302 283 "-" "curl/7.29.0" 80 0.002 [wls-domain-ns-okewls-wls-adminserver-7001] [] 10.244.1.133:7001 283 0.002 302 c3801af4939fb075bcaff2d1aa1e6dc8
+10.244.1.129 - - [25/Nov/2020:19:54:57 +0000] "GET /console/login/LoginForm.jsp HTTP/1.1" 200 3133 "-" "curl/7.29.0" 99 0.074 [wls-domain-ns-okewls-wls-adminserver-7001] [] 10.244.1.133:7001 3133 0.073 200 7b526d2bfb65c976c552d9559c603ca2
+10.244.0.128 - - [25/Nov/2020:19:55:12 +0000] "GET /jenkins HTTP/1.1" 302 0 "-" "curl/7.29.0" 79 0.062 [jenkins-ns-jenkins-service-8080] [] 10.244.0.132:8080 0 0.061 302 1729d91c5f5ecc72f189293bfaa0ab92
+10.244.0.128 - - [25/Nov/2020:19:55:13 +0000] "GET /jenkins/ HTTP/1.1" 302 0 "-" "curl/7.29.0" 80 0.740 [jenkins-ns-jenkins-service-8080] [] 10.244.0.132:8080 0 0.741 302 ea7930260cb84d3e212357bdd4bde149
+10.244.0.128 - - [25/Nov/2020:19:55:14 +0000] "GET /jenkins/securityRealm/firstUser HTTP/1.1" 200 10287 "-" "curl/7.29.0" 103 0.895 [jenkins-ns-jenkins-service-8080] [] 10.244.0.132:8080 10287 0.895 200 fb5a6fbbf526089015c1aaf6cacebcee
+==== END logs for container nginx-ingress-controller of pod ingress-nginx/nginx-ingress-controller-859cfff899-d6wwv ====

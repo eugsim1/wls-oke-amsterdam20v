@@ -1,0 +1,9 @@
+==== START logs for container csi-node-driver of pod kube-system/csi-oci-node-pkkfh ====
+2020-11-25T19:03:16.536Z	INFO	driver/driver.go:67	Creating a new CSI Node driver.	{"endpoint": "unix:///csi/csi.sock", "kubeconfig": "", "master": "", "nodeID": "10.0.4.2"}
+2020-11-25T19:03:16.543Z	INFO	driver/utils.go:169	Created kubernetes client successfully.
+2020-11-25T19:03:16.543Z	INFO	driver/driver.go:135	Removing socket.	{"address": "/csi/csi.sock"}
+2020-11-25T19:03:16.543Z	INFO	driver/driver.go:164	CSI ControllerDriver has started.
+2020-11-25T19:03:17.541Z	INFO	driver/driver.go:152	gRPC response is sent successfully.	{"method": "/csi.v1.Identity/GetPluginInfo", "response": "{\"name\":\"blockvolume.csi.oraclecloud.com\",\"vendor_version\":\"0.1.0\"}"}
+2020-11-25T19:03:18.769Z	INFO	driver/node.go:264	Available domain of node identified.	{"nodeId": "10.0.4.2", "availableDomain": "eu-amsterdam-1-AD-1"}
+2020-11-25T19:03:18.770Z	INFO	driver/driver.go:152	gRPC response is sent successfully.	{"method": "/csi.v1.Node/NodeGetInfo", "response": "{\"accessible_topology\":{\"segments\":{\"failure-domain.beta.kubernetes.io/zone\":\"eu-amsterdam-1-AD-1\"}},\"max_volumes_per_node\":32,\"node_id\":\"10.0.4.2\"}"}
+==== END logs for container csi-node-driver of pod kube-system/csi-oci-node-pkkfh ====

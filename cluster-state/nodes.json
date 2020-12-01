@@ -1,0 +1,1579 @@
+{
+    "kind": "NodeList",
+    "apiVersion": "v1",
+    "metadata": {
+        "selfLink": "/api/v1/nodes",
+        "resourceVersion": "190597"
+    },
+    "items": [
+        {
+            "metadata": {
+                "name": "10.0.4.2",
+                "selfLink": "/api/v1/nodes/10.0.4.2",
+                "uid": "b5234c60-b707-4cff-9ba9-f48f882a4198",
+                "resourceVersion": "190266",
+                "creationTimestamp": "2020-11-25T19:01:47Z",
+                "labels": {
+                    "beta.kubernetes.io/arch": "amd64",
+                    "beta.kubernetes.io/instance-type": "VM.Standard2.1",
+                    "beta.kubernetes.io/os": "linux",
+                    "displayName": "oke-c4gknbtgrrw-nydmnbumvsd-sytl4oh6emq-1",
+                    "failure-domain.beta.kubernetes.io/region": "eu-amsterdam-1",
+                    "failure-domain.beta.kubernetes.io/zone": "eu-amsterdam-1-AD-1",
+                    "hostname": "oke-c4gknbtgrrw-nydmnbumvsd-sytl4oh6emq-1",
+                    "internal_addr": "10.0.4.2",
+                    "kubernetes.io/arch": "amd64",
+                    "kubernetes.io/hostname": "10.0.4.2",
+                    "kubernetes.io/os": "linux",
+                    "node-pool": "non-wls-nodepool",
+                    "node-role.kubernetes.io/node": "",
+                    "node.info.ds_proxymux_client": "true",
+                    "node.info/compartment.id_prefix": "ocid1.compartment.oc1",
+                    "node.info/compartment.id_suffix": "aaaaaaaa375sfgxnc24b3rmxjju6ttxv264t6ukiyv42txxfxs3zj2difroa",
+                    "node.info/compartment.name": "Eugene",
+                    "node.info/kubeletVersion": "v1.18",
+                    "oci.oraclecloud.com/fault-domain": "FAULT-DOMAIN-2",
+                    "oke.oraclecloud.com/node.info.private_subnet": "true",
+                    "oke.oraclecloud.com/node.info.private_worker": "true",
+                    "oke.oraclecloud.com/tenant_agent.version": "1.29.1-9518dd3-329",
+                    "usage": "jenkins",
+                    "usage1": "nginx"
+                },
+                "annotations": {
+                    "alpha.kubernetes.io/provided-node-ip": "10.0.4.2",
+                    "csi.volume.kubernetes.io/nodeid": "{\"blockvolume.csi.oraclecloud.com\":\"10.0.4.2\"}",
+                    "flannel.alpha.coreos.com/backend-data": "{\"VtepMAC\":\"a6:c7:87:54:f9:e1\"}",
+                    "flannel.alpha.coreos.com/backend-type": "vxlan",
+                    "flannel.alpha.coreos.com/kube-subnet-manager": "true",
+                    "flannel.alpha.coreos.com/public-ip": "10.0.4.2",
+                    "node.alpha.kubernetes.io/ttl": "0",
+                    "oci.oraclecloud.com/compartment-id": "ocid1.compartment.oc1..aaaaaaaa375sfgxnc24b3rmxjju6ttxv264t6ukiyv42txxfxs3zj2difroa",
+                    "volumes.kubernetes.io/controller-managed-attach-detach": "true"
+                },
+                "managedFields": [
+                    {
+                        "manager": "kube-controller-manager",
+                        "operation": "Update",
+                        "apiVersion": "v1",
+                        "time": "2020-11-25T19:01:47Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    "f:node.alpha.kubernetes.io/ttl": {}
+                                }
+                            },
+                            "f:spec": {
+                                "f:podCIDR": {},
+                                "f:podCIDRs": {
+                                    ".": {},
+                                    "v:\"10.244.0.0/25\"": {}
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "manager": "cloud-provider-oci",
+                        "operation": "Update",
+                        "apiVersion": "v1",
+                        "time": "2020-11-25T19:01:48Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    "f:oci.oraclecloud.com/compartment-id": {}
+                                },
+                                "f:labels": {
+                                    "f:beta.kubernetes.io/instance-type": {},
+                                    "f:failure-domain.beta.kubernetes.io/region": {},
+                                    "f:failure-domain.beta.kubernetes.io/zone": {},
+                                    "f:oci.oraclecloud.com/fault-domain": {}
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "manager": "tenant-agent",
+                        "operation": "Update",
+                        "apiVersion": "v1",
+                        "time": "2020-11-25T19:01:54Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:labels": {
+                                    "f:node-role.kubernetes.io/node": {}
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "manager": "flanneld",
+                        "operation": "Update",
+                        "apiVersion": "v1",
+                        "time": "2020-11-25T19:03:28Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    "f:flannel.alpha.coreos.com/backend-data": {},
+                                    "f:flannel.alpha.coreos.com/backend-type": {},
+                                    "f:flannel.alpha.coreos.com/kube-subnet-manager": {},
+                                    "f:flannel.alpha.coreos.com/public-ip": {}
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "manager": "kubelet",
+                        "operation": "Update",
+                        "apiVersion": "v1",
+                        "time": "2020-11-26T06:54:56Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    ".": {},
+                                    "f:alpha.kubernetes.io/provided-node-ip": {},
+                                    "f:csi.volume.kubernetes.io/nodeid": {},
+                                    "f:volumes.kubernetes.io/controller-managed-attach-detach": {}
+                                },
+                                "f:labels": {
+                                    ".": {},
+                                    "f:beta.kubernetes.io/arch": {},
+                                    "f:beta.kubernetes.io/os": {},
+                                    "f:displayName": {},
+                                    "f:hostname": {},
+                                    "f:internal_addr": {},
+                                    "f:kubernetes.io/arch": {},
+                                    "f:kubernetes.io/hostname": {},
+                                    "f:kubernetes.io/os": {},
+                                    "f:node-pool": {},
+                                    "f:node.info.ds_proxymux_client": {},
+                                    "f:node.info/compartment.id_prefix": {},
+                                    "f:node.info/compartment.id_suffix": {},
+                                    "f:node.info/compartment.name": {},
+                                    "f:node.info/kubeletVersion": {},
+                                    "f:oke.oraclecloud.com/node.info.private_subnet": {},
+                                    "f:oke.oraclecloud.com/node.info.private_worker": {},
+                                    "f:oke.oraclecloud.com/tenant_agent.version": {},
+                                    "f:usage": {},
+                                    "f:usage1": {}
+                                }
+                            },
+                            "f:spec": {
+                                "f:providerID": {}
+                            },
+                            "f:status": {
+                                "f:addresses": {
+                                    ".": {},
+                                    "k:{\"type\":\"Hostname\"}": {
+                                        ".": {},
+                                        "f:address": {},
+                                        "f:type": {}
+                                    },
+                                    "k:{\"type\":\"InternalIP\"}": {
+                                        ".": {},
+                                        "f:address": {},
+                                        "f:type": {}
+                                    }
+                                },
+                                "f:allocatable": {
+                                    ".": {},
+                                    "f:cpu": {},
+                                    "f:ephemeral-storage": {},
+                                    "f:hugepages-1Gi": {},
+                                    "f:hugepages-2Mi": {},
+                                    "f:memory": {},
+                                    "f:pods": {}
+                                },
+                                "f:capacity": {
+                                    ".": {},
+                                    "f:cpu": {},
+                                    "f:ephemeral-storage": {},
+                                    "f:hugepages-1Gi": {},
+                                    "f:hugepages-2Mi": {},
+                                    "f:memory": {},
+                                    "f:pods": {}
+                                },
+                                "f:conditions": {
+                                    ".": {},
+                                    "k:{\"type\":\"DiskPressure\"}": {
+                                        ".": {},
+                                        "f:lastHeartbeatTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:message": {},
+                                        "f:reason": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    },
+                                    "k:{\"type\":\"MemoryPressure\"}": {
+                                        ".": {},
+                                        "f:lastHeartbeatTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:message": {},
+                                        "f:reason": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    },
+                                    "k:{\"type\":\"PIDPressure\"}": {
+                                        ".": {},
+                                        "f:lastHeartbeatTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:message": {},
+                                        "f:reason": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    },
+                                    "k:{\"type\":\"Ready\"}": {
+                                        ".": {},
+                                        "f:lastHeartbeatTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:message": {},
+                                        "f:reason": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    }
+                                },
+                                "f:daemonEndpoints": {
+                                    "f:kubeletEndpoint": {
+                                        "f:Port": {}
+                                    }
+                                },
+                                "f:images": {},
+                                "f:nodeInfo": {
+                                    "f:architecture": {},
+                                    "f:bootID": {},
+                                    "f:containerRuntimeVersion": {},
+                                    "f:kernelVersion": {},
+                                    "f:kubeProxyVersion": {},
+                                    "f:kubeletVersion": {},
+                                    "f:machineID": {},
+                                    "f:operatingSystem": {},
+                                    "f:osImage": {},
+                                    "f:systemUUID": {}
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            "spec": {
+                "podCIDR": "10.244.0.0/25",
+                "podCIDRs": [
+                    "10.244.0.0/25"
+                ],
+                "providerID": "ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgi4jhdl2awduwthr35qzvwk6qhtqxjjek2owftoyub5a"
+            },
+            "status": {
+                "capacity": {
+                    "cpu": "2",
+                    "ephemeral-storage": "40223552Ki",
+                    "hugepages-1Gi": "0",
+                    "hugepages-2Mi": "0",
+                    "memory": "15115860Ki",
+                    "pods": "110"
+                },
+                "allocatable": {
+                    "cpu": "2",
+                    "ephemeral-storage": "37070025462",
+                    "hugepages-1Gi": "0",
+                    "hugepages-2Mi": "0",
+                    "memory": "15013460Ki",
+                    "pods": "110"
+                },
+                "conditions": [
+                    {
+                        "type": "MemoryPressure",
+                        "status": "False",
+                        "lastHeartbeatTime": "2020-11-26T06:54:56Z",
+                        "lastTransitionTime": "2020-11-25T19:01:47Z",
+                        "reason": "KubeletHasSufficientMemory",
+                        "message": "kubelet has sufficient memory available"
+                    },
+                    {
+                        "type": "DiskPressure",
+                        "status": "False",
+                        "lastHeartbeatTime": "2020-11-26T06:54:56Z",
+                        "lastTransitionTime": "2020-11-25T19:01:47Z",
+                        "reason": "KubeletHasNoDiskPressure",
+                        "message": "kubelet has no disk pressure"
+                    },
+                    {
+                        "type": "PIDPressure",
+                        "status": "False",
+                        "lastHeartbeatTime": "2020-11-26T06:54:56Z",
+                        "lastTransitionTime": "2020-11-25T19:01:47Z",
+                        "reason": "KubeletHasSufficientPID",
+                        "message": "kubelet has sufficient PID available"
+                    },
+                    {
+                        "type": "Ready",
+                        "status": "True",
+                        "lastHeartbeatTime": "2020-11-26T06:54:56Z",
+                        "lastTransitionTime": "2020-11-25T19:02:18Z",
+                        "reason": "KubeletReady",
+                        "message": "kubelet is posting ready status"
+                    }
+                ],
+                "addresses": [
+                    {
+                        "type": "InternalIP",
+                        "address": "10.0.4.2"
+                    },
+                    {
+                        "type": "Hostname",
+                        "address": "10.0.4.2"
+                    }
+                ],
+                "daemonEndpoints": {
+                    "kubeletEndpoint": {
+                        "Port": 10250
+                    }
+                },
+                "nodeInfo": {
+                    "machineID": "37e86115648b4a95b4540ec57a6a44e0",
+                    "systemUUID": "37E86115-648B-4A95-B454-0EC57A6A44E0",
+                    "bootID": "83e9f36b-b290-419f-be69-6c6813770e53",
+                    "kernelVersion": "4.14.35-1902.2.0.el7uek.x86_64",
+                    "osImage": "Oracle Linux Server 7.6",
+                    "containerRuntimeVersion": "docker://19.3.11",
+                    "kubeletVersion": "v1.18.10",
+                    "kubeProxyVersion": "v1.18.10",
+                    "operatingSystem": "linux",
+                    "architecture": "amd64"
+                },
+                "images": [
+                    {
+                        "names": [
+                            "ams.ocir.io/oraseemeatechse/wls/okewls/wls-domain-base/12214@sha256:b5b567704520f69c08838c8774fa6074df3d7fdd4329ce587f34c2f35e1ce91f",
+                            "ams.ocir.io/oraseemeatechse/wls/okewls/wls-domain-base/12214:12.2.1.4.201020-201106"
+                        ],
+                        "sizeBytes": 2703392550
+                    },
+                    {
+                        "names": [
+                            "eu-amsterdam-1.ocir.io/axoxdievda5j/oke-public-cloud-provider-oci@sha256:887cd10e61105e62eca1c6fd5ea221dfdc838d282884c45b2f06d0841b85c336"
+                        ],
+                        "sizeBytes": 643294125
+                    },
+                    {
+                        "names": [
+                            "eu-amsterdam-1.ocir.io/axoxdievda5j/oke-public-kube-proxy@sha256:aa2fbf0cce17bf54efdc5e03d7fabc20e8eaff7fe3bf922e6e8e19ba0cba1dcf"
+                        ],
+                        "sizeBytes": 614062598
+                    },
+                    {
+                        "names": [
+                            "eu-amsterdam-1.ocir.io/axoxdievda5j/oke-public-proxymux-cli@sha256:8cdfbe2aed4e276063ee490dab01a92a057d0d7ea5ab0143687e4265a3abdefe"
+                        ],
+                        "sizeBytes": 273714133
+                    },
+                    {
+                        "names": [
+                            "eu-amsterdam-1.ocir.io/axoxdievda5j/oke-public-coredns@sha256:8cd974302f1f6108f6f31312f8181ae723b514e2022089cdcc3db10666c49228"
+                        ],
+                        "sizeBytes": 169144896
+                    },
+                    {
+                        "names": [
+                            "eu-amsterdam-1.ocir.io/axoxdievda5j/oke-public-cluster-proportional-autoscaler-amd64@sha256:81c611d16af2aab3c168164c39c8c6074894c13de0ac50e78659903488ee4b54"
+                        ],
+                        "sizeBytes": 163495592
+                    },
+                    {
+                        "names": [
+                            "eu-amsterdam-1.ocir.io/axoxdievda5j/oke-public-flannel@sha256:dbd5c4b125a87ac887eeeeee8e70522ed76b8ef729ff1d16f0da0f91d44f0e86"
+                        ],
+                        "sizeBytes": 44598861
+                    },
+                    {
+                        "names": [
+                            "eu-amsterdam-1.ocir.io/axoxdievda5j/oke-public-pause-amd64@sha256:fcaff905397ba63fd376d0c3019f1f1cb6e7506131389edbcb3d22719f1ae54d"
+                        ],
+                        "sizeBytes": 742472
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "name": "10.0.4.3",
+                "selfLink": "/api/v1/nodes/10.0.4.3",
+                "uid": "f88690e2-50d1-409e-ba50-d3d3e7e6f4a3",
+                "resourceVersion": "189565",
+                "creationTimestamp": "2020-11-25T19:03:57Z",
+                "labels": {
+                    "beta.kubernetes.io/arch": "amd64",
+                    "beta.kubernetes.io/instance-type": "VM.Standard2.1",
+                    "beta.kubernetes.io/os": "linux",
+                    "displayName": "oke-c4gknbtgrrw-ntggzdgmyzd-sytl4oh6emq-1",
+                    "failure-domain.beta.kubernetes.io/region": "eu-amsterdam-1",
+                    "failure-domain.beta.kubernetes.io/zone": "eu-amsterdam-1-AD-1",
+                    "hostname": "oke-c4gknbtgrrw-ntggzdgmyzd-sytl4oh6emq-1",
+                    "internal_addr": "10.0.4.3",
+                    "kubernetes.io/arch": "amd64",
+                    "kubernetes.io/hostname": "10.0.4.3",
+                    "kubernetes.io/os": "linux",
+                    "node-pool": "wls-nodepool",
+                    "node-role.kubernetes.io/node": "",
+                    "node.info.ds_proxymux_client": "true",
+                    "node.info/compartment.id_prefix": "ocid1.compartment.oc1",
+                    "node.info/compartment.id_suffix": "aaaaaaaa375sfgxnc24b3rmxjju6ttxv264t6ukiyv42txxfxs3zj2difroa",
+                    "node.info/compartment.name": "Eugene",
+                    "node.info/kubeletVersion": "v1.18",
+                    "oci.oraclecloud.com/fault-domain": "FAULT-DOMAIN-2",
+                    "oke.oraclecloud.com/node.info.private_subnet": "true",
+                    "oke.oraclecloud.com/node.info.private_worker": "true",
+                    "oke.oraclecloud.com/tenant_agent.version": "1.29.1-9518dd3-329",
+                    "usage": "weblogic"
+                },
+                "annotations": {
+                    "alpha.kubernetes.io/provided-node-ip": "10.0.4.3",
+                    "csi.volume.kubernetes.io/nodeid": "{\"blockvolume.csi.oraclecloud.com\":\"10.0.4.3\"}",
+                    "flannel.alpha.coreos.com/backend-data": "{\"VtepMAC\":\"2a:b6:cf:76:e5:c0\"}",
+                    "flannel.alpha.coreos.com/backend-type": "vxlan",
+                    "flannel.alpha.coreos.com/kube-subnet-manager": "true",
+                    "flannel.alpha.coreos.com/public-ip": "10.0.4.3",
+                    "node.alpha.kubernetes.io/ttl": "0",
+                    "oci.oraclecloud.com/compartment-id": "ocid1.compartment.oc1..aaaaaaaa375sfgxnc24b3rmxjju6ttxv264t6ukiyv42txxfxs3zj2difroa",
+                    "volumes.kubernetes.io/controller-managed-attach-detach": "true"
+                },
+                "managedFields": [
+                    {
+                        "manager": "cloud-provider-oci",
+                        "operation": "Update",
+                        "apiVersion": "v1",
+                        "time": "2020-11-25T19:03:57Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    "f:oci.oraclecloud.com/compartment-id": {}
+                                },
+                                "f:labels": {
+                                    "f:beta.kubernetes.io/instance-type": {},
+                                    "f:failure-domain.beta.kubernetes.io/region": {},
+                                    "f:failure-domain.beta.kubernetes.io/zone": {},
+                                    "f:oci.oraclecloud.com/fault-domain": {}
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "manager": "tenant-agent",
+                        "operation": "Update",
+                        "apiVersion": "v1",
+                        "time": "2020-11-25T19:04:03Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:labels": {
+                                    "f:node-role.kubernetes.io/node": {}
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "manager": "kube-controller-manager",
+                        "operation": "Update",
+                        "apiVersion": "v1",
+                        "time": "2020-11-25T19:04:39Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    "f:node.alpha.kubernetes.io/ttl": {}
+                                }
+                            },
+                            "f:spec": {
+                                "f:podCIDR": {},
+                                "f:podCIDRs": {
+                                    ".": {},
+                                    "v:\"10.244.1.128/25\"": {}
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "manager": "flanneld",
+                        "operation": "Update",
+                        "apiVersion": "v1",
+                        "time": "2020-11-25T19:06:39Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    "f:flannel.alpha.coreos.com/backend-data": {},
+                                    "f:flannel.alpha.coreos.com/backend-type": {},
+                                    "f:flannel.alpha.coreos.com/kube-subnet-manager": {},
+                                    "f:flannel.alpha.coreos.com/public-ip": {}
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "manager": "kubelet",
+                        "operation": "Update",
+                        "apiVersion": "v1",
+                        "time": "2020-11-26T06:52:15Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    ".": {},
+                                    "f:alpha.kubernetes.io/provided-node-ip": {},
+                                    "f:csi.volume.kubernetes.io/nodeid": {},
+                                    "f:volumes.kubernetes.io/controller-managed-attach-detach": {}
+                                },
+                                "f:labels": {
+                                    ".": {},
+                                    "f:beta.kubernetes.io/arch": {},
+                                    "f:beta.kubernetes.io/os": {},
+                                    "f:displayName": {},
+                                    "f:hostname": {},
+                                    "f:internal_addr": {},
+                                    "f:kubernetes.io/arch": {},
+                                    "f:kubernetes.io/hostname": {},
+                                    "f:kubernetes.io/os": {},
+                                    "f:node-pool": {},
+                                    "f:node.info.ds_proxymux_client": {},
+                                    "f:node.info/compartment.id_prefix": {},
+                                    "f:node.info/compartment.id_suffix": {},
+                                    "f:node.info/compartment.name": {},
+                                    "f:node.info/kubeletVersion": {},
+                                    "f:oke.oraclecloud.com/node.info.private_subnet": {},
+                                    "f:oke.oraclecloud.com/node.info.private_worker": {},
+                                    "f:oke.oraclecloud.com/tenant_agent.version": {},
+                                    "f:usage": {}
+                                }
+                            },
+                            "f:spec": {
+                                "f:providerID": {}
+                            },
+                            "f:status": {
+                                "f:addresses": {
+                                    ".": {},
+                                    "k:{\"type\":\"Hostname\"}": {
+                                        ".": {},
+                                        "f:address": {},
+                                        "f:type": {}
+                                    },
+                                    "k:{\"type\":\"InternalIP\"}": {
+                                        ".": {},
+                                        "f:address": {},
+                                        "f:type": {}
+                                    }
+                                },
+                                "f:allocatable": {
+                                    ".": {},
+                                    "f:cpu": {},
+                                    "f:ephemeral-storage": {},
+                                    "f:hugepages-1Gi": {},
+                                    "f:hugepages-2Mi": {},
+                                    "f:memory": {},
+                                    "f:pods": {}
+                                },
+                                "f:capacity": {
+                                    ".": {},
+                                    "f:cpu": {},
+                                    "f:ephemeral-storage": {},
+                                    "f:hugepages-1Gi": {},
+                                    "f:hugepages-2Mi": {},
+                                    "f:memory": {},
+                                    "f:pods": {}
+                                },
+                                "f:conditions": {
+                                    ".": {},
+                                    "k:{\"type\":\"DiskPressure\"}": {
+                                        ".": {},
+                                        "f:lastHeartbeatTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:message": {},
+                                        "f:reason": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    },
+                                    "k:{\"type\":\"MemoryPressure\"}": {
+                                        ".": {},
+                                        "f:lastHeartbeatTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:message": {},
+                                        "f:reason": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    },
+                                    "k:{\"type\":\"PIDPressure\"}": {
+                                        ".": {},
+                                        "f:lastHeartbeatTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:message": {},
+                                        "f:reason": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    },
+                                    "k:{\"type\":\"Ready\"}": {
+                                        ".": {},
+                                        "f:lastHeartbeatTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:message": {},
+                                        "f:reason": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    }
+                                },
+                                "f:daemonEndpoints": {
+                                    "f:kubeletEndpoint": {
+                                        "f:Port": {}
+                                    }
+                                },
+                                "f:images": {},
+                                "f:nodeInfo": {
+                                    "f:architecture": {},
+                                    "f:bootID": {},
+                                    "f:containerRuntimeVersion": {},
+                                    "f:kernelVersion": {},
+                                    "f:kubeProxyVersion": {},
+                                    "f:kubeletVersion": {},
+                                    "f:machineID": {},
+                                    "f:operatingSystem": {},
+                                    "f:osImage": {},
+                                    "f:systemUUID": {}
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            "spec": {
+                "podCIDR": "10.244.1.128/25",
+                "podCIDRs": [
+                    "10.244.1.128/25"
+                ],
+                "providerID": "ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycfxpcqnx2tdgw4edmmfsofvhiftymvljc3wzqkohy2ina"
+            },
+            "status": {
+                "capacity": {
+                    "cpu": "2",
+                    "ephemeral-storage": "40223552Ki",
+                    "hugepages-1Gi": "0",
+                    "hugepages-2Mi": "0",
+                    "memory": "15115840Ki",
+                    "pods": "110"
+                },
+                "allocatable": {
+                    "cpu": "2",
+                    "ephemeral-storage": "37070025462",
+                    "hugepages-1Gi": "0",
+                    "hugepages-2Mi": "0",
+                    "memory": "15013440Ki",
+                    "pods": "110"
+                },
+                "conditions": [
+                    {
+                        "type": "MemoryPressure",
+                        "status": "False",
+                        "lastHeartbeatTime": "2020-11-26T06:52:15Z",
+                        "lastTransitionTime": "2020-11-25T19:03:57Z",
+                        "reason": "KubeletHasSufficientMemory",
+                        "message": "kubelet has sufficient memory available"
+                    },
+                    {
+                        "type": "DiskPressure",
+                        "status": "False",
+                        "lastHeartbeatTime": "2020-11-26T06:52:15Z",
+                        "lastTransitionTime": "2020-11-25T19:03:57Z",
+                        "reason": "KubeletHasNoDiskPressure",
+                        "message": "kubelet has no disk pressure"
+                    },
+                    {
+                        "type": "PIDPressure",
+                        "status": "False",
+                        "lastHeartbeatTime": "2020-11-26T06:52:15Z",
+                        "lastTransitionTime": "2020-11-25T19:03:57Z",
+                        "reason": "KubeletHasSufficientPID",
+                        "message": "kubelet has sufficient PID available"
+                    },
+                    {
+                        "type": "Ready",
+                        "status": "True",
+                        "lastHeartbeatTime": "2020-11-26T06:52:15Z",
+                        "lastTransitionTime": "2020-11-25T19:04:39Z",
+                        "reason": "KubeletReady",
+                        "message": "kubelet is posting ready status"
+                    }
+                ],
+                "addresses": [
+                    {
+                        "type": "InternalIP",
+                        "address": "10.0.4.3"
+                    },
+                    {
+                        "type": "Hostname",
+                        "address": "10.0.4.3"
+                    }
+                ],
+                "daemonEndpoints": {
+                    "kubeletEndpoint": {
+                        "Port": 10250
+                    }
+                },
+                "nodeInfo": {
+                    "machineID": "959b304f6e2e443a8d5e1b3e939e007d",
+                    "systemUUID": "959B304F-6E2E-443A-8D5E-1B3E939E007D",
+                    "bootID": "cd84f698-0a95-4eba-8eca-01696611923a",
+                    "kernelVersion": "4.14.35-1902.304.6.el7uek.x86_64",
+                    "osImage": "Oracle Linux Server 7.8",
+                    "containerRuntimeVersion": "docker://19.3.11",
+                    "kubeletVersion": "v1.18.10",
+                    "kubeProxyVersion": "v1.18.10",
+                    "operatingSystem": "linux",
+                    "architecture": "amd64"
+                },
+                "images": [
+                    {
+                        "names": [
+                            "ams.ocir.io/oraseemeatechse/wls/okewls/wls-domain-base/12214:12.2.1.4.200714-200814"
+                        ],
+                        "sizeBytes": 2711839631
+                    },
+                    {
+                        "names": [
+                            "ams.ocir.io/oraseemeatechse/wls/okewls/wls-domain-base@sha256:8123200d50799aec1bd7b94a24b2bf92df96665d69a3590ce09ccbcb5d91eb3a",
+                            "ams.ocir.io/oraseemeatechse/wls/okewls/wls-domain-base:12.2.1.4.201020-201106-20-11-25_18-57-06"
+                        ],
+                        "sizeBytes": 2704489213
+                    },
+                    {
+                        "names": [
+                            "ams.ocir.io/oraseemeatechse/wls/okewls/wls-domain-base/12214@sha256:b5b567704520f69c08838c8774fa6074df3d7fdd4329ce587f34c2f35e1ce91f",
+                            "ams.ocir.io/oraseemeatechse/wls/okewls/wls-domain-base/12214:12.2.1.4.201020-201106"
+                        ],
+                        "sizeBytes": 2703392550
+                    },
+                    {
+                        "names": [
+                            "eu-amsterdam-1.ocir.io/axoxdievda5j/oke-public-cloud-provider-oci@sha256:887cd10e61105e62eca1c6fd5ea221dfdc838d282884c45b2f06d0841b85c336"
+                        ],
+                        "sizeBytes": 643294125
+                    },
+                    {
+                        "names": [
+                            "eu-amsterdam-1.ocir.io/axoxdievda5j/oke-public-kube-proxy@sha256:aa2fbf0cce17bf54efdc5e03d7fabc20e8eaff7fe3bf922e6e8e19ba0cba1dcf"
+                        ],
+                        "sizeBytes": 614062598
+                    },
+                    {
+                        "names": [
+                            "ams.ocir.io/oraseemeatechse/wls/infra/nginx-ingress-controller@sha256:5da1b2e84ecbdb27facbea84bc6ddc9d50145d824963230735b47828891cba7b",
+                            "ams.ocir.io/oraseemeatechse/wls/infra/nginx-ingress-controller:0.26.1"
+                        ],
+                        "sizeBytes": 483167446
+                    },
+                    {
+                        "names": [
+                            "eu-amsterdam-1.ocir.io/axoxdievda5j/oke-public-proxymux-cli@sha256:8cdfbe2aed4e276063ee490dab01a92a057d0d7ea5ab0143687e4265a3abdefe"
+                        ],
+                        "sizeBytes": 273714133
+                    },
+                    {
+                        "names": [
+                            "eu-amsterdam-1.ocir.io/axoxdievda5j/oke-public-flannel@sha256:dbd5c4b125a87ac887eeeeee8e70522ed76b8ef729ff1d16f0da0f91d44f0e86"
+                        ],
+                        "sizeBytes": 44598861
+                    },
+                    {
+                        "names": [
+                            "eu-amsterdam-1.ocir.io/axoxdievda5j/oke-public-pause-amd64@sha256:fcaff905397ba63fd376d0c3019f1f1cb6e7506131389edbcb3d22719f1ae54d"
+                        ],
+                        "sizeBytes": 742472
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "name": "10.0.4.4",
+                "selfLink": "/api/v1/nodes/10.0.4.4",
+                "uid": "4476eeaa-34a8-4b60-a1dc-b9c607d8261a",
+                "resourceVersion": "189410",
+                "creationTimestamp": "2020-11-25T19:01:53Z",
+                "labels": {
+                    "beta.kubernetes.io/arch": "amd64",
+                    "beta.kubernetes.io/instance-type": "VM.Standard2.1",
+                    "beta.kubernetes.io/os": "linux",
+                    "displayName": "oke-c4gknbtgrrw-nydmnbumvsd-sytl4oh6emq-0",
+                    "failure-domain.beta.kubernetes.io/region": "eu-amsterdam-1",
+                    "failure-domain.beta.kubernetes.io/zone": "eu-amsterdam-1-AD-1",
+                    "hostname": "oke-c4gknbtgrrw-nydmnbumvsd-sytl4oh6emq-0",
+                    "internal_addr": "10.0.4.4",
+                    "kubernetes.io/arch": "amd64",
+                    "kubernetes.io/hostname": "10.0.4.4",
+                    "kubernetes.io/os": "linux",
+                    "node-pool": "non-wls-nodepool",
+                    "node-role.kubernetes.io/node": "",
+                    "node.info.ds_proxymux_client": "true",
+                    "node.info/compartment.id_prefix": "ocid1.compartment.oc1",
+                    "node.info/compartment.id_suffix": "aaaaaaaa375sfgxnc24b3rmxjju6ttxv264t6ukiyv42txxfxs3zj2difroa",
+                    "node.info/compartment.name": "Eugene",
+                    "node.info/kubeletVersion": "v1.18",
+                    "oci.oraclecloud.com/fault-domain": "FAULT-DOMAIN-1",
+                    "oke.oraclecloud.com/node.info.private_subnet": "true",
+                    "oke.oraclecloud.com/node.info.private_worker": "true",
+                    "oke.oraclecloud.com/tenant_agent.version": "1.29.1-9518dd3-329",
+                    "usage": "jenkins",
+                    "usage1": "nginx"
+                },
+                "annotations": {
+                    "alpha.kubernetes.io/provided-node-ip": "10.0.4.4",
+                    "csi.volume.kubernetes.io/nodeid": "{\"blockvolume.csi.oraclecloud.com\":\"10.0.4.4\"}",
+                    "flannel.alpha.coreos.com/backend-data": "{\"VtepMAC\":\"da:bf:16:23:2f:8d\"}",
+                    "flannel.alpha.coreos.com/backend-type": "vxlan",
+                    "flannel.alpha.coreos.com/kube-subnet-manager": "true",
+                    "flannel.alpha.coreos.com/public-ip": "10.0.4.4",
+                    "node.alpha.kubernetes.io/ttl": "0",
+                    "oci.oraclecloud.com/compartment-id": "ocid1.compartment.oc1..aaaaaaaa375sfgxnc24b3rmxjju6ttxv264t6ukiyv42txxfxs3zj2difroa",
+                    "volumes.kubernetes.io/controller-managed-attach-detach": "true"
+                },
+                "managedFields": [
+                    {
+                        "manager": "cloud-provider-oci",
+                        "operation": "Update",
+                        "apiVersion": "v1",
+                        "time": "2020-11-25T19:01:53Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    "f:oci.oraclecloud.com/compartment-id": {}
+                                },
+                                "f:labels": {
+                                    "f:beta.kubernetes.io/instance-type": {},
+                                    "f:failure-domain.beta.kubernetes.io/region": {},
+                                    "f:failure-domain.beta.kubernetes.io/zone": {},
+                                    "f:oci.oraclecloud.com/fault-domain": {}
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "manager": "kube-controller-manager",
+                        "operation": "Update",
+                        "apiVersion": "v1",
+                        "time": "2020-11-25T19:01:53Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    "f:node.alpha.kubernetes.io/ttl": {}
+                                }
+                            },
+                            "f:spec": {
+                                "f:podCIDR": {},
+                                "f:podCIDRs": {
+                                    ".": {},
+                                    "v:\"10.244.0.128/25\"": {}
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "manager": "tenant-agent",
+                        "operation": "Update",
+                        "apiVersion": "v1",
+                        "time": "2020-11-25T19:01:53Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:labels": {
+                                    "f:node-role.kubernetes.io/node": {}
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "manager": "flanneld",
+                        "operation": "Update",
+                        "apiVersion": "v1",
+                        "time": "2020-11-25T19:03:38Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    "f:flannel.alpha.coreos.com/backend-data": {},
+                                    "f:flannel.alpha.coreos.com/backend-type": {},
+                                    "f:flannel.alpha.coreos.com/kube-subnet-manager": {},
+                                    "f:flannel.alpha.coreos.com/public-ip": {}
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "manager": "kubelet",
+                        "operation": "Update",
+                        "apiVersion": "v1",
+                        "time": "2020-11-26T06:51:40Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    ".": {},
+                                    "f:alpha.kubernetes.io/provided-node-ip": {},
+                                    "f:csi.volume.kubernetes.io/nodeid": {},
+                                    "f:volumes.kubernetes.io/controller-managed-attach-detach": {}
+                                },
+                                "f:labels": {
+                                    ".": {},
+                                    "f:beta.kubernetes.io/arch": {},
+                                    "f:beta.kubernetes.io/os": {},
+                                    "f:displayName": {},
+                                    "f:hostname": {},
+                                    "f:internal_addr": {},
+                                    "f:kubernetes.io/arch": {},
+                                    "f:kubernetes.io/hostname": {},
+                                    "f:kubernetes.io/os": {},
+                                    "f:node-pool": {},
+                                    "f:node.info.ds_proxymux_client": {},
+                                    "f:node.info/compartment.id_prefix": {},
+                                    "f:node.info/compartment.id_suffix": {},
+                                    "f:node.info/compartment.name": {},
+                                    "f:node.info/kubeletVersion": {},
+                                    "f:oke.oraclecloud.com/node.info.private_subnet": {},
+                                    "f:oke.oraclecloud.com/node.info.private_worker": {},
+                                    "f:oke.oraclecloud.com/tenant_agent.version": {},
+                                    "f:usage": {},
+                                    "f:usage1": {}
+                                }
+                            },
+                            "f:spec": {
+                                "f:providerID": {}
+                            },
+                            "f:status": {
+                                "f:addresses": {
+                                    ".": {},
+                                    "k:{\"type\":\"Hostname\"}": {
+                                        ".": {},
+                                        "f:address": {},
+                                        "f:type": {}
+                                    },
+                                    "k:{\"type\":\"InternalIP\"}": {
+                                        ".": {},
+                                        "f:address": {},
+                                        "f:type": {}
+                                    }
+                                },
+                                "f:allocatable": {
+                                    ".": {},
+                                    "f:cpu": {},
+                                    "f:ephemeral-storage": {},
+                                    "f:hugepages-1Gi": {},
+                                    "f:hugepages-2Mi": {},
+                                    "f:memory": {},
+                                    "f:pods": {}
+                                },
+                                "f:capacity": {
+                                    ".": {},
+                                    "f:cpu": {},
+                                    "f:ephemeral-storage": {},
+                                    "f:hugepages-1Gi": {},
+                                    "f:hugepages-2Mi": {},
+                                    "f:memory": {},
+                                    "f:pods": {}
+                                },
+                                "f:conditions": {
+                                    ".": {},
+                                    "k:{\"type\":\"DiskPressure\"}": {
+                                        ".": {},
+                                        "f:lastHeartbeatTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:message": {},
+                                        "f:reason": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    },
+                                    "k:{\"type\":\"MemoryPressure\"}": {
+                                        ".": {},
+                                        "f:lastHeartbeatTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:message": {},
+                                        "f:reason": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    },
+                                    "k:{\"type\":\"PIDPressure\"}": {
+                                        ".": {},
+                                        "f:lastHeartbeatTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:message": {},
+                                        "f:reason": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    },
+                                    "k:{\"type\":\"Ready\"}": {
+                                        ".": {},
+                                        "f:lastHeartbeatTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:message": {},
+                                        "f:reason": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    }
+                                },
+                                "f:daemonEndpoints": {
+                                    "f:kubeletEndpoint": {
+                                        "f:Port": {}
+                                    }
+                                },
+                                "f:images": {},
+                                "f:nodeInfo": {
+                                    "f:architecture": {},
+                                    "f:bootID": {},
+                                    "f:containerRuntimeVersion": {},
+                                    "f:kernelVersion": {},
+                                    "f:kubeProxyVersion": {},
+                                    "f:kubeletVersion": {},
+                                    "f:machineID": {},
+                                    "f:operatingSystem": {},
+                                    "f:osImage": {},
+                                    "f:systemUUID": {}
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            "spec": {
+                "podCIDR": "10.244.0.128/25",
+                "podCIDRs": [
+                    "10.244.0.128/25"
+                ],
+                "providerID": "ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycgsitzc3edd6n7pghfjzvrmy53k7vdafsminmfpdkroza"
+            },
+            "status": {
+                "capacity": {
+                    "cpu": "2",
+                    "ephemeral-storage": "40223552Ki",
+                    "hugepages-1Gi": "0",
+                    "hugepages-2Mi": "0",
+                    "memory": "15115868Ki",
+                    "pods": "110"
+                },
+                "allocatable": {
+                    "cpu": "2",
+                    "ephemeral-storage": "37070025462",
+                    "hugepages-1Gi": "0",
+                    "hugepages-2Mi": "0",
+                    "memory": "15013468Ki",
+                    "pods": "110"
+                },
+                "conditions": [
+                    {
+                        "type": "MemoryPressure",
+                        "status": "False",
+                        "lastHeartbeatTime": "2020-11-26T06:51:40Z",
+                        "lastTransitionTime": "2020-11-25T19:01:52Z",
+                        "reason": "KubeletHasSufficientMemory",
+                        "message": "kubelet has sufficient memory available"
+                    },
+                    {
+                        "type": "DiskPressure",
+                        "status": "False",
+                        "lastHeartbeatTime": "2020-11-26T06:51:40Z",
+                        "lastTransitionTime": "2020-11-25T19:01:52Z",
+                        "reason": "KubeletHasNoDiskPressure",
+                        "message": "kubelet has no disk pressure"
+                    },
+                    {
+                        "type": "PIDPressure",
+                        "status": "False",
+                        "lastHeartbeatTime": "2020-11-26T06:51:40Z",
+                        "lastTransitionTime": "2020-11-25T19:01:52Z",
+                        "reason": "KubeletHasSufficientPID",
+                        "message": "kubelet has sufficient PID available"
+                    },
+                    {
+                        "type": "Ready",
+                        "status": "True",
+                        "lastHeartbeatTime": "2020-11-26T06:51:40Z",
+                        "lastTransitionTime": "2020-11-25T19:02:24Z",
+                        "reason": "KubeletReady",
+                        "message": "kubelet is posting ready status"
+                    }
+                ],
+                "addresses": [
+                    {
+                        "type": "InternalIP",
+                        "address": "10.0.4.4"
+                    },
+                    {
+                        "type": "Hostname",
+                        "address": "10.0.4.4"
+                    }
+                ],
+                "daemonEndpoints": {
+                    "kubeletEndpoint": {
+                        "Port": 10250
+                    }
+                },
+                "nodeInfo": {
+                    "machineID": "49ebf813b7b74e47bceb7bae2d4ed572",
+                    "systemUUID": "49EBF813-B7B7-4E47-BCEB-7BAE2D4ED572",
+                    "bootID": "832f01b1-6da5-4097-997c-0b308c93f71e",
+                    "kernelVersion": "4.14.35-1902.2.0.el7uek.x86_64",
+                    "osImage": "Oracle Linux Server 7.6",
+                    "containerRuntimeVersion": "docker://19.3.11",
+                    "kubeletVersion": "v1.18.10",
+                    "kubeProxyVersion": "v1.18.10",
+                    "operatingSystem": "linux",
+                    "architecture": "amd64"
+                },
+                "images": [
+                    {
+                        "names": [
+                            "ams.ocir.io/oraseemeatechse/wls/okewls/wls-domain-base/12214@sha256:b5b567704520f69c08838c8774fa6074df3d7fdd4329ce587f34c2f35e1ce91f",
+                            "ams.ocir.io/oraseemeatechse/wls/okewls/wls-domain-base/12214:12.2.1.4.201020-201106"
+                        ],
+                        "sizeBytes": 2703392550
+                    },
+                    {
+                        "names": [
+                            "ams.ocir.io/oraseemeatechse/wls/infra/cisystem-jenkins-controller@sha256:8d58c4bbd04e98db2b7cc96a4621cc153752d039cba345b328a5b16582df56d4",
+                            "ams.ocir.io/oraseemeatechse/wls/infra/cisystem-jenkins-controller:1.0.1_2.235.5"
+                        ],
+                        "sizeBytes": 929759363
+                    },
+                    {
+                        "names": [
+                            "eu-amsterdam-1.ocir.io/axoxdievda5j/oke-public-cloud-provider-oci@sha256:887cd10e61105e62eca1c6fd5ea221dfdc838d282884c45b2f06d0841b85c336"
+                        ],
+                        "sizeBytes": 643294125
+                    },
+                    {
+                        "names": [
+                            "eu-amsterdam-1.ocir.io/axoxdievda5j/oke-public-kube-proxy@sha256:aa2fbf0cce17bf54efdc5e03d7fabc20e8eaff7fe3bf922e6e8e19ba0cba1dcf"
+                        ],
+                        "sizeBytes": 614062598
+                    },
+                    {
+                        "names": [
+                            "eu-amsterdam-1.ocir.io/axoxdievda5j/oke-public-proxymux-cli@sha256:8cdfbe2aed4e276063ee490dab01a92a057d0d7ea5ab0143687e4265a3abdefe"
+                        ],
+                        "sizeBytes": 273714133
+                    },
+                    {
+                        "names": [
+                            "eu-amsterdam-1.ocir.io/axoxdievda5j/oke-public-coredns@sha256:8cd974302f1f6108f6f31312f8181ae723b514e2022089cdcc3db10666c49228"
+                        ],
+                        "sizeBytes": 169144896
+                    },
+                    {
+                        "names": [
+                            "eu-amsterdam-1.ocir.io/axoxdievda5j/oke-public-flannel@sha256:dbd5c4b125a87ac887eeeeee8e70522ed76b8ef729ff1d16f0da0f91d44f0e86"
+                        ],
+                        "sizeBytes": 44598861
+                    },
+                    {
+                        "names": [
+                            "eu-amsterdam-1.ocir.io/axoxdievda5j/oke-public-pause-amd64@sha256:fcaff905397ba63fd376d0c3019f1f1cb6e7506131389edbcb3d22719f1ae54d"
+                        ],
+                        "sizeBytes": 742472
+                    }
+                ]
+            }
+        },
+        {
+            "metadata": {
+                "name": "10.0.4.5",
+                "selfLink": "/api/v1/nodes/10.0.4.5",
+                "uid": "555bb340-1f1b-4eb1-8487-a6d4b7b72e49",
+                "resourceVersion": "190035",
+                "creationTimestamp": "2020-11-25T19:03:50Z",
+                "labels": {
+                    "beta.kubernetes.io/arch": "amd64",
+                    "beta.kubernetes.io/instance-type": "VM.Standard2.1",
+                    "beta.kubernetes.io/os": "linux",
+                    "displayName": "oke-c4gknbtgrrw-ntggzdgmyzd-sytl4oh6emq-0",
+                    "failure-domain.beta.kubernetes.io/region": "eu-amsterdam-1",
+                    "failure-domain.beta.kubernetes.io/zone": "eu-amsterdam-1-AD-1",
+                    "hostname": "oke-c4gknbtgrrw-ntggzdgmyzd-sytl4oh6emq-0",
+                    "internal_addr": "10.0.4.5",
+                    "kubernetes.io/arch": "amd64",
+                    "kubernetes.io/hostname": "10.0.4.5",
+                    "kubernetes.io/os": "linux",
+                    "node-pool": "wls-nodepool",
+                    "node-role.kubernetes.io/node": "",
+                    "node.info.ds_proxymux_client": "true",
+                    "node.info/compartment.id_prefix": "ocid1.compartment.oc1",
+                    "node.info/compartment.id_suffix": "aaaaaaaa375sfgxnc24b3rmxjju6ttxv264t6ukiyv42txxfxs3zj2difroa",
+                    "node.info/compartment.name": "Eugene",
+                    "node.info/kubeletVersion": "v1.18",
+                    "oci.oraclecloud.com/fault-domain": "FAULT-DOMAIN-1",
+                    "oke.oraclecloud.com/node.info.private_subnet": "true",
+                    "oke.oraclecloud.com/node.info.private_worker": "true",
+                    "oke.oraclecloud.com/tenant_agent.version": "1.29.1-9518dd3-329",
+                    "usage": "weblogic"
+                },
+                "annotations": {
+                    "alpha.kubernetes.io/provided-node-ip": "10.0.4.5",
+                    "csi.volume.kubernetes.io/nodeid": "{\"blockvolume.csi.oraclecloud.com\":\"10.0.4.5\"}",
+                    "flannel.alpha.coreos.com/backend-data": "{\"VtepMAC\":\"c2:f8:c3:12:57:c1\"}",
+                    "flannel.alpha.coreos.com/backend-type": "vxlan",
+                    "flannel.alpha.coreos.com/kube-subnet-manager": "true",
+                    "flannel.alpha.coreos.com/public-ip": "10.0.4.5",
+                    "node.alpha.kubernetes.io/ttl": "0",
+                    "oci.oraclecloud.com/compartment-id": "ocid1.compartment.oc1..aaaaaaaa375sfgxnc24b3rmxjju6ttxv264t6ukiyv42txxfxs3zj2difroa",
+                    "volumes.kubernetes.io/controller-managed-attach-detach": "true"
+                },
+                "managedFields": [
+                    {
+                        "manager": "cloud-provider-oci",
+                        "operation": "Update",
+                        "apiVersion": "v1",
+                        "time": "2020-11-25T19:03:51Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    "f:oci.oraclecloud.com/compartment-id": {}
+                                },
+                                "f:labels": {
+                                    "f:beta.kubernetes.io/instance-type": {},
+                                    "f:failure-domain.beta.kubernetes.io/region": {},
+                                    "f:failure-domain.beta.kubernetes.io/zone": {},
+                                    "f:oci.oraclecloud.com/fault-domain": {}
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "manager": "tenant-agent",
+                        "operation": "Update",
+                        "apiVersion": "v1",
+                        "time": "2020-11-25T19:03:54Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:labels": {
+                                    "f:node-role.kubernetes.io/node": {}
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "manager": "kube-controller-manager",
+                        "operation": "Update",
+                        "apiVersion": "v1",
+                        "time": "2020-11-25T19:04:22Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    "f:node.alpha.kubernetes.io/ttl": {}
+                                }
+                            },
+                            "f:spec": {
+                                "f:podCIDR": {},
+                                "f:podCIDRs": {
+                                    ".": {},
+                                    "v:\"10.244.1.0/25\"": {}
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "manager": "flanneld",
+                        "operation": "Update",
+                        "apiVersion": "v1",
+                        "time": "2020-11-25T19:06:06Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    "f:flannel.alpha.coreos.com/backend-data": {},
+                                    "f:flannel.alpha.coreos.com/backend-type": {},
+                                    "f:flannel.alpha.coreos.com/kube-subnet-manager": {},
+                                    "f:flannel.alpha.coreos.com/public-ip": {}
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "manager": "kubelet",
+                        "operation": "Update",
+                        "apiVersion": "v1",
+                        "time": "2020-11-26T06:54:03Z",
+                        "fieldsType": "FieldsV1",
+                        "fieldsV1": {
+                            "f:metadata": {
+                                "f:annotations": {
+                                    ".": {},
+                                    "f:alpha.kubernetes.io/provided-node-ip": {},
+                                    "f:csi.volume.kubernetes.io/nodeid": {},
+                                    "f:volumes.kubernetes.io/controller-managed-attach-detach": {}
+                                },
+                                "f:labels": {
+                                    ".": {},
+                                    "f:beta.kubernetes.io/arch": {},
+                                    "f:beta.kubernetes.io/os": {},
+                                    "f:displayName": {},
+                                    "f:hostname": {},
+                                    "f:internal_addr": {},
+                                    "f:kubernetes.io/arch": {},
+                                    "f:kubernetes.io/hostname": {},
+                                    "f:kubernetes.io/os": {},
+                                    "f:node-pool": {},
+                                    "f:node.info.ds_proxymux_client": {},
+                                    "f:node.info/compartment.id_prefix": {},
+                                    "f:node.info/compartment.id_suffix": {},
+                                    "f:node.info/compartment.name": {},
+                                    "f:node.info/kubeletVersion": {},
+                                    "f:oke.oraclecloud.com/node.info.private_subnet": {},
+                                    "f:oke.oraclecloud.com/node.info.private_worker": {},
+                                    "f:oke.oraclecloud.com/tenant_agent.version": {},
+                                    "f:usage": {}
+                                }
+                            },
+                            "f:spec": {
+                                "f:providerID": {}
+                            },
+                            "f:status": {
+                                "f:addresses": {
+                                    ".": {},
+                                    "k:{\"type\":\"Hostname\"}": {
+                                        ".": {},
+                                        "f:address": {},
+                                        "f:type": {}
+                                    },
+                                    "k:{\"type\":\"InternalIP\"}": {
+                                        ".": {},
+                                        "f:address": {},
+                                        "f:type": {}
+                                    }
+                                },
+                                "f:allocatable": {
+                                    ".": {},
+                                    "f:cpu": {},
+                                    "f:ephemeral-storage": {},
+                                    "f:hugepages-1Gi": {},
+                                    "f:hugepages-2Mi": {},
+                                    "f:memory": {},
+                                    "f:pods": {}
+                                },
+                                "f:capacity": {
+                                    ".": {},
+                                    "f:cpu": {},
+                                    "f:ephemeral-storage": {},
+                                    "f:hugepages-1Gi": {},
+                                    "f:hugepages-2Mi": {},
+                                    "f:memory": {},
+                                    "f:pods": {}
+                                },
+                                "f:conditions": {
+                                    ".": {},
+                                    "k:{\"type\":\"DiskPressure\"}": {
+                                        ".": {},
+                                        "f:lastHeartbeatTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:message": {},
+                                        "f:reason": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    },
+                                    "k:{\"type\":\"MemoryPressure\"}": {
+                                        ".": {},
+                                        "f:lastHeartbeatTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:message": {},
+                                        "f:reason": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    },
+                                    "k:{\"type\":\"PIDPressure\"}": {
+                                        ".": {},
+                                        "f:lastHeartbeatTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:message": {},
+                                        "f:reason": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    },
+                                    "k:{\"type\":\"Ready\"}": {
+                                        ".": {},
+                                        "f:lastHeartbeatTime": {},
+                                        "f:lastTransitionTime": {},
+                                        "f:message": {},
+                                        "f:reason": {},
+                                        "f:status": {},
+                                        "f:type": {}
+                                    }
+                                },
+                                "f:daemonEndpoints": {
+                                    "f:kubeletEndpoint": {
+                                        "f:Port": {}
+                                    }
+                                },
+                                "f:images": {},
+                                "f:nodeInfo": {
+                                    "f:architecture": {},
+                                    "f:bootID": {},
+                                    "f:containerRuntimeVersion": {},
+                                    "f:kernelVersion": {},
+                                    "f:kubeProxyVersion": {},
+                                    "f:kubeletVersion": {},
+                                    "f:machineID": {},
+                                    "f:operatingSystem": {},
+                                    "f:osImage": {},
+                                    "f:systemUUID": {}
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            "spec": {
+                "podCIDR": "10.244.1.0/25",
+                "podCIDRs": [
+                    "10.244.1.0/25"
+                ],
+                "providerID": "ocid1.instance.oc1.eu-amsterdam-1.anqw2ljr4g77oeycpzrj6ukvfenzb53qfibta2wwo5x32h2obwpy34ia6qlq"
+            },
+            "status": {
+                "capacity": {
+                    "cpu": "2",
+                    "ephemeral-storage": "40223552Ki",
+                    "hugepages-1Gi": "0",
+                    "hugepages-2Mi": "0",
+                    "memory": "15115840Ki",
+                    "pods": "110"
+                },
+                "allocatable": {
+                    "cpu": "2",
+                    "ephemeral-storage": "37070025462",
+                    "hugepages-1Gi": "0",
+                    "hugepages-2Mi": "0",
+                    "memory": "15013440Ki",
+                    "pods": "110"
+                },
+                "conditions": [
+                    {
+                        "type": "MemoryPressure",
+                        "status": "False",
+                        "lastHeartbeatTime": "2020-11-26T06:54:03Z",
+                        "lastTransitionTime": "2020-11-25T19:03:50Z",
+                        "reason": "KubeletHasSufficientMemory",
+                        "message": "kubelet has sufficient memory available"
+                    },
+                    {
+                        "type": "DiskPressure",
+                        "status": "False",
+                        "lastHeartbeatTime": "2020-11-26T06:54:03Z",
+                        "lastTransitionTime": "2020-11-25T19:03:50Z",
+                        "reason": "KubeletHasNoDiskPressure",
+                        "message": "kubelet has no disk pressure"
+                    },
+                    {
+                        "type": "PIDPressure",
+                        "status": "False",
+                        "lastHeartbeatTime": "2020-11-26T06:54:03Z",
+                        "lastTransitionTime": "2020-11-25T19:03:50Z",
+                        "reason": "KubeletHasSufficientPID",
+                        "message": "kubelet has sufficient PID available"
+                    },
+                    {
+                        "type": "Ready",
+                        "status": "True",
+                        "lastHeartbeatTime": "2020-11-26T06:54:03Z",
+                        "lastTransitionTime": "2020-11-25T19:04:22Z",
+                        "reason": "KubeletReady",
+                        "message": "kubelet is posting ready status"
+                    }
+                ],
+                "addresses": [
+                    {
+                        "type": "InternalIP",
+                        "address": "10.0.4.5"
+                    },
+                    {
+                        "type": "Hostname",
+                        "address": "10.0.4.5"
+                    }
+                ],
+                "daemonEndpoints": {
+                    "kubeletEndpoint": {
+                        "Port": 10250
+                    }
+                },
+                "nodeInfo": {
+                    "machineID": "3a28e7333b8f435dbfb278bab21b38ea",
+                    "systemUUID": "3A28E733-3B8F-435D-BFB2-78BAB21B38EA",
+                    "bootID": "bb3e6324-f1e4-45d7-be82-2a4eedff6572",
+                    "kernelVersion": "4.14.35-1902.304.6.el7uek.x86_64",
+                    "osImage": "Oracle Linux Server 7.8",
+                    "containerRuntimeVersion": "docker://19.3.11",
+                    "kubeletVersion": "v1.18.10",
+                    "kubeProxyVersion": "v1.18.10",
+                    "operatingSystem": "linux",
+                    "architecture": "amd64"
+                },
+                "images": [
+                    {
+                        "names": [
+                            "ams.ocir.io/oraseemeatechse/wls/okewls/wls-domain-base/12214:12.2.1.4.200714-200814"
+                        ],
+                        "sizeBytes": 2711839631
+                    },
+                    {
+                        "names": [
+                            "ams.ocir.io/oraseemeatechse/wls/okewls/wls-domain-base@sha256:8123200d50799aec1bd7b94a24b2bf92df96665d69a3590ce09ccbcb5d91eb3a",
+                            "ams.ocir.io/oraseemeatechse/wls/okewls/wls-domain-base:12.2.1.4.201020-201106-20-11-25_18-57-06"
+                        ],
+                        "sizeBytes": 2704489213
+                    },
+                    {
+                        "names": [
+                            "ams.ocir.io/oraseemeatechse/wls/okewls/wls-domain-base/12214@sha256:b5b567704520f69c08838c8774fa6074df3d7fdd4329ce587f34c2f35e1ce91f",
+                            "ams.ocir.io/oraseemeatechse/wls/okewls/wls-domain-base/12214:12.2.1.4.201020-201106"
+                        ],
+                        "sizeBytes": 2703392550
+                    },
+                    {
+                        "names": [
+                            "eu-amsterdam-1.ocir.io/axoxdievda5j/oke-public-cloud-provider-oci@sha256:887cd10e61105e62eca1c6fd5ea221dfdc838d282884c45b2f06d0841b85c336"
+                        ],
+                        "sizeBytes": 643294125
+                    },
+                    {
+                        "names": [
+                            "eu-amsterdam-1.ocir.io/axoxdievda5j/oke-public-kube-proxy@sha256:aa2fbf0cce17bf54efdc5e03d7fabc20e8eaff7fe3bf922e6e8e19ba0cba1dcf"
+                        ],
+                        "sizeBytes": 614062598
+                    },
+                    {
+                        "names": [
+                            "ams.ocir.io/oraseemeatechse/wls/infra/weblogic-kubernetes-operator@sha256:f03506ab428c98084b9b4226e2743cff9a16878ddf0df65c6f417fb5fe365511",
+                            "ams.ocir.io/oraseemeatechse/wls/infra/weblogic-kubernetes-operator:3.0.0"
+                        ],
+                        "sizeBytes": 388277901
+                    },
+                    {
+                        "names": [
+                            "eu-amsterdam-1.ocir.io/axoxdievda5j/oke-public-proxymux-cli@sha256:8cdfbe2aed4e276063ee490dab01a92a057d0d7ea5ab0143687e4265a3abdefe"
+                        ],
+                        "sizeBytes": 273714133
+                    },
+                    {
+                        "names": [
+                            "eu-amsterdam-1.ocir.io/axoxdievda5j/oke-public-flannel@sha256:dbd5c4b125a87ac887eeeeee8e70522ed76b8ef729ff1d16f0da0f91d44f0e86"
+                        ],
+                        "sizeBytes": 44598861
+                    },
+                    {
+                        "names": [
+                            "eu-amsterdam-1.ocir.io/axoxdievda5j/oke-public-pause-amd64@sha256:fcaff905397ba63fd376d0c3019f1f1cb6e7506131389edbcb3d22719f1ae54d"
+                        ],
+                        "sizeBytes": 742472
+                    }
+                ]
+            }
+        }
+    ]
+}

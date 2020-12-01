@@ -1,0 +1,9 @@
+{
+    "kind": "DaemonSetList",
+    "apiVersion": "apps/v1",
+    "metadata": {
+        "selfLink": "/apis/apps/v1/namespaces/wls-domain-ns/daemonsets",
+        "resourceVersion": "190649"
+    },
+    "items": []
+}
