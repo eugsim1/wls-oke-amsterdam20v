@@ -22,9 +22,9 @@ wls_admin_user            = "weblogic"
 wls_admin_password_ocid   = "ocid1.vaultsecret.oc1.eu-amsterdam-1.amaaaaaa4g77oeyahogz6ttg2bscgtin6nienmb44fbjwe2bd7ugrujj6jua"
 ##fss_availability_domain   = "WtoZ:eu-amsterdam-1-AD-1"
 
-### TL{.1>5oB7xWPNqL4}rT
-ocir_auth_token_ocid = "ocid1.vaultsecret.oc1.eu-amsterdam-1.amaaaaaa4g77oeyacka3u3yqhmrb2i7iuott3kdegcnngys3vcvtn7gj5cqq"
-ocir_user            = "oracleidentitycloudservice/eugene.simos@oracle.com"
+
+ocir_auth_token_ocid = "XXXXXX"
+ocir_user            = "XXXXXX"
 
 wls_domain_name = "okewls"
 wls_node_pool_count = 2
