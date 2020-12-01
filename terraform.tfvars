@@ -2,7 +2,6 @@
 #region             = "XXXXXXX"
 #tenancy_ocid       = "XXXXXXX"
 kubernetes_version = "v1.17.9"
-
 ##  "v1.18.10"
 
 non_wls_node_pool_count = 2
@@ -28,6 +27,5 @@ ocir_user            = "XXXXXX"
 
 wls_domain_name = "okewls"
 wls_node_pool_count = 2
-###wls_configured_ms_count = 1
 deploy_sample_app = false
  
